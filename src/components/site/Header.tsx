@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
 import { ChevronDown, Menu, X } from "lucide-react";
 import { NAV_LINKS, SECTORS } from "@/lib/site";
-import logoAsset from "@/assets/rez-logo.png.asset.json";
+const logoAsset = "/rez-logo.png";
 
 
 export function Header() {
@@ -34,7 +34,7 @@ export function Header() {
         {/* Logo lockup — kept large and prominent */}
         <Link to="/" className="brand-lockup min-w-0 shrink-0">
           <img
-            src={logoAsset.url}
+            src={logoAsset}
             alt="REZ INTERNATIONAL emblem"
             width={44}
             height={44}
