@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import logoAsset from "@/assets/rez-logo.png.asset.json";
+const logo = "/rez-logo.png";
 
 /**
  * Interactive 4D welcome splash:
@@ -180,13 +180,19 @@ export function Preloader() {
           }}
         >
           <img
-            src={logoAsset.url}
-            alt="REZ INTERNATIONAL"
-            width={260}
-            height={260}
-            className="animate-logo-3d h-40 w-40 sm:h-48 sm:w-48 md:h-60 md:w-60"
-            style={{ objectFit: "contain" }}
-          />
+  src={logo}
+  alt="REZ INTERNATIONAL"
+  width={260}
+  height={260}
+  loading="eager"
+  decoding="sync"
+  draggable={false}
+  className="animate-logo-3d h-40 w-40 sm:h-48 sm:w-48 md:h-60 md:w-60 select-none"
+  style={{
+    objectFit: "contain",
+    display: "block",
+  }}
+/>
         </div>
 
         <div className="flex flex-col items-center gap-4">
