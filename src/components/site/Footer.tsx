@@ -1,7 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Mail, MapPin } from "lucide-react";
 import { COMPANY } from "@/lib/site";
-import logoAsset from "@/assets/rez-logo.png.asset.json";
+const logo = "/rez-logo.png";
 
 
 const SITE_LINKS = [
@@ -21,13 +21,14 @@ export function Footer() {
         <div>
           <div className="flex items-center gap-3">
             <img
-              src={logoAsset.url}
-              alt="REZ INTERNATIONAL LTD emblem"
-              width={40}
-              height={40}
-              className="h-10 w-10 shrink-0 object-contain"
-              style={{ filter: "drop-shadow(0 2px 8px rgba(223,204,140,0.45))" }}
-            />
+  src={logo}
+  alt="REZ INTERNATIONAL LTD emblem"
+  width={40}
+  height={40}
+  loading="eager"
+  className="h-10 w-10 shrink-0 object-contain"
+  style={{ filter: "drop-shadow(0 2px 8px rgba(223,204,140,.45))" }}
+/>
             <span className="brand-serif whitespace-nowrap text-base sm:text-lg" style={{ lineHeight: 1.05 }}>
               REZ INTERNATIONAL LTD
             </span>
