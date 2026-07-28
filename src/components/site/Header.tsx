@@ -26,7 +26,7 @@ export function Header() {
         className="relative border-b border-border backdrop-blur-xl"
         style={{
           background:
-            "linear-gradient(180deg, oklch(0.145 0.003 285 / 0.88) 0%, oklch(0.145 0.003 285 / 0.9) 80%, oklch(0.49 0.17 26 / 0.06) 100%)",
+            "linear-gradient(180deg, oklch(0.02 0 0 / 0.9) 0%, oklch(0.02 0 0 / 0.92) 80%, oklch(0.49 0.17 26 / 0.06) 100%)",
           boxShadow: "0 4px 30px rgba(139, 0, 0, 0.10)",
         }}
       >
@@ -120,7 +120,7 @@ export function Header() {
       {mobileOpen && (
         <div className="animate-fade-in fixed inset-0 z-[70] flex flex-col bg-background md:hidden">
           <div className="brand-lockup items-center px-4 sm:px-6" style={{ height: "4.5rem" }}>
-            <img src={logoAsset.url} alt="" width={36} height={36} className="brand-emblem h-9 w-9 object-contain" />
+            <img src={logoAsset} alt="" width={36} height={36} className="brand-emblem h-9 w-9 object-contain" />
             <span className="brand-serif whitespace-nowrap text-sm" style={{ lineHeight: 1.05 }}>
               REZ INTERNATIONAL
             </span>

@@ -27,7 +27,7 @@ export function Footer() {
   height={40}
   loading="eager"
   className="h-10 w-10 shrink-0 object-contain"
-  style={{ filter: "drop-shadow(0 2px 8px rgba(223,204,140,.45))" }}
+  style={{ filter: "drop-shadow(0 2px 8px rgba(242,216,121,.45))" }}
 />
             <span className="brand-serif whitespace-nowrap text-base sm:text-lg" style={{ lineHeight: 1.05 }}>
               REZ INTERNATIONAL LTD

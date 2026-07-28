@@ -60,15 +60,15 @@
 :root {
   --radius: 0.5rem;
 
-  /* Deep Matte Graphite base (#141416) — body layers a gradient on top */
-  --background: oklch(0.185 0.003 285);
+  /* Ultra-deep pitch black base */
+  --background: oklch(0.02 0 0);
   --foreground: oklch(1 0 0);
 
-  /* Soft obsidian card / surface tint (#222224) */
-  --surface: oklch(0.245 0.003 285);
-  --card: oklch(0.245 0.003 285);
+  /* Rich midnight navy card / surface (#0F1A33) */
+  --surface: oklch(0.235 0.055 260);
+  --card: oklch(0.235 0.055 260);
   --card-foreground: oklch(1 0 0);
-  --popover: oklch(0.22 0.003 285);
+  --popover: oklch(0.21 0.05 260);
   --popover-foreground: oklch(1 0 0);
 
   /* Premium Crimson Red #9B111E / #B22222 */
@@ -77,39 +77,41 @@
   --crimson: oklch(0.43 0.16 24);
   --crimson-bright: oklch(0.49 0.17 26);
 
-  /* Official brand gold #DFCC8C (logo-matched) */
-  --gold: #DFCC8C;
-  --gold-soft: #E8D9A6;
-  --gold-deep: #B89A54;
+  /* Bright stainless metallic gold */
+  --gold: #F2D879;
+  --gold-soft: #FBEBA8;
+  --gold-deep: #C9A94A;
 
 
-  --secondary: oklch(0.25 0.004 285);
+  --secondary: oklch(0.25 0.055 260);
   --secondary-foreground: oklch(1 0 0);
 
-  /* Polished off-white / metallic silver body text #E0E0E0 */
-  --muted: oklch(0.25 0.004 285);
-  --muted-foreground: oklch(0.895 0.002 286);
+  /* Crisp near-white body text */
+  --muted: oklch(0.25 0.055 260);
+  --muted-foreground: oklch(0.945 0.002 286);
 
-  --accent: oklch(0.28 0.006 285);
-  --accent-foreground: oklch(0.755 0.115 93);
+  --accent: oklch(0.29 0.06 260);
+  --accent-foreground: oklch(0.86 0.13 93);
 
   --destructive: oklch(0.49 0.17 26);
   --destructive-foreground: oklch(1 0 0);
 
-  --border: oklch(1 0 0 / 8%);
-  --border-gold: oklch(0.755 0.115 93 / 24%);
+  --border: oklch(1 0 0 / 10%);
+  --border-gold: oklch(0.86 0.13 93 / 32%);
   --border-hairline: rgba(255, 255, 255, 0.35);
   --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.755 0.115 93 / 60%);
+  --ring: oklch(0.86 0.13 93 / 60%);
+
 
   /* Signature effects — logo-matched metallic gradient */
-  --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #E9C96B 30%, #AA7C11 70%, #C69A2A 100%);
-  --gradient-gold-brushed: linear-gradient(180deg, #E9C96B 0%, #D4AF37 45%, #AA7C11 100%);
-  --gradient-hero: linear-gradient(180deg, oklch(0.185 0.003 285 / 55%), oklch(0.185 0.003 285) 92%);
-  --gradient-charcoal: linear-gradient(180deg, #1B1B1D 0%, #121214 100%);
-  --gradient-canvas: linear-gradient(180deg, #121212 0%, #1B1B1B 60%, #141416 100%);
-  --texture-noise: radial-gradient(circle at 20% 20%, rgba(212,175,55,0.05), transparent 40%), radial-gradient(circle at 80% 70%, rgba(212,175,55,0.03), transparent 45%);
-  --shadow-gold-glow: 0 0 24px oklch(0.755 0.115 93 / 18%), 0 4px 20px oklch(0 0 0 / 45%);
+  --gradient-gold: linear-gradient(135deg, #F5DE8A 0%, #FFF0B8 30%, #C9A94A 70%, #EBD275 100%);
+  --gradient-gold-brushed: linear-gradient(180deg, #FFF0B8 0%, #F2D879 45%, #C9A94A 100%);
+  --gradient-hero: linear-gradient(180deg, oklch(0.02 0 0 / 55%), oklch(0.02 0 0) 92%);
+  --gradient-charcoal: linear-gradient(180deg, #101B33 0%, #0A1224 100%);
+  --gradient-canvas: linear-gradient(180deg, #000000 0%, #030307 60%, #000000 100%);
+  --texture-noise: radial-gradient(circle at 20% 20%, rgba(242,216,121,0.05), transparent 40%), radial-gradient(circle at 80% 70%, rgba(242,216,121,0.03), transparent 45%);
+  --shadow-gold-glow: 0 0 26px oklch(0.86 0.13 93 / 22%), 0 4px 20px oklch(0 0 0 / 55%);
+
   --shadow-crimson-glow: 0 0 26px oklch(0.49 0.17 26 / 30%), 0 6px 22px oklch(0 0 0 / 50%);
   --stroke-white: inset 0 0 0 1px rgba(255, 255, 255, 0.32);
 }
@@ -125,7 +127,7 @@
   }
 
   body {
-    background-color: #121214;
+    background-color: #000000;
     background-image: var(--gradient-canvas);
     background-attachment: fixed;
     color: var(--color-foreground);
@@ -140,7 +142,7 @@
   }
 
   ::selection {
-    background: oklch(0.755 0.115 93 / 30%);
+    background: oklch(0.86 0.13 93 / 30%);
   }
 }
 
@@ -156,10 +158,10 @@
 
 /* Solid one-tone metallic gold — clean corporate wordmark */
 @utility text-gold-solid {
-  color: #DFCC8C;
+  color: #F2D879;
   text-shadow:
     0 1px 0 rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(223, 204, 140, 0.22);
+    0 0 14px rgba(242, 216, 121, 0.22);
 }
 
 /* Corporate wordmark — Roman inscription serif, luxury trading-house feel */
@@ -168,10 +170,10 @@
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #DFCC8C;
+  color: #F2D879;
   text-shadow:
     0 1px 0 rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(223, 204, 140, 0.20);
+    0 0 14px rgba(242, 216, 121, 0.20);
 }
 
 
@@ -288,7 +290,7 @@
   &:hover {
     box-shadow: var(--shadow-gold-glow);
     border-color: var(--gold);
-    background: oklch(0.755 0.115 93 / 6%);
+    background: oklch(0.86 0.13 93 / 6%);
   }
 }
 
@@ -379,10 +381,10 @@
 
 @keyframes gold-pulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 oklch(0.755 0.115 93 / 40%);
+    box-shadow: 0 0 0 0 oklch(0.86 0.13 93 / 40%);
   }
   50% {
-    box-shadow: 0 0 0 12px oklch(0.755 0.115 93 / 0%);
+    box-shadow: 0 0 0 12px oklch(0.86 0.13 93 / 0%);
   }
 }
 
@@ -434,7 +436,7 @@
 
 @keyframes preloaderTriPulse {
   0% {
-    background: radial-gradient(circle, rgba(223,204,140,0.55) 0%, rgba(223,204,140,0.18) 30%, rgba(223,204,140,0) 60%);
+    background: radial-gradient(circle, rgba(242,216,121,0.55) 0%, rgba(242,216,121,0.18) 30%, rgba(242,216,121,0) 60%);
     transform: scale(0.85);
     opacity: 0.9;
   }
@@ -449,7 +451,7 @@
     opacity: 0.95;
   }
   100% {
-    background: radial-gradient(circle, rgba(223,204,140,0.55) 0%, rgba(223,204,140,0.18) 30%, rgba(223,204,140,0) 60%);
+    background: radial-gradient(circle, rgba(242,216,121,0.55) 0%, rgba(242,216,121,0.18) 30%, rgba(242,216,121,0) 60%);
     transform: scale(0.85);
     opacity: 0.9;
   }
