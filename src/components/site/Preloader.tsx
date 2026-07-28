@@ -95,7 +95,7 @@ export function Preloader() {
       aria-hidden="true"
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden"
       style={{
-        background: "#08080A",
+        background: "#0A0A0C",
         opacity: fading ? 0 : 1,
         transform: fading ? "scale(1.02)" : "scale(1)",
         transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
@@ -223,7 +223,7 @@ export function Preloader() {
           <p
             className="animate-welcome-rise max-w-[36ch] font-sans text-[0.78rem] font-medium leading-relaxed sm:max-w-md sm:text-sm md:text-base"
             style={{
-              color: "rgba(240,240,245,0.82)",
+              color: "#FFFFFF",
               letterSpacing: "0.06em",
               animationDelay: "0.75s",
             }}

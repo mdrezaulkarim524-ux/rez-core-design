@@ -169,7 +169,7 @@ function ExpertisePage() {
                         className="rounded-full border px-3 py-1 font-display text-[0.65rem] font-bold uppercase tracking-[0.2em] text-gold backdrop-blur-md"
                         style={{
                           borderColor: "rgba(255,255,255,0.4)",
-                          background: "rgba(11,11,12,0.55)",
+                          background: "rgba(10,10,12,0.55)",
                         }}
                       >
                         {String(i + 1).padStart(2, "0")}

@@ -119,7 +119,7 @@ function HomePage() {
         <div className="relative mx-auto flex max-w-7xl flex-col items-start px-4 py-28 sm:px-6 lg:px-8 lg:py-44">
           <Reveal>
             <p className="eyebrow" style={{ color: "#FFFFFF" }}>UK-Registered Digital Wholesale Business Partner</p>
-            <h1 className="mt-5 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl" style={{ color: "#DFCC8C" }}>
+            <h1 className="mt-5 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl" style={{ color: "#D4AF37" }}>
               Accelerating Brand Growth Across Premium Digital Marketplaces.
             </h1>
             <h2 className="mt-6 max-w-3xl text-lg font-normal leading-relaxed text-foreground sm:text-xl">
@@ -310,7 +310,7 @@ function HomePage() {
             <h2 className="font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl" style={{ color: "#FFFFFF" }}>
               Protect Your Brand. Scale Your Digital Footprint.
             </h2>
-            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed sm:text-lg" style={{ color: "#C5A059" }}>
+            <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed sm:text-lg" style={{ color: "#D4AF37" }}>
               Partner with REZ INTERNATIONAL LTD, an officially registered UK marketplace distribution expert. Let us discuss a secure, high volume bulk supply contract today.
             </p>
 
