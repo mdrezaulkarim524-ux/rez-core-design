@@ -142,7 +142,7 @@
   }
 
   ::selection {
-    background: oklch(0.755 0.115 93 / 30%);
+    background: oklch(0.86 0.13 93 / 30%);
   }
 }
 
@@ -290,7 +290,7 @@
   &:hover {
     box-shadow: var(--shadow-gold-glow);
     border-color: var(--gold);
-    background: oklch(0.755 0.115 93 / 6%);
+    background: oklch(0.86 0.13 93 / 6%);
   }
 }
 
@@ -381,10 +381,10 @@
 
 @keyframes gold-pulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 oklch(0.755 0.115 93 / 40%);
+    box-shadow: 0 0 0 0 oklch(0.86 0.13 93 / 40%);
   }
   50% {
-    box-shadow: 0 0 0 12px oklch(0.755 0.115 93 / 0%);
+    box-shadow: 0 0 0 12px oklch(0.86 0.13 93 / 0%);
   }
 }
 
