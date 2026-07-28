@@ -15,8 +15,7 @@
 
 /*
  * REZ INTERNATIONAL — Luxury Dark Corporate Design System
- * Deep matte black + metallic gold + premium crimson.
- * All colors in oklch. Never hardcode colors in components.
+ * Deep obsidian + graphite charcoal + champagne metallic gold + premium crimson.
  */
 
 @theme inline {
@@ -60,59 +59,58 @@
 :root {
   --radius: 0.5rem;
 
-  /* Ultra-deep pitch black base */
-  --background: oklch(0.02 0 0);
-  --foreground: oklch(1 0 0);
+  /* Rich obsidian black base */
+  --background: #0A0A0C;
+  --foreground: #FFFFFF;
 
-  /* Rich midnight navy card / surface (#0F1A33) */
-  --surface: oklch(0.235 0.055 260);
-  --card: oklch(0.235 0.055 260);
-  --card-foreground: oklch(1 0 0);
-  --popover: oklch(0.21 0.05 260);
-  --popover-foreground: oklch(1 0 0);
+  /* Sleek dark graphite charcoal cards / surfaces */
+  --surface: #16161A;
+  --card: #16161A;
+  --card-foreground: #FFFFFF;
+  --popover: #16161A;
+  --popover-foreground: #FFFFFF;
 
   /* Premium Crimson Red #9B111E / #B22222 */
   --primary: oklch(0.43 0.16 24);
-  --primary-foreground: oklch(1 0 0);
+  --primary-foreground: #FFFFFF;
   --crimson: oklch(0.43 0.16 24);
   --crimson-bright: oklch(0.49 0.17 26);
 
-  /* Bright stainless metallic gold */
-  --gold: #F2D879;
-  --gold-soft: #FBEBA8;
-  --gold-deep: #C9A94A;
+  /* Champagne Metallic Gold #D4AF37 */
+  --gold: #D4AF37;
+  --gold-soft: #E8C96A;
+  --gold-deep: #B8943A;
 
+  --secondary: #1C1C21;
+  --secondary-foreground: #FFFFFF;
 
-  --secondary: oklch(0.25 0.055 260);
-  --secondary-foreground: oklch(1 0 0);
+  /* Crisp pure white body text */
+  --muted: #1C1C21;
+  --muted-foreground: #FFFFFF;
 
-  /* Crisp near-white body text */
-  --muted: oklch(0.25 0.055 260);
-  --muted-foreground: oklch(0.945 0.002 286);
-
-  --accent: oklch(0.29 0.06 260);
-  --accent-foreground: oklch(0.86 0.13 93);
+  --accent: #202025;
+  --accent-foreground: #FFFFFF;
 
   --destructive: oklch(0.49 0.17 26);
-  --destructive-foreground: oklch(1 0 0);
+  --destructive-foreground: #FFFFFF;
 
-  --border: oklch(1 0 0 / 10%);
-  --border-gold: oklch(0.86 0.13 93 / 32%);
+  --border: rgba(255, 255, 255, 0.10);
+  --border-gold: rgba(212, 175, 55, 0.32);
   --border-hairline: rgba(255, 255, 255, 0.35);
-  --input: oklch(1 0 0 / 12%);
-  --ring: oklch(0.86 0.13 93 / 60%);
+  --input: rgba(255, 255, 255, 0.12);
+  --ring: rgba(212, 175, 55, 0.60);
 
 
   /* Signature effects — logo-matched metallic gradient */
-  --gradient-gold: linear-gradient(135deg, #F5DE8A 0%, #FFF0B8 30%, #C9A94A 70%, #EBD275 100%);
-  --gradient-gold-brushed: linear-gradient(180deg, #FFF0B8 0%, #F2D879 45%, #C9A94A 100%);
-  --gradient-hero: linear-gradient(180deg, oklch(0.02 0 0 / 55%), oklch(0.02 0 0) 92%);
-  --gradient-charcoal: linear-gradient(180deg, #101B33 0%, #0A1224 100%);
-  --gradient-canvas: linear-gradient(180deg, #000000 0%, #030307 60%, #000000 100%);
-  --texture-noise: radial-gradient(circle at 20% 20%, rgba(242,216,121,0.05), transparent 40%), radial-gradient(circle at 80% 70%, rgba(242,216,121,0.03), transparent 45%);
-  --shadow-gold-glow: 0 0 26px oklch(0.86 0.13 93 / 22%), 0 4px 20px oklch(0 0 0 / 55%);
+  --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F5DE8A 30%, #B8943A 70%, #E8C96A 100%);
+  --gradient-gold-brushed: linear-gradient(180deg, #F5DE8A 0%, #D4AF37 45%, #B8943A 100%);
+  --gradient-hero: linear-gradient(180deg, rgba(10, 10, 12, 0.55) 0%, rgba(10, 10, 12, 0.92) 92%);
+  --gradient-charcoal: linear-gradient(180deg, #16161A 0%, #0A0A0C 100%);
+  --gradient-canvas: linear-gradient(180deg, #0A0A0C 0%, #050505 60%, #0A0A0C 100%);
+  --texture-noise: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.05), transparent 40%), radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.03), transparent 45%);
+  --shadow-gold-glow: 0 0 26px rgba(212, 175, 55, 0.22), 0 4px 20px rgba(0, 0, 0, 0.55);
 
-  --shadow-crimson-glow: 0 0 26px oklch(0.49 0.17 26 / 30%), 0 6px 22px oklch(0 0 0 / 50%);
+  --shadow-crimson-glow: 0 0 26px oklch(0.49 0.17 26 / 30%), 0 6px 22px rgba(0, 0, 0, 0.50);
   --stroke-white: inset 0 0 0 1px rgba(255, 255, 255, 0.32);
 }
 
@@ -127,7 +125,7 @@
   }
 
   body {
-    background-color: #000000;
+    background-color: #0A0A0C;
     background-image: var(--gradient-canvas);
     background-attachment: fixed;
     color: var(--color-foreground);
@@ -142,7 +140,7 @@
   }
 
   ::selection {
-    background: oklch(0.86 0.13 93 / 30%);
+    background: rgba(212, 175, 55, 0.30);
   }
 }
 
@@ -158,10 +156,10 @@
 
 /* Solid one-tone metallic gold — clean corporate wordmark */
 @utility text-gold-solid {
-  color: #F2D879;
+  color: #D4AF37;
   text-shadow:
     0 1px 0 rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(242, 216, 121, 0.22);
+    0 0 14px rgba(212, 175, 55, 0.22);
 }
 
 /* Corporate wordmark — Roman inscription serif, luxury trading-house feel */
@@ -170,10 +168,10 @@
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #F2D879;
+  color: #D4AF37;
   text-shadow:
     0 1px 0 rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(242, 216, 121, 0.20);
+    0 0 14px rgba(212, 175, 55, 0.20);
 }
 
 
@@ -290,7 +288,7 @@
   &:hover {
     box-shadow: var(--shadow-gold-glow);
     border-color: var(--gold);
-    background: oklch(0.86 0.13 93 / 6%);
+    background: rgba(212, 175, 55, 0.06);
   }
 }
 
@@ -381,10 +379,10 @@
 
 @keyframes gold-pulse {
   0%, 100% {
-    box-shadow: 0 0 0 0 oklch(0.86 0.13 93 / 40%);
+    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.40);
   }
   50% {
-    box-shadow: 0 0 0 12px oklch(0.86 0.13 93 / 0%);
+    box-shadow: 0 0 0 12px rgba(212, 175, 55, 0);
   }
 }
 
@@ -436,7 +434,7 @@
 
 @keyframes preloaderTriPulse {
   0% {
-    background: radial-gradient(circle, rgba(242,216,121,0.55) 0%, rgba(242,216,121,0.18) 30%, rgba(242,216,121,0) 60%);
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.55) 0%, rgba(212, 175, 55, 0.18) 30%, rgba(212, 175, 55, 0) 60%);
     transform: scale(0.85);
     opacity: 0.9;
   }
@@ -451,7 +449,7 @@
     opacity: 0.95;
   }
   100% {
-    background: radial-gradient(circle, rgba(242,216,121,0.55) 0%, rgba(242,216,121,0.18) 30%, rgba(242,216,121,0) 60%);
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.55) 0%, rgba(212, 175, 55, 0.18) 30%, rgba(212, 175, 55, 0) 60%);
     transform: scale(0.85);
     opacity: 0.9;
   }
@@ -474,7 +472,7 @@
   }
   66% {
     background:
-      radial-gradient(ellipse 90% 70% at 50% 60%, rgba(90, 90, 100, 0.24) 0%, rgba(90, 90, 100, 0) 60%),
+      radial-gradient(ellipse 90% 70% at 50% 60%, rgba(28, 28, 33, 0.24) 0%, rgba(28, 28, 33, 0) 60%),
       radial-gradient(ellipse 85% 65% at 10% 20%, rgba(120, 96, 40, 0.22) 0%, rgba(120, 96, 40, 0) 62%),
       radial-gradient(ellipse 85% 65% at 90% 80%, rgba(70, 14, 14, 0.28) 0%, rgba(70, 14, 14, 0) 62%);
   }
@@ -587,4 +585,3 @@
 @utility animate-welcome-rise {
   animation: welcome-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
 }
-
