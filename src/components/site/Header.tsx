@@ -120,7 +120,7 @@ export function Header() {
       {mobileOpen && (
         <div className="animate-fade-in fixed inset-0 z-[70] flex flex-col bg-background md:hidden">
           <div className="brand-lockup items-center px-4 sm:px-6" style={{ height: "4.5rem" }}>
-            <img src={logoAsset.url} alt="" width={36} height={36} className="brand-emblem h-9 w-9 object-contain" />
+            <img src={logoAsset} alt="" width={36} height={36} className="brand-emblem h-9 w-9 object-contain" />
             <span className="brand-serif whitespace-nowrap text-sm" style={{ lineHeight: 1.05 }}>
               REZ INTERNATIONAL
             </span>
