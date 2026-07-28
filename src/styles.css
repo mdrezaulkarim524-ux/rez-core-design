@@ -127,7 +127,7 @@
   }
 
   body {
-    background-color: #121214;
+    background-color: #000000;
     background-image: var(--gradient-canvas);
     background-attachment: fixed;
     color: var(--color-foreground);
