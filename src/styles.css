@@ -60,57 +60,57 @@
   --radius: 0.5rem;
 
   /* Rich obsidian black base */
-  --background: #0A0A0C;
+  --background: #08080A;
   --foreground: #FFFFFF;
 
   /* Sleek dark graphite charcoal cards / surfaces */
-  --surface: #16161A;
-  --card: #16161A;
+  --surface: #141417;
+  --card: #141417;
   --card-foreground: #FFFFFF;
-  --popover: #16161A;
+  --popover: #18181B;
   --popover-foreground: #FFFFFF;
 
   /* Premium Crimson Red #9B111E / #B22222 */
-  --primary: oklch(0.43 0.16 24);
+  --primary: #DC2626;
   --primary-foreground: #FFFFFF;
-  --crimson: oklch(0.43 0.16 24);
-  --crimson-bright: oklch(0.49 0.17 26);
+  --crimson: #DC2626;
+  --crimson-bright: #EF4444;
 
   /* Champagne Metallic Gold #D4AF37 */
   --gold: #D4AF37;
   --gold-soft: #E8C96A;
   --gold-deep: #B8943A;
 
-  --secondary: #1C1C21;
+  --secondary: #18181B;
   --secondary-foreground: #FFFFFF;
 
   /* Crisp pure white body text */
-  --muted: #1C1C21;
-  --muted-foreground: #FFFFFF;
+  --muted: #18181B;
+  --muted-foreground: #A1A1AA;
 
-  --accent: #202025;
+  --accent: #18181B;
   --accent-foreground: #FFFFFF;
 
-  --destructive: oklch(0.49 0.17 26);
+  --destructive: #DC2626;
   --destructive-foreground: #FFFFFF;
 
-  --border: rgba(255, 255, 255, 0.10);
-  --border-gold: rgba(212, 175, 55, 0.32);
+  --border: #27272A;
+  --border-gold: rgba(212, 175, 55, 0.28);
   --border-hairline: rgba(255, 255, 255, 0.35);
   --input: rgba(255, 255, 255, 0.12);
-  --ring: rgba(212, 175, 55, 0.60);
+  --ring: rgba(212, 175, 55, 0.45);
 
 
   /* Signature effects — logo-matched metallic gradient */
   --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F5DE8A 30%, #B8943A 70%, #E8C96A 100%);
   --gradient-gold-brushed: linear-gradient(180deg, #F5DE8A 0%, #D4AF37 45%, #B8943A 100%);
-  --gradient-hero: linear-gradient(180deg, rgba(10, 10, 12, 0.55) 0%, rgba(10, 10, 12, 0.92) 92%);
-  --gradient-charcoal: linear-gradient(180deg, #16161A 0%, #0A0A0C 100%);
-  --gradient-canvas: linear-gradient(180deg, #0A0A0C 0%, #050505 60%, #0A0A0C 100%);
-  --texture-noise: radial-gradient(circle at 20% 20%, rgba(212, 175, 55, 0.05), transparent 40%), radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.03), transparent 45%);
-  --shadow-gold-glow: 0 0 26px rgba(212, 175, 55, 0.22), 0 4px 20px rgba(0, 0, 0, 0.55);
+  --gradient-hero: linear-gradient(180deg, rgba(8, 8, 10, 0.62) 0%, rgba(8, 8, 10, 0.94) 92%);
+  --gradient-charcoal: #141417;
+  --gradient-canvas: none;
+  --texture-noise: none;
+  --shadow-gold-glow: 0 4px 20px rgba(0, 0, 0, 0.55);
 
-  --shadow-crimson-glow: 0 0 26px oklch(0.49 0.17 26 / 30%), 0 6px 22px rgba(0, 0, 0, 0.50);
+  --shadow-crimson-glow: 0 6px 22px rgba(0, 0, 0, 0.50);
   --stroke-white: inset 0 0 0 1px rgba(255, 255, 255, 0.32);
 }
 
@@ -125,9 +125,7 @@
   }
 
   body {
-    background-color: #0A0A0C;
-    background-image: var(--gradient-canvas);
-    background-attachment: fixed;
+    background-color: #08080A;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -157,9 +155,6 @@
 /* Solid one-tone metallic gold — clean corporate wordmark */
 @utility text-gold-solid {
   color: #D4AF37;
-  text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(212, 175, 55, 0.22);
 }
 
 /* Corporate wordmark — Roman inscription serif, luxury trading-house feel */
@@ -169,9 +164,6 @@
   letter-spacing: 0.15em;
   text-transform: uppercase;
   color: #D4AF37;
-  text-shadow:
-    0 1px 0 rgba(0, 0, 0, 0.35),
-    0 0 14px rgba(212, 175, 55, 0.20);
 }
 
 
@@ -228,8 +220,7 @@
 @utility hover-luxe {
   transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease, background-color 0.35s ease;
   &:hover {
-    box-shadow: var(--shadow-gold-glow);
-    border-color: oklch(0.49 0.17 26 / 55%);
+    border-color: rgba(212, 175, 55, 0.5);
     transform: translateY(-2px);
   }
 }
@@ -238,8 +229,7 @@
 @utility hover-crimson-glow {
   transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease, background-color 0.35s ease;
   &:hover {
-    box-shadow: var(--shadow-crimson-glow);
-    border-color: oklch(0.49 0.17 26 / 55%);
+    border-color: rgba(220, 38, 38, 0.55);
     transform: translateY(-2px);
   }
 }
@@ -250,7 +240,6 @@
   &:hover {
     transform: translateY(-4px);
     border-color: #D4AF37;
-    box-shadow: 0 0 1px 1px rgba(212, 175, 55, 0.6), 0 0 12px 2px rgba(218, 29, 29, 0.35);
   }
 }
 
@@ -268,7 +257,6 @@
   transition: background-color 0.3s ease, box-shadow 0.35s ease, transform 0.3s ease;
   &:hover {
     background: var(--crimson-bright);
-    box-shadow: var(--shadow-crimson-glow);
     transform: translateY(-1px);
   }
 }
@@ -286,7 +274,6 @@
   border-radius: var(--radius);
   transition: box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.3s ease;
   &:hover {
-    box-shadow: var(--shadow-gold-glow);
     border-color: var(--gold);
     background: rgba(212, 175, 55, 0.06);
   }
@@ -306,8 +293,7 @@
   border-radius: var(--radius);
   transition: box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.3s ease, color 0.3s ease;
   &:hover {
-    box-shadow: var(--shadow-crimson-glow);
-    background: oklch(0.49 0.17 26 / 10%);
+    background: rgba(220, 38, 38, 0.10);
     color: var(--foreground);
   }
 }
@@ -356,9 +342,9 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(60, 12, 12, 0.55) 20%,
-    rgba(150, 118, 55, 0.85) 50%,
-    rgba(60, 12, 12, 0.55) 80%,
+    rgba(212, 175, 55, 0.18) 20%,
+    rgba(212, 175, 55, 0.55) 50%,
+    rgba(212, 175, 55, 0.18) 80%,
     transparent 100%
   );
 }
@@ -378,12 +364,7 @@
 /* ---------- Keyframes ---------- */
 
 @keyframes gold-pulse {
-  0%, 100% {
-    box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.40);
-  }
-  50% {
-    box-shadow: 0 0 0 12px rgba(212, 175, 55, 0);
-  }
+  0%, 100% { box-shadow: none; }
 }
 
 @utility animate-gold-pulse {
@@ -433,49 +414,13 @@
 
 
 @keyframes preloaderTriPulse {
-  0% {
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.55) 0%, rgba(212, 175, 55, 0.18) 30%, rgba(212, 175, 55, 0) 60%);
-    transform: scale(0.85);
-    opacity: 0.9;
-  }
-  40% {
-    background: radial-gradient(circle, rgba(139,0,0,0.5) 0%, rgba(139,0,0,0.18) 35%, rgba(139,0,0,0) 65%);
-    transform: scale(1);
-    opacity: 1;
-  }
-  75% {
-    background: radial-gradient(circle, rgba(255,255,255,0.42) 0%, rgba(255,255,255,0.14) 40%, rgba(255,255,255,0) 70%);
-    transform: scale(1.08);
-    opacity: 0.95;
-  }
-  100% {
-    background: radial-gradient(circle, rgba(212, 175, 55, 0.55) 0%, rgba(212, 175, 55, 0.18) 30%, rgba(212, 175, 55, 0) 60%);
-    transform: scale(0.85);
-    opacity: 0.9;
-  }
+  0%, 100% { opacity: 0; }
 }
 
 /* Full-viewport deep ambient welcome canvas — muted deep gold → crimson → cool white,
    spread across 100% of the display so it never feels concentrated on the icon. */
 @keyframes preloaderAmbientFull {
-  0%, 100% {
-    background:
-      radial-gradient(ellipse 90% 70% at 20% 25%, rgba(120, 96, 40, 0.28) 0%, rgba(120, 96, 40, 0) 60%),
-      radial-gradient(ellipse 85% 65% at 80% 75%, rgba(60, 12, 12, 0.32) 0%, rgba(60, 12, 12, 0) 62%),
-      radial-gradient(ellipse 60% 55% at 50% 50%, rgba(30, 30, 34, 0.35) 0%, rgba(10, 10, 12, 0) 70%);
-  }
-  33% {
-    background:
-      radial-gradient(ellipse 90% 70% at 75% 30%, rgba(90, 18, 18, 0.32) 0%, rgba(90, 18, 18, 0) 62%),
-      radial-gradient(ellipse 85% 65% at 25% 80%, rgba(120, 96, 40, 0.26) 0%, rgba(120, 96, 40, 0) 62%),
-      radial-gradient(ellipse 60% 55% at 50% 50%, rgba(40, 32, 20, 0.30) 0%, rgba(10, 10, 12, 0) 72%);
-  }
-  66% {
-    background:
-      radial-gradient(ellipse 90% 70% at 50% 60%, rgba(28, 28, 33, 0.24) 0%, rgba(28, 28, 33, 0) 60%),
-      radial-gradient(ellipse 85% 65% at 10% 20%, rgba(120, 96, 40, 0.22) 0%, rgba(120, 96, 40, 0) 62%),
-      radial-gradient(ellipse 85% 65% at 90% 80%, rgba(70, 14, 14, 0.28) 0%, rgba(70, 14, 14, 0) 62%);
-  }
+  0%, 100% { background: none; }
 }
 
 /* Symmetric deep metallic accent divider — burnished dark gold ↔ velvet crimson
@@ -487,9 +432,9 @@
   background: linear-gradient(
     90deg,
     transparent 0%,
-    rgba(60, 12, 12, 0.55) 20%,
-    rgba(150, 118, 55, 0.85) 50%,
-    rgba(60, 12, 12, 0.55) 80%,
+    rgba(212, 175, 55, 0.18) 20%,
+    rgba(212, 175, 55, 0.55) 50%,
+    rgba(212, 175, 55, 0.18) 80%,
     transparent 100%
   );
   box-shadow: none;
@@ -503,7 +448,7 @@
     linear-gradient(135deg, #E0E0E0 0%, #B0B0B0 50%, #E0E0E0 100%);
   background-clip: padding-box, border-box;
   background-origin: padding-box, border-box;
-  box-shadow: 0 0 18px rgba(224, 224, 224, 0.08);
+  box-shadow: none;
 }
 
 
@@ -526,17 +471,17 @@
   0% {
     opacity: 0;
     transform: perspective(1200px) translateZ(-500px) rotateY(-180deg) rotateX(35deg) scale(0.4);
-    filter: drop-shadow(0 0 0 rgba(212,175,55,0)) blur(6px);
+    filter: none;
   }
   55% {
     opacity: 1;
     transform: perspective(1200px) translateZ(60px) rotateY(15deg) rotateX(-6deg) scale(1.08);
-    filter: drop-shadow(0 25px 55px rgba(212,175,55,0.55)) blur(0);
+    filter: none;
   }
   100% {
     opacity: 1;
     transform: perspective(1200px) translateZ(0) rotateY(0deg) rotateX(0deg) scale(1);
-    filter: drop-shadow(0 15px 35px rgba(212,175,55,0.4));
+    filter: none;
   }
 }
 
@@ -544,19 +489,19 @@
 @keyframes logo-3d-orbit {
   0%, 100% {
     transform: perspective(1200px) rotateY(-8deg) rotateX(4deg) translateY(0) scale(1);
-    filter: drop-shadow(0 14px 32px rgba(212,175,55,0.38)) drop-shadow(0 0 18px rgba(212,175,55,0.15));
+    filter: none;
   }
   25% {
     transform: perspective(1200px) rotateY(0deg) rotateX(-3deg) translateY(-6px) scale(1.02);
-    filter: drop-shadow(0 20px 44px rgba(212,175,55,0.5)) drop-shadow(0 0 26px rgba(212,175,55,0.28));
+    filter: none;
   }
   50% {
     transform: perspective(1200px) rotateY(8deg) rotateX(4deg) translateY(0) scale(1.03);
-    filter: drop-shadow(0 22px 48px rgba(212,175,55,0.55)) drop-shadow(0 0 32px rgba(212,175,55,0.35));
+    filter: none;
   }
   75% {
     transform: perspective(1200px) rotateY(0deg) rotateX(-3deg) translateY(-4px) scale(1.02);
-    filter: drop-shadow(0 20px 44px rgba(212,175,55,0.5)) drop-shadow(0 0 26px rgba(212,175,55,0.28));
+    filter: none;
   }
 }
 
@@ -570,8 +515,8 @@
 
 /* Legacy breathe kept for other pages */
 @keyframes logo-breathe {
-  0%, 100% { transform: scale(1); filter: drop-shadow(0 12px 30px rgba(212,175,55,0.35)); }
-  50% { transform: scale(1.04); filter: drop-shadow(0 18px 42px rgba(212,175,55,0.5)); }
+  0%, 100% { transform: scale(1); filter: none; }
+  50% { transform: scale(1.04); filter: none; }
 }
 @utility animate-logo-breathe {
   animation: logo-breathe 3.2s ease-in-out infinite;
