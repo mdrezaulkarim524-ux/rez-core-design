@@ -7,6 +7,9 @@ import {
   Wallet,
   Lock,
   ArrowRight,
+  Banknote,
+  Building2,
+  Globe2,
 } from "lucide-react";
 import heroImage from "@/assets/hero-warehouse.jpg";
 import sectorBeauty from "@/assets/sector-beauty.jpg";
@@ -82,6 +85,29 @@ const SECTOR_CARDS = [
     eyebrow: "Sector 03",
     title: "Premium Consumer Goods",
     text: "Electronics, lifestyle and specialty categories scaled through authorized digital channels.",
+  },
+] as const;
+
+const TRUST_PILLARS = [
+  {
+    icon: Lock,
+    title: "Strict Brand & Price Protection",
+    text: "We strictly enforce MAP (Minimum Advertised Price) policies and eliminate unauthorized channel resellers to preserve your brand equity across all marketplaces.",
+  },
+  {
+    icon: Banknote,
+    title: "Direct Capital Investment",
+    text: "We operate as a true wholesale partner, purchasing inventory upfront to provide immediate cash flow and stock stability for manufacturers.",
+  },
+  {
+    icon: Building2,
+    title: "Fully Compliant UK Entity",
+    text: `Registered in England and Wales (CRN: ${COMPANY.crn}). Fully aligned with UK commercial safety, warehouse standards, and strict GDPR guidelines.`,
+  },
+  {
+    icon: Globe2,
+    title: "Omnichannel Marketplace Power",
+    text: "Proven distribution infrastructure connecting authorized suppliers with high-converting opportunities across major UK and European digital marketplaces.",
   },
 ] as const;
 
@@ -302,7 +328,32 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 6. FINAL CTA BANNER */}
+      {/* 6. WHY TRUST US */}
+      <section className="bg-background py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <p className="eyebrow">Why Trust Us?</p>
+            <h2 className="mt-3 max-w-3xl font-display text-3xl font-extrabold text-gold sm:text-4xl">
+              Why Leading Brands Trust REZ INTERNATIONAL
+            </h2>
+          </Reveal>
+          <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+            {TRUST_PILLARS.map((p, i) => (
+              <Reveal key={p.title} delay={i * 90}>
+                <div className="hover-luxe h-full rounded-lg border border-border bg-card p-7">
+                  <div className="flex h-11 w-11 items-center justify-center rounded-md border border-border bg-background text-gold">
+                    <p.icon className="h-5 w-5" strokeWidth={1.6} />
+                  </div>
+                  <h3 className="mt-6 font-display text-lg font-bold text-foreground">{p.title}</h3>
+                  <p className="mt-3 text-sm leading-relaxed text-muted-foreground">{p.text}</p>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 7. FINAL CTA BANNER */}
       <section className="relative bg-surface py-20 lg:py-28">
         <div aria-hidden="true" className="metallic-divider absolute inset-x-0 top-0" />
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6">
