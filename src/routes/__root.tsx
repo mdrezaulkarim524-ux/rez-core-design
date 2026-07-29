@@ -16,7 +16,6 @@ import { Footer } from "@/components/site/Footer";
 
 import { CookieBanner } from "@/components/site/CookieBanner";
 import { Preloader } from "@/components/site/Preloader";
-import logisticsWatermark from "@/assets/bg-logistics-watermark.jpg";
 
 function NotFoundComponent() {
   return (
