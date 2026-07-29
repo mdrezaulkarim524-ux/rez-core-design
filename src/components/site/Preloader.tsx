@@ -95,7 +95,7 @@ export function Preloader() {
       aria-hidden="true"
       className="fixed inset-0 z-[100] flex flex-col items-center justify-center overflow-hidden"
       style={{
-        background: "#0A0A0C",
+        background: "#08080A",
         opacity: fading ? 0 : 1,
         transform: fading ? "scale(1.02)" : "scale(1)",
         transition: "opacity 1s ease-in-out, transform 1s ease-in-out",
@@ -132,9 +132,7 @@ export function Preloader() {
               width: `${p.size}px`,
               height: `${p.size}px`,
               background: p.gold ? "rgba(212,175,55,0.85)" : "rgba(255,255,255,0.55)",
-              boxShadow: p.gold
-                ? "0 0 8px rgba(212,175,55,0.7)"
-                : "0 0 6px rgba(255,255,255,0.4)",
+              boxShadow: "none",
               transform: `translate3d(calc(var(--px) * ${p.depth * 40}px), calc(var(--py) * ${p.depth * 40}px), 0)`,
               transition: "transform 0.35s cubic-bezier(0.2, 0.7, 0.2, 1)",
               opacity: 0.35 + p.depth * 0.5,
