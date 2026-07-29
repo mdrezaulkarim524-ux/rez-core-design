@@ -16,20 +16,10 @@ import { Footer } from "@/components/site/Footer";
 
 import { CookieBanner } from "@/components/site/CookieBanner";
 import { Preloader } from "@/components/site/Preloader";
-import logisticsWatermark from "@/assets/bg-logistics-watermark.jpg";
 
 function NotFoundComponent() {
   return (
     <div className="relative flex min-h-screen items-center justify-center overflow-hidden bg-background px-4">
-      {/* Subtle crimson warning glow */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-0"
-        style={{
-          background:
-            "radial-gradient(circle at 50% 45%, oklch(0.49 0.17 26 / 22%) 0%, transparent 55%)",
-        }}
-      />
       <div className="relative z-10 mx-auto max-w-xl text-center">
         <p className="eyebrow text-crimson-bright">System Notice</p>
         <h1 className="mt-5 font-display text-5xl font-extrabold tracking-tight text-gold sm:text-6xl">
@@ -151,39 +141,6 @@ function RootComponent() {
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
       </main>
-      {/* Global ambient studio glow — crimson (top-left) + gold (bottom-right).
-          Fixed to viewport, sits beneath the logistics watermark. Non-interactive.
-          Intensities held between ~5–10% so text and cards remain fully readable. */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 z-[4]"
-        style={{
-          backgroundImage: `
-            radial-gradient(ellipse 70% 60% at 8% 18%, rgba(155, 17, 30, 0.09), rgba(155, 17, 30, 0) 60%),
-            radial-gradient(ellipse 65% 55% at 92% 82%, rgba(212, 175, 55, 0.07), rgba(212, 175, 55, 0) 62%),
-            radial-gradient(ellipse 40% 35% at 78% 12%, rgba(212, 175, 55, 0.035), rgba(212, 175, 55, 0) 65%),
-            radial-gradient(ellipse 45% 40% at 15% 88%, rgba(155, 17, 30, 0.05), rgba(155, 17, 30, 0) 65%)
-          `,
-          backgroundAttachment: "fixed",
-          backgroundRepeat: "no-repeat",
-          backgroundSize: "cover",
-        }}
-      />
-      {/* Global luxury logistics watermark — sits above the ambient glow so both
-          layers compose into a moody studio-lit surface. 15% opacity, deeply tinted. */}
-      <div
-        aria-hidden="true"
-        className="pointer-events-none fixed inset-0 z-[5]"
-        style={{
-          backgroundImage: `url(${logisticsWatermark})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundAttachment: "fixed",
-          opacity: 0.15,
-          filter: "contrast(120%) brightness(30%)",
-          mixBlendMode: "screen",
-        }}
-      />
       <Footer />
       <CookieBanner />
     </QueryClientProvider>

@@ -27,7 +27,7 @@ export function Header() {
         style={{
           background:
             "linear-gradient(180deg, rgba(10, 10, 12, 0.9) 0%, rgba(10, 10, 12, 0.92) 80%, oklch(0.49 0.17 26 / 0.06) 100%)",
-          boxShadow: "0 4px 30px rgba(139, 0, 0, 0.10)",
+          boxShadow: "none",
         }}
       >
       <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8" style={{ height: "4.5rem" }}>
@@ -68,7 +68,7 @@ export function Header() {
                 </Link>
                 {/* Mega dropdown */}
                 <div className="invisible absolute left-1/2 top-full z-50 w-[560px] -translate-x-1/2 pt-4 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
-                  <div className="rounded-lg border border-border-gold bg-popover p-6 shadow-lg" style={{ boxShadow: "var(--shadow-gold-glow)" }}>
+                  <div className="rounded-lg border border-border-gold bg-popover p-6 shadow-lg">
                     <p className="eyebrow mb-4">25 Product Sectors We Distribute</p>
                     <div className="grid grid-cols-2 gap-x-6 gap-y-2">
                       {SECTORS.slice(0, 10).map((sector) => (
