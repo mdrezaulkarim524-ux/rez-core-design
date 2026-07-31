@@ -17,6 +17,7 @@ import { Route as PartnerRouteImport } from './routes/partner'
 import { Route as ExpertiseRouteImport } from './routes/expertise'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BrandProtectionRouteImport } from './routes/brand-protection'
+import { Route as BookAMeetingRouteImport } from './routes/book-a-meeting'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as IndexRouteImport } from './routes/index'
 
@@ -60,6 +61,11 @@ const BrandProtectionRoute = BrandProtectionRouteImport.update({
   path: '/brand-protection',
   getParentRoute: () => rootRouteImport,
 } as any)
+const BookAMeetingRoute = BookAMeetingRouteImport.update({
+  id: '/book-a-meeting',
+  path: '/book-a-meeting',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const AboutRoute = AboutRouteImport.update({
   id: '/about',
   path: '/about',
@@ -74,6 +80,7 @@ const IndexRoute = IndexRouteImport.update({
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/book-a-meeting': typeof BookAMeetingRoute
   '/brand-protection': typeof BrandProtectionRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRoute
@@ -86,6 +93,7 @@ export interface FileRoutesByFullPath {
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/book-a-meeting': typeof BookAMeetingRoute
   '/brand-protection': typeof BrandProtectionRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRoute
@@ -99,6 +107,7 @@ export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
   '/about': typeof AboutRoute
+  '/book-a-meeting': typeof BookAMeetingRoute
   '/brand-protection': typeof BrandProtectionRoute
   '/contact': typeof ContactRoute
   '/expertise': typeof ExpertiseRoute
@@ -113,6 +122,7 @@ export interface FileRouteTypes {
   fullPaths:
     | '/'
     | '/about'
+    | '/book-a-meeting'
     | '/brand-protection'
     | '/contact'
     | '/expertise'
@@ -125,6 +135,7 @@ export interface FileRouteTypes {
   to:
     | '/'
     | '/about'
+    | '/book-a-meeting'
     | '/brand-protection'
     | '/contact'
     | '/expertise'
@@ -137,6 +148,7 @@ export interface FileRouteTypes {
     | '__root__'
     | '/'
     | '/about'
+    | '/book-a-meeting'
     | '/brand-protection'
     | '/contact'
     | '/expertise'
@@ -150,6 +162,7 @@ export interface FileRouteTypes {
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
   AboutRoute: typeof AboutRoute
+  BookAMeetingRoute: typeof BookAMeetingRoute
   BrandProtectionRoute: typeof BrandProtectionRoute
   ContactRoute: typeof ContactRoute
   ExpertiseRoute: typeof ExpertiseRoute
@@ -218,6 +231,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof BrandProtectionRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/book-a-meeting': {
+      id: '/book-a-meeting'
+      path: '/book-a-meeting'
+      fullPath: '/book-a-meeting'
+      preLoaderRoute: typeof BookAMeetingRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/about': {
       id: '/about'
       path: '/about'
@@ -238,6 +258,7 @@ declare module '@tanstack/react-router' {
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
+  BookAMeetingRoute: BookAMeetingRoute,
   BrandProtectionRoute: BrandProtectionRoute,
   ContactRoute: ContactRoute,
   ExpertiseRoute: ExpertiseRoute,
