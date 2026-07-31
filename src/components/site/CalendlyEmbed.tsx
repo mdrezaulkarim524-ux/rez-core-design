@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ExternalLink } from "lucide-react";
 
 interface CalendlyEmbedProps {
   url: string;
@@ -6,61 +7,70 @@ interface CalendlyEmbedProps {
   className?: string;
 }
 
-const SCRIPT_SRC = "https://assets.calendly.com/assets/external/widget.js";
-
-declare global {
-  interface Window {
-    Calendly?: {
-      initInlineWidget: (opts: { url: string; parentElement: HTMLElement }) => void;
-    };
-  }
-}
-
-function loadScript(): Promise<void> {
-  return new Promise((resolve, reject) => {
-    if (window.Calendly) return resolve();
-    const existing = document.querySelector<HTMLScriptElement>(`script[src="${SCRIPT_SRC}"]`);
-    if (existing) {
-      existing.addEventListener("load", () => resolve());
-      existing.addEventListener("error", () => reject(new Error("calendly script failed")));
-      return;
-    }
-    const script = document.createElement("script");
-    script.src = SCRIPT_SRC;
-    script.async = true;
-    script.onload = () => resolve();
-    script.onerror = () => reject(new Error("calendly script failed"));
-    document.body.appendChild(script);
-  });
-}
-
-/** Calendly inline scheduling widget. Loads the widget script, then initialises explicitly. */
+/**
+ * Calendly inline scheduler rendered as a direct iframe.
+ * Avoids the external widget.js loader, which is blocked inside sandboxed previews.
+ */
 export function CalendlyEmbed({ url, height = 700, className }: CalendlyEmbedProps) {
-  const containerRef = useRef<HTMLDivElement>(null);
+  const [src, setSrc] = useState<string | null>(null);
+  const [ready, setReady] = useState(false);
+  const [failed, setFailed] = useState(false);
+  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    let cancelled = false;
-    loadScript()
-      .then(() => {
-        const el = containerRef.current;
-        if (cancelled || !el || !window.Calendly) return;
-        el.innerHTML = "";
-        window.Calendly.initInlineWidget({ url, parentElement: el });
-      })
-      .catch(() => {
-        /* widget unavailable (blocked / offline) */
-      });
+    const u = new URL(url);
+    u.searchParams.set("embed_domain", window.location.hostname);
+    u.searchParams.set("embed_type", "Inline");
+    u.searchParams.set("hide_gdpr_banner", "1");
+    u.searchParams.set("background_color", "141417");
+    u.searchParams.set("text_color", "ffffff");
+    u.searchParams.set("primary_color", "d4af37");
+    setSrc(u.toString());
+
+    timer.current = setTimeout(() => setFailed((f) => (ready ? f : true)), 8000);
     return () => {
-      cancelled = true;
+      if (timer.current) clearTimeout(timer.current);
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
   return (
-    <div
-      ref={containerRef}
-      className={className}
-      style={{ minWidth: 320, height }}
-      aria-label="Calendly scheduling"
-    />
+    <div className={className} style={{ minWidth: 320 }}>
+      {src && !failed ? (
+        <iframe
+          src={src}
+          title="Schedule a meeting with REZ INTERNATIONAL LTD"
+          width="100%"
+          height={height}
+          frameBorder="0"
+          loading="lazy"
+          onLoad={() => setReady(true)}
+          onError={() => setFailed(true)}
+          style={{ border: 0, display: "block", borderRadius: 8, minHeight: height }}
+        />
+      ) : null}
+
+      {(!ready || failed) && (
+        <div
+          className="flex flex-col items-center justify-center gap-4 rounded-lg border border-border bg-card px-6 py-10 text-center"
+          style={failed ? undefined : { marginTop: -height, height, position: "relative" }}
+        >
+          <p className="text-sm text-muted-foreground">
+            {failed
+              ? "The scheduling calendar could not load in this view."
+              : "Loading the corporate scheduling calendar…"}
+          </p>
+          <a
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-crimson px-6 py-3 text-sm"
+          >
+            Open Scheduling Page
+            <ExternalLink className="h-4 w-4" strokeWidth={1.8} />
+          </a>
+        </div>
+      )}
+    </div>
   );
 }
