@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import { ExternalLink } from "lucide-react";
 
 interface CalendlyEmbedProps {
@@ -13,9 +13,6 @@ interface CalendlyEmbedProps {
  */
 export function CalendlyEmbed({ url, height = 700, className }: CalendlyEmbedProps) {
   const [src, setSrc] = useState<string | null>(null);
-  const [ready, setReady] = useState(false);
-  const [failed, setFailed] = useState(false);
-  const timer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
     const u = new URL(url);
@@ -26,51 +23,40 @@ export function CalendlyEmbed({ url, height = 700, className }: CalendlyEmbedPro
     u.searchParams.set("text_color", "ffffff");
     u.searchParams.set("primary_color", "d4af37");
     setSrc(u.toString());
-
-    timer.current = setTimeout(() => setFailed((f) => (ready ? f : true)), 8000);
-    return () => {
-      if (timer.current) clearTimeout(timer.current);
-    };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [url]);
 
   return (
     <div className={className} style={{ minWidth: 320 }}>
-      {src && !failed ? (
-        <iframe
-          src={src}
-          title="Schedule a meeting with REZ INTERNATIONAL LTD"
-          width="100%"
-          height={height}
-          frameBorder="0"
-          loading="lazy"
-          onLoad={() => setReady(true)}
-          onError={() => setFailed(true)}
-          style={{ border: 0, display: "block", borderRadius: 8, minHeight: height }}
-        />
-      ) : null}
-
-      {(!ready || failed) && (
-        <div
-          className="flex flex-col items-center justify-center gap-4 rounded-lg border border-border bg-card px-6 py-10 text-center"
-          style={failed ? undefined : { marginTop: -height, height, position: "relative" }}
-        >
-          <p className="text-sm text-muted-foreground">
-            {failed
-              ? "The scheduling calendar could not load in this view."
-              : "Loading the corporate scheduling calendar…"}
-          </p>
-          <a
-            href={url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-crimson px-6 py-3 text-sm"
-          >
-            Open Scheduling Page
-            <ExternalLink className="h-4 w-4" strokeWidth={1.8} />
-          </a>
+      <div
+        className="relative overflow-hidden rounded-lg bg-card"
+        style={{ height }}
+      >
+        <div className="absolute inset-0 flex items-center justify-center px-6 text-center">
+          <p className="text-sm text-muted-foreground">Loading the corporate scheduling calendar…</p>
         </div>
-      )}
+        {src ? (
+          <iframe
+            src={src}
+            title="Schedule a meeting with REZ INTERNATIONAL LTD"
+            width="100%"
+            height={height}
+            loading="lazy"
+            className="relative block h-full w-full border-0"
+          />
+        ) : null}
+      </div>
+
+      <div className="mt-4 text-center">
+        <a
+          href={url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-gold hover:opacity-80"
+        >
+          Open the scheduling page in a new tab
+          <ExternalLink className="h-3.5 w-3.5" strokeWidth={1.8} />
+        </a>
+      </div>
     </div>
   );
 }
