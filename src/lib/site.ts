@@ -15,6 +15,7 @@ export const NAV_LINKS = [
   { label: "About Us", to: "/about" },
   { label: "Our Expertise", to: "/expertise", hasDropdown: true },
   { label: "Brand Protection & Supply Chain", to: "/brand-protection" },
+  { label: "Book a Meeting", to: "/book-a-meeting" },
   { label: "Contact Us", to: "/contact" },
 ] as const;
 

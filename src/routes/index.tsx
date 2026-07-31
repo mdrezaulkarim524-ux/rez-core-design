@@ -16,6 +16,7 @@ import sectorBeauty from "@/assets/sector-beauty.jpg";
 import sectorHome from "@/assets/sector-home.jpg";
 import sectorConsumer from "@/assets/sector-consumer.jpg";
 import { Reveal } from "@/components/site/Reveal";
+import { CalendlyEmbed } from "@/components/site/CalendlyEmbed";
 import { COMPANY } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
@@ -353,7 +354,33 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 7. FINAL CTA BANNER */}
+      {/* 7. BOOK A MEETING */}
+      <section className="bg-surface py-20 lg:py-28">
+        <div className="mx-auto grid max-w-7xl gap-12 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
+          <Reveal>
+            <p className="eyebrow">Corporate Scheduling</p>
+            <h2 className="mt-3 font-display text-3xl font-extrabold text-gold sm:text-4xl">
+              Book a Meeting With Our Partnerships Team
+            </h2>
+            <p className="mt-6 text-base leading-relaxed text-muted-foreground">
+              Reserve a confidential 30 minute consultation to review your catalogue, distribution guidelines and bulk supply requirements. Choose a slot that suits your schedule and receive instant confirmation.
+            </p>
+            <div className="mt-8">
+              <Link to="/book-a-meeting" className="btn-crimson px-7 py-3.5 text-base">
+                Open Full Scheduling Page
+                <ArrowRight className="h-4 w-4" />
+              </Link>
+            </div>
+          </Reveal>
+          <Reveal delay={120}>
+            <div className="overflow-hidden rounded-lg border border-border-gold bg-background p-2 sm:p-3">
+              <CalendlyEmbed url="https://calendly.com/mdrezaulkarim524/30min" height={700} />
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* 8. FINAL CTA BANNER */}
       <section className="relative bg-surface py-20 lg:py-28">
         <div aria-hidden="true" className="metallic-divider absolute inset-x-0 top-0" />
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6">
