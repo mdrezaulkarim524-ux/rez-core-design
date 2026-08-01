@@ -4,6 +4,10 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
+const MARQUEE_TEXT =
+  "✦ MAP POLICY COMPLIANT ✦ BRAND EQUITY PROTECTION ✦ UPFRONT BULK CAPITAL PROCUREMENT ✦ OFFICIAL UK ENTITY (CRN: 17320050) ✦ DIGITAL MARKETPLACE DISTRIBUTION PARTNER ✦ COMPLIANT PREP & WAREHOUSING INFRASTRUCTURE ✦";
+
+
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
