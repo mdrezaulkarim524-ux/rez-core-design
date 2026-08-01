@@ -137,7 +137,7 @@ function RootComponent() {
     <QueryClientProvider client={queryClient}>
       <Preloader />
       <Header />
-      <main className="relative min-h-screen pt-18" style={{ paddingTop: "4.5rem" }}>
+      <main className="relative min-h-screen" style={{ paddingTop: "107px" }}>
         {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
         <Outlet />
       </main>

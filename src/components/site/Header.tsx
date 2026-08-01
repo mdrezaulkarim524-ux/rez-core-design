@@ -4,6 +4,10 @@ import { ChevronDown, Menu, X } from "lucide-react";
 import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
+const MARQUEE_TEXT =
+  "✦ MAP POLICY COMPLIANT ✦ BRAND EQUITY PROTECTION ✦ UPFRONT BULK CAPITAL PROCUREMENT ✦ OFFICIAL UK ENTITY (CRN: 17320050) ✦ DIGITAL MARKETPLACE DISTRIBUTION PARTNER ✦ COMPLIANT PREP & WAREHOUSING INFRASTRUCTURE ✦";
+
+
 
 export function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -23,32 +27,32 @@ export function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50">
       <div
-        className="relative border-b border-border backdrop-blur-xl"
+        className="relative"
         style={{
-          background:
-            "linear-gradient(180deg, rgba(10, 10, 12, 0.9) 0%, rgba(10, 10, 12, 0.92) 80%, oklch(0.49 0.17 26 / 0.06) 100%)",
-          boxShadow: "none",
+          background: "rgba(9, 10, 12, 0.72)",
+          backdropFilter: "blur(12px)",
+          borderBottom: "1px solid rgba(212, 175, 55, 0.15)",
         }}
       >
-      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8" style={{ height: "4.5rem" }}>
+      <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8" style={{ height: "65px" }}>
         {/* Logo lockup — kept large and prominent */}
         <Link to="/" className="brand-lockup min-w-0 shrink-0">
           <img
             src={logoAsset}
             alt="REZ INTERNATIONAL emblem"
-            width={44}
-            height={44}
-            className="brand-emblem h-10 w-10 shrink-0 object-contain sm:h-11 sm:w-11"
-            style={{ filter: "drop-shadow(0 2px 8px rgba(212,175,55,0.45))" }}
+            width={40}
+            height={40}
+            className="brand-emblem h-9 w-9 shrink-0 object-contain sm:h-10 sm:w-10"
           />
           <span
             className="brand-serif whitespace-nowrap text-base sm:text-lg lg:text-xl"
-            style={{ lineHeight: 1.05, letterSpacing: "0.14em" }}
+            style={{ lineHeight: 1.05 }}
           >
             REZ INTERNATIONAL
           </span>
 
         </Link>
+
 
 
 
@@ -104,16 +108,22 @@ export function Header() {
           <button
             onClick={() => setMobileOpen(true)}
             aria-label="Open navigation menu"
-            className="site-hamburger flex h-11 w-11 items-center justify-center rounded-md border border-border text-gold md:hidden"
+            className="site-hamburger flex h-10 w-10 items-center justify-center rounded-md border border-border text-gold md:hidden"
           >
             <Menu className="h-5 w-5" />
           </button>
         </div>
       </div>
-      {/* Symmetric deep metallic divider — burnished dark gold ↔ velvet crimson with faint silver core */}
-      <div aria-hidden="true" className="metallic-divider" />
-
       </div>
+
+      {/* 1-inch interactive running marquee */}
+      <div className="marquee-band marquee-pausable" aria-label="REZ INTERNATIONAL credentials ticker">
+        <div className="marquee-track">
+          <span className="marquee-text">{MARQUEE_TEXT}</span>
+          <span className="marquee-text" aria-hidden="true">{MARQUEE_TEXT}</span>
+        </div>
+      </div>
+
 
 
       {/* Mobile full-screen overlay */}

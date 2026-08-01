@@ -59,8 +59,8 @@
 :root {
   --radius: 0.5rem;
 
-  /* Rich obsidian black base */
-  --background: #08080A;
+  /* Deep obsidian charcoal base */
+  --background: #090A0C;
   --foreground: #FFFFFF;
 
   /* Sleek dark graphite charcoal cards / surfaces */
@@ -86,7 +86,7 @@
 
   /* Crisp pure white body text */
   --muted: #18181B;
-  --muted-foreground: #A1A1AA;
+  --muted-foreground: #E2E8F0;
 
   --accent: #18181B;
   --accent-foreground: #FFFFFF;
@@ -125,7 +125,7 @@
   }
 
   body {
-    background-color: #08080A;
+    background-color: #090A0C;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
@@ -139,6 +139,12 @@
 
   ::selection {
     background: rgba(212, 175, 55, 0.30);
+  }
+
+  /* Subtle dark studio lighting on all imagery */
+  section img,
+  .studio-image {
+    filter: brightness(0.93) contrast(1.06) saturate(0.98);
   }
 }
 
@@ -157,14 +163,70 @@
   color: #D4AF37;
 }
 
-/* Corporate wordmark — Roman inscription serif, luxury trading-house feel */
+/* Corporate wordmark — elegant modern serif (Lakone / Cormorant style) */
 @utility brand-serif {
-  font-family: "Cinzel", "Trajan Pro", "Cormorant Garamond", Georgia, serif;
+  font-family: "Cormorant Garamond", "Lakone", "Cinzel", Georgia, serif;
   font-weight: 600;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #D4AF37;
 }
+
+/* Dark studio vignette overlay for image assets */
+@utility studio-vignette {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.55) 100%),
+      linear-gradient(180deg, rgba(9, 10, 12, 0.35) 0%, rgba(9, 10, 12, 0.15) 45%, rgba(9, 10, 12, 0.7) 100%);
+  }
+}
+
+/* 1-inch interactive running marquee */
+@keyframes marquee-run {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@utility marquee-band {
+  height: 42px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #141417;
+  border-top: 1px solid rgba(212, 175, 55, 0.28);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+@utility marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-run 38s linear infinite;
+  will-change: transform;
+}
+
+@utility marquee-pausable {
+  &:hover .marquee-track,
+  &:active .marquee-track,
+  &:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+@utility marquee-text {
+  white-space: nowrap;
+  padding-right: 3rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #D4AF37;
+}
+
 
 
 /* Unified brand lockup — gentle continuous breathing + hover tilt/scale */
@@ -178,7 +240,7 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  animation: unifiedFloat 5s ease-in-out infinite;
+  animation: unifiedFloat 4s ease-in-out infinite;
   transform-origin: center;
   will-change: transform;
   &:hover {
