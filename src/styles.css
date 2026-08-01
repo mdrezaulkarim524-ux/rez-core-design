@@ -140,6 +140,12 @@
   ::selection {
     background: rgba(212, 175, 55, 0.30);
   }
+
+  /* Subtle dark studio lighting on all imagery */
+  section img,
+  .studio-image {
+    filter: brightness(0.93) contrast(1.06) saturate(0.98);
+  }
 }
 
 /* ---------- Signature utilities ---------- */
