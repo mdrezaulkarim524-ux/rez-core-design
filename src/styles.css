@@ -59,8 +59,8 @@
 :root {
   --radius: 0.5rem;
 
-  /* Rich obsidian black base */
-  --background: #08080A;
+  /* Deep obsidian charcoal base */
+  --background: #090A0C;
   --foreground: #FFFFFF;
 
   /* Sleek dark graphite charcoal cards / surfaces */
@@ -86,7 +86,7 @@
 
   /* Crisp pure white body text */
   --muted: #18181B;
-  --muted-foreground: #A1A1AA;
+  --muted-foreground: #E2E8F0;
 
   --accent: #18181B;
   --accent-foreground: #FFFFFF;
@@ -125,7 +125,7 @@
   }
 
   body {
-    background-color: #08080A;
+    background-color: #090A0C;
     color: var(--color-foreground);
     font-family: var(--font-sans);
     -webkit-font-smoothing: antialiased;
