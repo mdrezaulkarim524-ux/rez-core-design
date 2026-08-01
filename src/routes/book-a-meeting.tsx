@@ -35,7 +35,7 @@ function BookMeetingPage() {
       <PageHero
         eyebrow="Corporate Scheduling"
         title="Book a Meeting With REZ INTERNATIONAL LTD"
-        description="Select a convenient slot below to arrange a confidential discussion around bulk wholesale supply, brand protection and marketplace distribution."
+        description="Arrange a confidential discussion around bulk wholesale supply, brand protection and marketplace distribution. Reach our partnerships team directly through the contact channels below."
       />
 
       <section className="bg-background py-16 lg:py-24">
@@ -55,8 +55,19 @@ function BookMeetingPage() {
           </div>
 
           <Reveal delay={120}>
-            <div className="mt-14 overflow-hidden rounded-lg border border-border-gold bg-card p-2 sm:p-4">
-              <CalendlyEmbed url="https://calendly.com/mdrezaulkarim524/30min" height={760} />
+            <div className="mt-14 rounded-lg border border-border-gold bg-card p-8 text-center sm:p-12">
+              <h2 className="font-display text-2xl font-extrabold text-gold sm:text-3xl">
+                Request a Consultation
+              </h2>
+              <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
+                Submit your details through our contact form and a member of the partnerships team will respond within one business day to arrange a confidential call at a time that suits you.
+              </p>
+              <div className="mt-8 flex justify-center">
+                <Link to="/contact" className="btn-crimson px-8 py-4 text-base">
+                  Contact Our Partnerships Team
+                  <ArrowRight className="h-4 w-4" />
+                </Link>
+              </div>
             </div>
           </Reveal>
 
