@@ -1,8 +1,7 @@
-import { createFileRoute } from "@tanstack/react-router";
-import { CalendarCheck, Clock, ShieldCheck, Users } from "lucide-react";
+import { createFileRoute, Link } from "@tanstack/react-router";
+import { CalendarCheck, Clock, ShieldCheck, Users, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
-import { CalendlyEmbed } from "@/components/site/CalendlyEmbed";
 import { COMPANY } from "@/lib/site";
 
 const TITLE = "Book a Meeting | REZ INTERNATIONAL";

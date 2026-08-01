@@ -16,7 +16,7 @@ import sectorBeauty from "@/assets/sector-beauty.jpg";
 import sectorHome from "@/assets/sector-home.jpg";
 import sectorConsumer from "@/assets/sector-consumer.jpg";
 import { Reveal } from "@/components/site/Reveal";
-import { CalendlyEmbed } from "@/components/site/CalendlyEmbed";
+
 import { COMPANY } from "@/lib/site";
 
 export const Route = createFileRoute("/")({
