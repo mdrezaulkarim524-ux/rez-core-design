@@ -157,14 +157,70 @@
   color: #D4AF37;
 }
 
-/* Corporate wordmark — Roman inscription serif, luxury trading-house feel */
+/* Corporate wordmark — elegant modern serif (Lakone / Cormorant style) */
 @utility brand-serif {
-  font-family: "Cinzel", "Trajan Pro", "Cormorant Garamond", Georgia, serif;
+  font-family: "Cormorant Garamond", "Lakone", "Cinzel", Georgia, serif;
   font-weight: 600;
-  letter-spacing: 0.15em;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: #D4AF37;
 }
+
+/* Dark studio vignette overlay for image assets */
+@utility studio-vignette {
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.55) 100%),
+      linear-gradient(180deg, rgba(9, 10, 12, 0.35) 0%, rgba(9, 10, 12, 0.15) 45%, rgba(9, 10, 12, 0.7) 100%);
+  }
+}
+
+/* 1-inch interactive running marquee */
+@keyframes marquee-run {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+@utility marquee-band {
+  height: 42px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #141417;
+  border-top: 1px solid rgba(212, 175, 55, 0.28);
+  border-bottom: 1px solid rgba(212, 175, 55, 0.28);
+}
+
+@utility marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-run 38s linear infinite;
+  will-change: transform;
+}
+
+@utility marquee-pausable {
+  &:hover .marquee-track,
+  &:active .marquee-track,
+  &:focus-within .marquee-track {
+    animation-play-state: paused;
+  }
+}
+
+@utility marquee-text {
+  white-space: nowrap;
+  padding-right: 3rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  color: #D4AF37;
+}
+
 
 
 /* Unified brand lockup — gentle continuous breathing + hover tilt/scale */
