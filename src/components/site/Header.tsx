@@ -1,11 +1,41 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { ChevronDown, Menu, X } from "lucide-react";
+import {
+  Banknote,
+  Building2,
+  ChevronDown,
+  Globe2,
+  LockKeyhole,
+  Menu,
+  ShieldCheck,
+  Warehouse,
+  X,
+} from "lucide-react";
 import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
-const MARQUEE_TEXT =
-  "✦ MAP POLICY COMPLIANT ✦ BRAND EQUITY PROTECTION ✦ UPFRONT BULK CAPITAL PROCUREMENT ✦ OFFICIAL UK ENTITY (CRN: 17320050) ✦ DIGITAL MARKETPLACE DISTRIBUTION PARTNER ✦ COMPLIANT PREP & WAREHOUSING INFRASTRUCTURE ✦";
+const TICKER_ITEMS = [
+  { Icon: ShieldCheck, color: "#E0C097", label: "MAP Policy Compliant" },
+  { Icon: LockKeyhole, color: "#D1D5DB", label: "Brand Equity Protection" },
+  { Icon: Banknote, color: "#E0C097", label: "Upfront Bulk Capital Procurement" },
+  { Icon: Building2, color: "#9CA3AF", label: "Official UK Entity (CRN: 17320050)" },
+  { Icon: Globe2, color: "#A5F3FC", label: "Digital Marketplace Distribution Partner" },
+  { Icon: Warehouse, color: "#FDE68A", label: "Compliant Prep & Warehousing Infrastructure" },
+] as const;
+
+function TickerGroup({ ariaHidden = false }: { ariaHidden?: boolean }) {
+  return (
+    <div className="marquee-group" aria-hidden={ariaHidden || undefined}>
+      {TICKER_ITEMS.map(({ Icon, color, label }) => (
+        <span key={label} className="marquee-item">
+          <Icon size={14} strokeWidth={1.2} color={color} className="shrink-0" />
+          {label}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 
 
 
