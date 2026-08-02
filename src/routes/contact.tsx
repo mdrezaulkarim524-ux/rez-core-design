@@ -48,7 +48,7 @@ function ContactPage() {
             preserveAspectRatio="xMidYMid slice"
             className="h-full w-full"
             fill="none"
-            stroke="#E0C097"
+            stroke="#D8B893"
             strokeWidth="1"
           >
             {/* Latitude / longitude grid */}
@@ -64,7 +64,7 @@ function ContactPage() {
               [260, 520], [500, 600], [780, 560], [1000, 640], [1220, 560],
               [340, 760], [700, 800], [1060, 780],
             ].map(([cx, cy], i) => (
-              <circle key={`n-${i}`} cx={cx} cy={cy} r="4" fill="#E0C097" stroke="none" />
+              <circle key={`n-${i}`} cx={cx} cy={cy} r="4" fill="#D8B893" stroke="none" />
             ))}
             {/* Connection arcs */}
             {[
@@ -128,7 +128,7 @@ function ContactPage() {
                       Principal Corporate Office
                     </p>
                     <h2 className="mt-2 font-display text-lg font-bold text-foreground">
-                      <span className="text-gold break-words" style={{ color: "#E0C097" }}>
+                      <span className="text-gold break-words" style={{ color: "#D8B893" }}>
                         {COMPANY.name}
                       </span>
                     </h2>
@@ -231,7 +231,7 @@ function ContactPage() {
 
               <div className="border-t border-border-gold/40 bg-background px-6 py-5">
                 <p className="text-sm text-muted-foreground">
-                  <span className="font-semibold text-gold break-words" style={{ color: "#E0C097" }}>{COMPANY.name}</span> · 8 Sea Road,
+                  <span className="font-semibold text-gold break-words" style={{ color: "#D8B893" }}>{COMPANY.name}</span> · 8 Sea Road,
                   Bexhill on Sea, TN40 1ED · United Kingdom
                 </p>
               </div>

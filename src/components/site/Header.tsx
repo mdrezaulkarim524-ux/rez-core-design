@@ -15,9 +15,9 @@ import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
 const TICKER_ITEMS = [
-  { Icon: ShieldCheck, color: "#E0C097", label: "MAP Policy Compliant" },
+  { Icon: ShieldCheck, color: "#D8B893", label: "MAP Policy Compliant" },
   { Icon: LockKeyhole, color: "#D1D5DB", label: "Brand Equity Protection" },
-  { Icon: Banknote, color: "#E0C097", label: "Upfront Bulk Capital Procurement" },
+  { Icon: Banknote, color: "#D8B893", label: "Upfront Bulk Capital Procurement" },
   { Icon: Building2, color: "#9CA3AF", label: "Official UK Entity (CRN: 17320050)" },
   { Icon: Globe2, color: "#A5F3FC", label: "Digital Marketplace Distribution Partner" },
   { Icon: Warehouse, color: "#FDE68A", label: "Compliant Prep & Warehousing Infrastructure" },
@@ -61,7 +61,7 @@ export function Header() {
         style={{
           background: "rgba(9, 10, 12, 0.72)",
           backdropFilter: "blur(12px)",
-          borderBottom: "1px solid rgba(224, 192, 151, 0.15)",
+          borderBottom: "1px solid rgba(216, 184, 147, 0.15)",
         }}
       >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8" style={{ height: "65px" }}>
