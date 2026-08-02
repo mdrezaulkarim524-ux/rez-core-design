@@ -146,13 +146,14 @@ export function Header() {
       </div>
       </div>
 
-      {/* 1-inch interactive running marquee */}
+      {/* Ultra-compact executive ticker */}
       <div className="marquee-band marquee-pausable" aria-label="REZ INTERNATIONAL credentials ticker">
         <div className="marquee-track">
-          <span className="marquee-text">{MARQUEE_TEXT}</span>
-          <span className="marquee-text" aria-hidden="true">{MARQUEE_TEXT}</span>
+          <TickerGroup />
+          <TickerGroup ariaHidden />
         </div>
       </div>
+
 
 
 
