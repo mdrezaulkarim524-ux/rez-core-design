@@ -60,59 +60,61 @@
   --radius: 0.5rem;
 
   /* Deep obsidian charcoal base */
-  --background: #090A0C;
+  --background: #0F1012;
   --foreground: #FFFFFF;
 
-  /* Sleek dark graphite charcoal cards / surfaces */
-  --surface: #141417;
-  --card: #141417;
+  /* Sleek dark metallic modules */
+  --surface: #16181B;
+  --card: #16181B;
   --card-foreground: #FFFFFF;
-  --popover: #18181B;
+  --popover: #1A1C1F;
   --popover-foreground: #FFFFFF;
 
-  /* Premium Crimson Red #9B111E / #B22222 */
+  /* Premium Crimson Red */
   --primary: #DC2626;
   --primary-foreground: #FFFFFF;
   --crimson: #DC2626;
   --crimson-bright: #EF4444;
 
-  /* Champagne Metallic Gold #D4AF37 */
-  --gold: #D4AF37;
-  --gold-soft: #E8C96A;
-  --gold-deep: #B8943A;
+  /* Muted Champagne Beige/Gold + Brushed Titanium */
+  --gold: #E0C097;
+  --gold-soft: #EFD8B6;
+  --gold-deep: #C2A175;
+  --titanium: #D1D5DB;
 
-  --secondary: #18181B;
+  --secondary: #1A1C1F;
   --secondary-foreground: #FFFFFF;
 
-  /* Crisp pure white body text */
-  --muted: #18181B;
-  --muted-foreground: #E2E8F0;
+  /* Soft platinum body text */
+  --muted: #1A1C1F;
+  --muted-foreground: #9CA3AF;
 
-  --accent: #18181B;
+  --accent: #1A1C1F;
   --accent-foreground: #FFFFFF;
 
   --destructive: #DC2626;
   --destructive-foreground: #FFFFFF;
 
-  --border: #27272A;
-  --border-gold: rgba(212, 175, 55, 0.28);
-  --border-hairline: rgba(255, 255, 255, 0.35);
+  --border: rgba(224, 192, 151, 0.12);
+  --border-gold: rgba(224, 192, 151, 0.18);
+  --border-hairline: rgba(255, 255, 255, 0.25);
   --input: rgba(255, 255, 255, 0.12);
-  --ring: rgba(212, 175, 55, 0.45);
+  --ring: rgba(224, 192, 151, 0.45);
 
 
-  /* Signature effects — logo-matched metallic gradient */
-  --gradient-gold: linear-gradient(135deg, #D4AF37 0%, #F5DE8A 30%, #B8943A 70%, #E8C96A 100%);
-  --gradient-gold-brushed: linear-gradient(180deg, #F5DE8A 0%, #D4AF37 45%, #B8943A 100%);
-  --gradient-hero: linear-gradient(180deg, rgba(8, 8, 10, 0.62) 0%, rgba(8, 8, 10, 0.94) 92%);
-  --gradient-charcoal: #141417;
-  --gradient-canvas: none;
+  /* Signature effects — champagne metallic gradient */
+  --gradient-gold: linear-gradient(135deg, #E0C097 0%, #F3E2C7 30%, #C2A175 70%, #EFD8B6 100%);
+  --gradient-gold-brushed: linear-gradient(180deg, #F3E2C7 0%, #E0C097 45%, #C2A175 100%);
+  --gradient-hero: linear-gradient(180deg, rgba(15, 16, 18, 0.62) 0%, rgba(15, 16, 18, 0.94) 92%);
+  --gradient-charcoal: #16181B;
+  --gradient-canvas: radial-gradient(ellipse 120% 80% at 50% 0%, rgba(209, 213, 219, 0.03) 0%, transparent 60%);
   --texture-noise: none;
-  --shadow-gold-glow: 0 4px 20px rgba(0, 0, 0, 0.55);
+  --shadow-gold-glow: 0 8px 32px rgba(0, 0, 0, 0.4);
 
-  --shadow-crimson-glow: 0 6px 22px rgba(0, 0, 0, 0.50);
-  --stroke-white: inset 0 0 0 1px rgba(255, 255, 255, 0.32);
+  --shadow-crimson-glow: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --stroke-white: inset 0 0 0 1px rgba(255, 255, 255, 0.18);
 }
+
 
 
 @layer base {
