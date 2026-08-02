@@ -331,22 +331,25 @@
   }
 }
 
-/* Primary crimson CTA */
+/* Primary matte sand-beige CTA */
 @utility btn-crimson {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: #D8B893;
-  color: #090A0C;
-  font-weight: 700;
+  background-color: #D8B893;
+  background-image: none;
+  color: #0F1012;
+  font-weight: 600;
   letter-spacing: 0.02em;
   border-radius: var(--radius);
-  transition: filter 0.3s ease, box-shadow 0.35s ease, transform 0.3s ease;
+  box-shadow: none;
+  transition: background-color 0.3s ease;
   &:hover {
-    filter: brightness(1.1);
-    box-shadow: 0 4px 20px rgba(216, 184, 147, 0.3);
-    transform: translateY(-1px);
+    background-color: #C2A580;
+    background-image: none;
+    box-shadow: none;
+    filter: none;
   }
 }
 
