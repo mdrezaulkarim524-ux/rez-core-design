@@ -31,7 +31,7 @@ export function Header() {
         style={{
           background: "rgba(9, 10, 12, 0.72)",
           backdropFilter: "blur(12px)",
-          borderBottom: "1px solid rgba(212, 175, 55, 0.15)",
+          borderBottom: "1px solid rgba(224, 192, 151, 0.15)",
         }}
       >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8" style={{ height: "65px" }}>
