@@ -48,6 +48,8 @@
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
   --color-border-gold: var(--border-gold);
+  --color-bronze: #735338;
+  --color-bronze-deep: #64472F;
   --color-input: var(--input);
   --color-ring: var(--ring);
 
