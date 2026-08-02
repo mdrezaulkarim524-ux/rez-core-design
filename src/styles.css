@@ -60,21 +60,21 @@
   --radius: 0.5rem;
 
   /* Deep obsidian charcoal base */
-  --background: #0F1012;
+  --background: #050505;
   --foreground: #FFFFFF;
 
   /* Sleek dark metallic modules */
-  --surface: #16181B;
-  --card: #16181B;
+  --surface: #141518;
+  --card: #141518;
   --card-foreground: #FFFFFF;
-  --popover: #1A1C1F;
+  --popover: #141518;
   --popover-foreground: #FFFFFF;
 
   /* Premium Crimson Red */
-  --primary: #DC2626;
-  --primary-foreground: #FFFFFF;
-  --crimson: #DC2626;
-  --crimson-bright: #EF4444;
+  --primary: #E0C097;
+  --primary-foreground: #090A0C;
+  --crimson: #E0C097;
+  --crimson-bright: #EFD8B6;
 
   /* Muted Champagne Beige/Gold + Brushed Titanium */
   --gold: #E0C097;
@@ -82,17 +82,17 @@
   --gold-deep: #C2A175;
   --titanium: #D1D5DB;
 
-  --secondary: #1A1C1F;
+  --secondary: #141518;
   --secondary-foreground: #FFFFFF;
 
   /* Soft platinum body text */
-  --muted: #1A1C1F;
+  --muted: #141518;
   --muted-foreground: #9CA3AF;
 
-  --accent: #1A1C1F;
+  --accent: #141518;
   --accent-foreground: #FFFFFF;
 
-  --destructive: #DC2626;
+  --destructive: #C5A059;
   --destructive-foreground: #FFFFFF;
 
   --border: rgba(224, 192, 151, 0.12);
@@ -105,8 +105,8 @@
   /* Signature effects — champagne metallic gradient */
   --gradient-gold: linear-gradient(135deg, #E0C097 0%, #F3E2C7 30%, #C2A175 70%, #EFD8B6 100%);
   --gradient-gold-brushed: linear-gradient(180deg, #F3E2C7 0%, #E0C097 45%, #C2A175 100%);
-  --gradient-hero: linear-gradient(180deg, rgba(15, 16, 18, 0.62) 0%, rgba(15, 16, 18, 0.94) 92%);
-  --gradient-charcoal: #16181B;
+  --gradient-hero: linear-gradient(180deg, rgba(5, 5, 5, 0.62) 0%, rgba(5, 5, 5, 0.94) 92%);
+  --gradient-charcoal: #141518;
   --gradient-canvas: radial-gradient(ellipse 120% 80% at 50% 0%, rgba(209, 213, 219, 0.03) 0%, transparent 60%);
   --texture-noise: none;
   --shadow-gold-glow: 0 8px 32px rgba(0, 0, 0, 0.4);
@@ -127,7 +127,7 @@
   }
 
   body {
-    background-color: #0F1012;
+    background-color: #050505;
     background-image: var(--gradient-canvas);
     background-attachment: fixed;
     color: var(--color-foreground);
@@ -187,7 +187,7 @@
     pointer-events: none;
     background:
       radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 35%, rgba(0, 0, 0, 0.55) 100%),
-      linear-gradient(180deg, rgba(15, 16, 18, 0.35) 0%, rgba(15, 16, 18, 0.15) 45%, rgba(15, 16, 18, 0.7) 100%);
+      linear-gradient(180deg, rgba(5, 5, 5, 0.35) 0%, rgba(5, 5, 5, 0.15) 45%, rgba(5, 5, 5, 0.7) 100%);
   }
 }
 
@@ -315,7 +315,7 @@
 @utility hover-crimson-glow {
   transition: box-shadow 0.35s ease, border-color 0.35s ease, transform 0.35s ease, background-color 0.35s ease;
   &:hover {
-    border-color: rgba(220, 38, 38, 0.55);
+    border-color: rgba(224, 192, 151, 0.55);
     transform: translateY(-2px);
   }
 }
@@ -335,14 +335,15 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: var(--crimson);
-  color: var(--primary-foreground);
-  font-weight: 600;
+  background: #E0C097;
+  color: #090A0C;
+  font-weight: 700;
   letter-spacing: 0.02em;
   border-radius: var(--radius);
-  transition: background-color 0.3s ease, box-shadow 0.35s ease, transform 0.3s ease;
+  transition: filter 0.3s ease, box-shadow 0.35s ease, transform 0.3s ease;
   &:hover {
-    background: var(--crimson-bright);
+    filter: brightness(1.1);
+    box-shadow: 0 4px 20px rgba(224, 192, 151, 0.3);
     transform: translateY(-1px);
   }
 }
@@ -372,14 +373,14 @@
   justify-content: center;
   gap: 0.5rem;
   background: transparent;
-  border: 1px solid var(--crimson);
-  color: var(--crimson-bright);
+  border: 1px solid var(--gold);
+  color: var(--gold);
   font-weight: 600;
   letter-spacing: 0.02em;
   border-radius: var(--radius);
   transition: box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.3s ease, color 0.3s ease;
   &:hover {
-    background: rgba(220, 38, 38, 0.10);
+    background: rgba(224, 192, 151, 0.10);
     color: var(--foreground);
   }
 }
