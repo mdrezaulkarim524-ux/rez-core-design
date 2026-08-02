@@ -392,7 +392,7 @@
   }
 }
 
-/* Nav link with crimson micro-underline animation */
+/* Nav link with matte beige micro-underline animation */
 @utility nav-link {
   position: relative;
   font-family: "Cinzel", "Trajan Pro", Georgia, serif;
@@ -409,7 +409,7 @@
     width: 100%;
     transform: scaleX(0);
     transform-origin: right;
-    background: var(--gold);
+    background: #D8B893;
     transition: transform 0.3s ease;
   }
   &:hover {
@@ -419,6 +419,23 @@
     transform: scaleX(1);
     transform-origin: left;
   }
+  &[data-status="active"] {
+    color: #D8B893;
+    background-color: rgba(115, 83, 56, 0.35);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+  }
+}
+
+/* Deep bronze accent bar / selected tab surface */
+@utility accent-bronze {
+  background-color: #735338;
+  color: #F2E6D8;
+}
+
+@utility accent-bronze-soft {
+  background-color: rgba(115, 83, 56, 0.28);
+  border: 1px solid rgba(115, 83, 56, 0.55);
 }
 
 /* Small gold eyebrow label */
