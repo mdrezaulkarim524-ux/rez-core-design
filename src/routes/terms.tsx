@@ -33,7 +33,7 @@ export const Route = createFileRoute("/terms")({
 /** Body-context legal name: gold on white/muted body text (Rule B). */
 function LegalName() {
   return (
-    <span className="font-semibold text-gold break-words" style={{ color: "#E0C097" }}>
+    <span className="font-semibold text-gold break-words" style={{ color: "#D8B893" }}>
       REZ INTERNATIONAL LTD
     </span>
   );
@@ -66,7 +66,7 @@ function TermsPage() {
             preserveAspectRatio="xMidYMid slice"
             className="h-full w-full"
             fill="none"
-            stroke="#E0C097"
+            stroke="#D8B893"
             strokeWidth="1.2"
           >
             {/* Large central legal shield */}
@@ -79,7 +79,7 @@ function TermsPage() {
               {/* Compliance lock inside shield */}
               <rect x="-46" y="-10" width="92" height="80" rx="6" />
               <path d="M-30,-10 L-30,-40 A30,30 0 0 1 30,-40 L30,-10" />
-              <circle cx="0" cy="28" r="8" fill="#E0C097" stroke="none" />
+              <circle cx="0" cy="28" r="8" fill="#D8B893" stroke="none" />
               <line x1="0" y1="28" x2="0" y2="52" strokeWidth="2" />
             </g>
 
