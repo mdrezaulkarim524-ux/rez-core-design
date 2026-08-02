@@ -1,11 +1,41 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { ChevronDown, Menu, X } from "lucide-react";
+import {
+  Banknote,
+  Building2,
+  ChevronDown,
+  Globe2,
+  LockKeyhole,
+  Menu,
+  ShieldCheck,
+  Warehouse,
+  X,
+} from "lucide-react";
 import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
-const MARQUEE_TEXT =
-  "✦ MAP POLICY COMPLIANT ✦ BRAND EQUITY PROTECTION ✦ UPFRONT BULK CAPITAL PROCUREMENT ✦ OFFICIAL UK ENTITY (CRN: 17320050) ✦ DIGITAL MARKETPLACE DISTRIBUTION PARTNER ✦ COMPLIANT PREP & WAREHOUSING INFRASTRUCTURE ✦";
+const TICKER_ITEMS = [
+  { Icon: ShieldCheck, color: "#E0C097", label: "MAP Policy Compliant" },
+  { Icon: LockKeyhole, color: "#D1D5DB", label: "Brand Equity Protection" },
+  { Icon: Banknote, color: "#E0C097", label: "Upfront Bulk Capital Procurement" },
+  { Icon: Building2, color: "#9CA3AF", label: "Official UK Entity (CRN: 17320050)" },
+  { Icon: Globe2, color: "#A5F3FC", label: "Digital Marketplace Distribution Partner" },
+  { Icon: Warehouse, color: "#FDE68A", label: "Compliant Prep & Warehousing Infrastructure" },
+] as const;
+
+function TickerGroup({ ariaHidden = false }: { ariaHidden?: boolean }) {
+  return (
+    <div className="marquee-group" aria-hidden={ariaHidden || undefined}>
+      {TICKER_ITEMS.map(({ Icon, color, label }) => (
+        <span key={label} className="marquee-item">
+          <Icon size={14} strokeWidth={1.2} color={color} className="shrink-0" />
+          {label}
+        </span>
+      ))}
+    </div>
+  );
+}
+
 
 
 
@@ -31,7 +61,7 @@ export function Header() {
         style={{
           background: "rgba(9, 10, 12, 0.72)",
           backdropFilter: "blur(12px)",
-          borderBottom: "1px solid rgba(212, 175, 55, 0.15)",
+          borderBottom: "1px solid rgba(224, 192, 151, 0.15)",
         }}
       >
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-8 px-4 sm:px-6 lg:gap-12 lg:px-8" style={{ height: "65px" }}>
@@ -116,13 +146,14 @@ export function Header() {
       </div>
       </div>
 
-      {/* 1-inch interactive running marquee */}
+      {/* Ultra-compact executive ticker */}
       <div className="marquee-band marquee-pausable" aria-label="REZ INTERNATIONAL credentials ticker">
         <div className="marquee-track">
-          <span className="marquee-text">{MARQUEE_TEXT}</span>
-          <span className="marquee-text" aria-hidden="true">{MARQUEE_TEXT}</span>
+          <TickerGroup />
+          <TickerGroup ariaHidden />
         </div>
       </div>
+
 
 
 
