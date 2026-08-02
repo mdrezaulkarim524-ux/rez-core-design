@@ -202,7 +202,7 @@
   overflow: hidden;
   display: flex;
   align-items: center;
-  background: #0B0C0E;
+  background: #050505;
   border-top: 1px solid rgba(224, 192, 151, 0.15);
   border-bottom: 1px solid rgba(224, 192, 151, 0.15);
 }
@@ -402,11 +402,11 @@
     width: 100%;
     transform: scaleX(0);
     transform-origin: right;
-    background: var(--crimson-bright);
+    background: var(--gold);
     transition: transform 0.3s ease;
   }
   &:hover {
-    color: var(--crimson-bright);
+    color: var(--gold);
   }
   &:hover::after {
     transform: scaleX(1);
