@@ -102,9 +102,11 @@
   --ring: rgba(216, 184, 147, 0.45);
 
 
-  /* Signature effects — champagne metallic gradient */
-  --gradient-gold: linear-gradient(135deg, #D8B893 0%, #E3C9AB 30%, #C2A580 70%, #E3C9AB 100%);
-  --gradient-gold-brushed: linear-gradient(180deg, #E3C9AB 0%, #D8B893 45%, #C2A580 100%);
+  /* Matte beige — no glossy gradients */
+  --bronze: #735338;
+  --bronze-deep: #64472F;
+  --gradient-gold: linear-gradient(135deg, #D8B893 0%, #D8B893 100%);
+  --gradient-gold-brushed: linear-gradient(180deg, #D8B893 0%, #D8B893 100%);
   --gradient-hero: linear-gradient(180deg, rgba(5, 5, 5, 0.62) 0%, rgba(5, 5, 5, 0.94) 92%);
   --gradient-charcoal: #141518;
   --gradient-canvas: radial-gradient(ellipse 120% 80% at 50% 0%, rgba(209, 213, 219, 0.03) 0%, transparent 60%);
