@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import { CheckCircle2, X, ShieldCheck, Clock3, FileCheck2 } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
+import partnerBg from "@/assets/partner-procurement.jpg";
 import { Reveal } from "@/components/site/Reveal";
 import { COMPANY, SECTORS } from "@/lib/site";
 
@@ -56,11 +57,27 @@ function PartnerPage() {
       <PageHero
         eyebrow="Become a Supply Partner"
         title="Initiate a Strategic Supply Partnership"
+        image={partnerBg}
+        imageAlt="Global container port and freight logistics infrastructure at dusk"
         description="Submit your corporate portfolio and distribution guidelines. Our procurement team will review your asset structures, minimum capital requirements, and inventory volume availability within 2 business days."
       />
 
-      <section className="bg-background py-20 lg:py-28">
-        <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[1fr_1.35fr] lg:px-8">
+      <section className="relative overflow-hidden bg-background py-20 lg:py-28">
+        <img
+          src={partnerBg}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          width={1920}
+          height={1088}
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-20"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "linear-gradient(180deg, rgba(9,10,12,0.85) 0%, rgba(9,10,12,0.7) 50%, rgba(9,10,12,0.9) 100%)" }}
+        />
+        <div className="relative mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-[1fr_1.35fr] lg:px-8">
           {/* Assurances column */}
           <Reveal>
             <p className="eyebrow">Procurement Assurances</p>

@@ -2,7 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Scale, ShieldCheck, Search, PackageCheck, Warehouse, Truck } from "lucide-react";
 import { Reveal } from "@/components/site/Reveal";
 import { COMPANY } from "@/lib/site";
-import heroImg from "@/assets/brand-supply-chain.jpg";
+import heroImg from "@/assets/brand-verification-facility.jpg";
 
 export const Route = createFileRoute("/brand-protection")({
   head: () => ({
@@ -49,7 +49,7 @@ function BrandProtectionSupplyChainPage() {
       <section className="relative flex min-h-[72vh] items-center overflow-hidden">
         <img
           src={heroImg}
-          alt="Premium digital distribution warehouse with automated scanning and organised retail inventory"
+          alt="Secure automated brand verification facility with scanning gantries and sealed premium cartons"
           width={1920}
           height={1080}
           className="animate-camera-pan absolute inset-0 h-full w-full object-cover"

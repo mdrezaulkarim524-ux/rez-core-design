@@ -11,7 +11,7 @@ import {
   Building2,
   Globe2,
 } from "lucide-react";
-import heroImage from "@/assets/hero-warehouse.jpg";
+import heroImage from "@/assets/hero-distribution-luxury.jpg";
 import sectorBeauty from "@/assets/sector-beauty.jpg";
 import sectorHome from "@/assets/sector-home.jpg";
 import sectorConsumer from "@/assets/sector-consumer.jpg";
@@ -137,17 +137,22 @@ function HomePage() {
       <section className="relative overflow-hidden">
         <img
           src={heroImage}
-          alt="State-of-the-art corporate fulfillment center with premium retail packaging under professional accent lighting"
+          alt="Cinematic automated global distribution centre with robotic conveyor lines and palletised premium inventory"
           width={1920}
           height={1088}
           className="animate-camera-pan absolute inset-0 h-full w-full object-cover"
         />
+        <div className="absolute inset-0" style={{ background: "rgba(9, 10, 12, 0.18)" }} />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative mx-auto flex max-w-7xl flex-col items-start px-4 py-28 sm:px-6 lg:px-8 lg:py-44">
           <Reveal>
             <p className="eyebrow" style={{ color: "#FFFFFF" }}>UK-Registered Digital Wholesale Business Partner</p>
-            <h1 className="mt-5 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl" style={{ color: "#D8B893" }}>
-              Accelerating Brand Growth Across Premium Digital Marketplaces.
+            <h1
+              className="mt-5 max-w-5xl font-display font-extrabold leading-[1.1]"
+              style={{ color: "#D8B893", fontSize: "clamp(1.8rem, 4vw, 3.2rem)" }}
+            >
+              <span className="block sm:whitespace-nowrap">Accelerating Brand Growth</span>
+              <span className="block sm:whitespace-nowrap">Across Premium Digital Marketplaces</span>
             </h1>
             <h2 className="hero-copy mt-6 max-w-3xl text-lg font-normal leading-relaxed sm:text-xl">
               REZ INTERNATIONAL LTD acts as your official distribution and fulfilment facilitator. We purchase inventory in bulk, honour your brand guidelines, enforce price stability and optimise your positioning across digital channels with zero marketplace channel friction.
