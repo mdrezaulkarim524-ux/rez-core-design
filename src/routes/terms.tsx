@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { PageHero } from "@/components/site/PageHero";
+import termsBg from "@/assets/terms-statutory-architecture.jpg";
 import { COMPANY } from "@/lib/site";
 import {
   Accordion,
@@ -55,6 +56,20 @@ function TermsPage() {
       />
 
       <section className="relative overflow-hidden bg-background py-20 lg:py-28">
+        <img
+          src={termsBg}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          width={1920}
+          height={1088}
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.15]"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "linear-gradient(180deg, rgba(9,10,12,0.85) 0%, rgba(9,10,12,0.7) 50%, rgba(9,10,12,0.9) 100%)" }}
+        />
         {/* Ultra-low visibility legal shield / compliance lock watermark */}
         <div
           aria-hidden="true"

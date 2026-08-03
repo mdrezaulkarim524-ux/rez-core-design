@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { PageHero } from "@/components/site/PageHero";
+import privacyBg from "@/assets/privacy-security-nodes.jpg";
 import { COMPANY } from "@/lib/site";
 import {
   Accordion,
@@ -39,8 +40,22 @@ function PrivacyPage() {
         description="This policy governs how REZ INTERNATIONAL LTD collects, processes, retains and protects corporate representative data in strict alignment with the United Kingdom GDPR and the Data Protection Act 2018."
       />
 
-      <section className="bg-background py-20 lg:py-28">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
+      <section className="relative overflow-hidden bg-background py-20 lg:py-28">
+        <img
+          src={privacyBg}
+          alt=""
+          aria-hidden="true"
+          loading="lazy"
+          width={1920}
+          height={1088}
+          className="pointer-events-none absolute inset-0 h-full w-full object-cover opacity-[0.15]"
+        />
+        <div
+          aria-hidden="true"
+          className="pointer-events-none absolute inset-0"
+          style={{ background: "linear-gradient(180deg, rgba(9,10,12,0.85) 0%, rgba(9,10,12,0.7) 50%, rgba(9,10,12,0.9) 100%)" }}
+        />
+        <div className="relative mx-auto max-w-3xl px-4 sm:px-6">
           <div className="relative overflow-hidden rounded-lg border border-border-gold bg-surface">
             <PrivacyWatermark />
             <div className="relative space-y-10 px-6 py-14 sm:px-10 lg:py-20">
