@@ -60,7 +60,7 @@ function BrandProtectionSupplyChainPage() {
             <h1 className="max-w-4xl font-display text-4xl font-extrabold text-gold sm:text-5xl lg:text-6xl">
               Safeguarding Brand Equity. Optimizing Global Logistics.
             </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-relaxed text-white sm:text-xl">
+            <p className="hero-copy mt-6 max-w-2xl text-lg leading-relaxed sm:text-xl">
               We do not simply move inventory; we protect your market ecosystem. By combining strict
               price policy enforcement with an advanced, compliant supply chain network, REZ
               INTERNATIONAL LTD ensures your products are handled with the highest corporate standards

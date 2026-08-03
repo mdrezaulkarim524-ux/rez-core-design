@@ -3,6 +3,7 @@ import { CalendarCheck, Clock, ShieldCheck, Users, ArrowRight } from "lucide-rea
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { COMPANY } from "@/lib/site";
+import meetingHero from "@/assets/meeting-boardroom.jpg";
 
 const TITLE = "Book a Meeting | REZ INTERNATIONAL";
 const DESCRIPTION =
@@ -36,6 +37,8 @@ function BookMeetingPage() {
         eyebrow="Corporate Scheduling"
         title="Book a Meeting With REZ INTERNATIONAL LTD"
         description="Arrange a confidential discussion around bulk wholesale supply, brand protection and marketplace distribution. Reach our partnerships team directly through the contact channels below."
+        image={meetingHero}
+        imageAlt="Luxury executive corporate boardroom conference suite at night with champagne gold accent lighting"
       />
 
       <section className="bg-background py-16 lg:py-24">

@@ -149,7 +149,7 @@ function HomePage() {
             <h1 className="mt-5 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] sm:text-5xl lg:text-6xl" style={{ color: "#D8B893" }}>
               Accelerating Brand Growth Across Premium Digital Marketplaces.
             </h1>
-            <h2 className="mt-6 max-w-3xl text-lg font-normal leading-relaxed text-foreground sm:text-xl">
+            <h2 className="hero-copy mt-6 max-w-3xl text-lg font-normal leading-relaxed sm:text-xl">
               REZ INTERNATIONAL LTD acts as your official distribution and fulfilment facilitator. We purchase inventory in bulk, honour your brand guidelines, enforce price stability and optimise your positioning across digital channels with zero marketplace channel friction.
             </h2>
 
