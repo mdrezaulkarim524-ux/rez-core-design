@@ -333,23 +333,25 @@
   }
 }
 
-/* Primary matte sand-beige CTA */
+/* Primary CTA — dark ghost outline with champagne gold */
 @utility btn-crimson {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background-color: #D8B893;
+  background: rgba(20, 21, 24, 0.7);
   background-image: none;
-  color: #0F1012;
+  color: #D8B893;
   font-weight: 600;
   letter-spacing: 0.02em;
+  border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: var(--radius);
   box-shadow: none;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
   &:hover {
-    background-color: #C2A580;
-    background-image: none;
+    background: rgba(20, 21, 24, 0.9);
+    border-color: rgba(212, 175, 55, 0.7);
+    color: #E4CBA9;
     box-shadow: none;
     filter: none;
   }
@@ -640,4 +642,14 @@
 }
 @utility animate-welcome-rise {
   animation: welcome-rise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both;
+}
+
+/* Hero copy readability panel — gradient mask behind hero paragraphs */
+@utility hero-copy {
+  background: linear-gradient(180deg, rgba(9, 10, 12, 0.85) 0%, rgba(9, 10, 12, 0.6) 100%);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  color: #F3F4F6;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(2px);
 }
