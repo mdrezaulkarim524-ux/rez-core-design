@@ -3,6 +3,7 @@ import { Mail, MapPin, Building2, Scale } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { COMPANY } from "@/lib/site";
+import contactHero from "@/assets/contact-network.jpg";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -34,6 +35,8 @@ function ContactPage() {
         eyebrow="Contact Us"
         title="Direct Corporate Channels"
         description="All partnership, procurement and supply chain communications are handled exclusively through the verified corporate channels below."
+        image={contactHero}
+        imageAlt="Corporate headquarters at night overlooking a global container logistics port network"
       />
 
       <section className="relative overflow-hidden bg-background py-20 lg:py-28">
