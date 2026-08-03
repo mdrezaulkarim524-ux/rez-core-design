@@ -96,7 +96,7 @@ function ExpertisePage() {
             <h1 className="mt-4 max-w-4xl font-display text-4xl font-extrabold leading-tight text-gold sm:text-5xl lg:text-6xl">
               Diversified Portfolio. Specialized Execution.
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-relaxed text-foreground/90 sm:text-xl">
+            <p className="hero-copy mt-6 max-w-3xl text-lg leading-relaxed sm:text-xl">
               We possess the capital infrastructure and advanced supply chain compliance
               frameworks to securely manage, audit, and distribute products across 25 core
               market sectors. Global brands trust our operational alignment to maintain

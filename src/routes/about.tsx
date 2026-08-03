@@ -72,7 +72,7 @@ function AboutPage() {
             <h1 className="mt-5 max-w-4xl font-display text-4xl font-extrabold leading-[1.08] text-gold sm:text-5xl lg:text-6xl">
               Driven by Compliance. <span className="text-gold-gradient">Scaled by Innovation.</span>
             </h1>
-            <h2 className="mt-6 max-w-3xl text-lg font-normal leading-relaxed text-foreground sm:text-xl">
+            <h2 className="hero-copy mt-6 max-w-3xl text-lg font-normal leading-relaxed sm:text-xl">
               At REZ INTERNATIONAL LTD, we bridge the gap between world class manufacturing and complex digital marketplace distribution ecosystems. We do not operate as an ordinary broker; we act as an authorized, fully-compliant wholesale partner committed to long term brand preservation.
             </h2>
           </Reveal>
