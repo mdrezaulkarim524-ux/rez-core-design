@@ -154,7 +154,7 @@ function PrivacyPage() {
 function LegalItem({ value, title, children }: { value: string; title: string; children: ReactNode }) {
   return (
     <AccordionItem value={value} className="border-b border-border-gold/30">
-      <AccordionTrigger className="py-5 text-left font-display text-lg font-extrabold uppercase tracking-[0.14em] text-gold hover:no-underline sm:text-xl">
+      <AccordionTrigger className="py-5 text-left font-display text-lg font-extrabold tracking-[0.06em] text-gold hover:no-underline sm:text-xl">
         {title}
       </AccordionTrigger>
       <AccordionContent className="pt-2 pb-6 text-base leading-relaxed text-muted-foreground">
