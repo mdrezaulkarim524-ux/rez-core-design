@@ -54,7 +54,7 @@
   --color-ring: var(--ring);
 
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Cinzel", "Trajan Pro", "Cormorant Garamond", Georgia, serif;
+  --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
   --font-display-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
 }
 
