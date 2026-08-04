@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { PageHero } from "@/components/site/PageHero";
 import privacyBg from "@/assets/privacy-security-nodes.jpg";
+import privacyHero from "@/assets/privacy-hero-vault.jpg";
 import { COMPANY } from "@/lib/site";
 import {
   Accordion,
