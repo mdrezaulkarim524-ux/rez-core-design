@@ -49,6 +49,7 @@ function TermsPage() {
         title="Terms &amp; Conditions"
         image={termsHero}
         imageAlt="Modern institutional corporate glass facade at dusk"
+        imageOpacity={0.35}
         description={
           <>
             These terms govern access to and use of this corporate web application operated by{" "}

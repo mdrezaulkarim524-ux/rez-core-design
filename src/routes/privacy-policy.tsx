@@ -40,6 +40,7 @@ function PrivacyPage() {
         title="Privacy Policy"
         image={privacyHero}
         imageAlt="Secure encrypted data vault with server infrastructure"
+        imageOpacity={0.35}
         description="This policy governs how REZ INTERNATIONAL LTD collects, processes, retains and protects corporate representative data in strict alignment with the United Kingdom GDPR and the Data Protection Act 2018."
       />
 
