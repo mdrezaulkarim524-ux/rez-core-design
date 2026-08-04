@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { PageHero } from "@/components/site/PageHero";
 import termsBg from "@/assets/terms-statutory-architecture.jpg";
+import termsHero from "@/assets/terms-hero-facade.jpg";
 import { COMPANY } from "@/lib/site";
 import {
   Accordion,
@@ -46,6 +47,9 @@ function TermsPage() {
       <PageHero
         eyebrow="Legal, Corporate Framework"
         title="Terms &amp; Conditions"
+        image={termsHero}
+        imageAlt="Modern institutional corporate glass facade at dusk"
+        imageOpacity={0.35}
         description={
           <>
             These terms govern access to and use of this corporate web application operated by{" "}

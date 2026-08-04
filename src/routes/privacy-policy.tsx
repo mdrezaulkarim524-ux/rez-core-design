@@ -2,6 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import type { ReactNode } from "react";
 import { PageHero } from "@/components/site/PageHero";
 import privacyBg from "@/assets/privacy-security-nodes.jpg";
+import privacyHero from "@/assets/privacy-hero-vault.jpg";
 import { COMPANY } from "@/lib/site";
 import {
   Accordion,
@@ -37,6 +38,9 @@ function PrivacyPage() {
       <PageHero
         eyebrow="Legal, Statutory Compliance"
         title="Privacy Policy"
+        image={privacyHero}
+        imageAlt="Secure encrypted data vault with server infrastructure"
+        imageOpacity={0.35}
         description="This policy governs how REZ INTERNATIONAL LTD collects, processes, retains and protects corporate representative data in strict alignment with the United Kingdom GDPR and the Data Protection Act 2018."
       />
 

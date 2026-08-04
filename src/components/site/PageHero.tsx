@@ -8,10 +8,12 @@ interface PageHeroProps {
   /** Optional photorealistic background image for the hero band. */
   image?: string;
   imageAlt?: string;
+  /** Dim the background photo further (legal pages use a muted 0.2 wash). */
+  imageOpacity?: number;
 }
 
 /** Shared inner-page hero band on the secondary surface background. */
-export function PageHero({ eyebrow, title, description, image, imageAlt }: PageHeroProps) {
+export function PageHero({ eyebrow, title, description, image, imageAlt, imageOpacity }: PageHeroProps) {
   return (
     <section className="relative overflow-hidden bg-surface">
       {image && (
@@ -22,6 +24,7 @@ export function PageHero({ eyebrow, title, description, image, imageAlt }: PageH
             width={1920}
             height={1088}
             className="absolute inset-0 h-full w-full object-cover"
+            style={{ objectPosition: "center", opacity: imageOpacity ?? 1, filter: "brightness(0.7)" }}
           />
           {/* 20% dark obsidian tint + readability gradient */}
           <div className="absolute inset-0" style={{ background: "rgba(9, 10, 12, 0.2)" }} />
