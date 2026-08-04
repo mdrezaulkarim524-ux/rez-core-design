@@ -47,6 +47,8 @@ function TermsPage() {
       <PageHero
         eyebrow="Legal, Corporate Framework"
         title="Terms &amp; Conditions"
+        image={termsHero}
+        imageAlt="Modern institutional corporate glass facade at dusk"
         description={
           <>
             These terms govern access to and use of this corporate web application operated by{" "}
