@@ -2,6 +2,7 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { CalendarCheck, Clock, ShieldCheck, Users, ArrowRight } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import { BookingModal } from "@/components/site/BookingModal";
 import { COMPANY } from "@/lib/site";
 import meetingHero from "@/assets/meeting-boardroom.jpg";
 
