@@ -63,12 +63,15 @@ function BookMeetingPage() {
                 Request a Consultation
               </h2>
               <p className="mx-auto mt-4 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                Submit your details through our contact form and a member of the partnerships team will respond within one business day to arrange a confidential call at a time that suits you.
+                Reserve a confidential thirty minute slot with the partnerships team, or reach us directly through the contact desk.
               </p>
-              <div className="mt-8 flex justify-center">
-                <Link to="/contact" className="btn-crimson px-8 py-4 text-base">
+              <div className="mt-8">
+                <BookingModal />
+              </div>
+              <div className="mt-6">
+                <Link to="/contact" className="inline-flex items-center gap-2 text-xs uppercase tracking-[0.18em] text-gold hover:opacity-80">
                   Contact Our Partnerships Team
-                  <ArrowRight className="h-4 w-4" />
+                  <ArrowRight className="h-3.5 w-3.5" />
                 </Link>
               </div>
             </div>
