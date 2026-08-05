@@ -73,9 +73,8 @@ export function BookingModal({ url = CALENDLY_URL }: { url?: string }) {
           }}
         >
           <div
-            className="w-[88vw] overflow-hidden rounded-2xl border border-border-gold bg-card shadow-2xl sm:w-full sm:max-w-[540px] sm:rounded-lg"
+            className="flex max-h-[75vh] w-[88vw] flex-col overflow-hidden rounded-2xl border border-border-gold bg-card shadow-2xl sm:max-h-[70vh] sm:w-full sm:max-w-[540px] sm:rounded-lg"
             style={{
-              maxHeight: "75vh",
               transform: shown ? "translateY(0) scale(1)" : "translateY(8px) scale(0.98)",
               opacity: shown ? 1 : 0,
               transition: "all 0.25s ease-in-out",
@@ -95,7 +94,7 @@ export function BookingModal({ url = CALENDLY_URL }: { url?: string }) {
               </button>
             </div>
 
-            <div className="overflow-y-auto" style={{ maxHeight: "calc(75vh - 49px)" }}>
+            <div className="flex-1 overflow-y-auto">
               <CalendlyEmbed url={url} height={620} className="p-2" />
             </div>
           </div>
