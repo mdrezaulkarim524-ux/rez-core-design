@@ -53,8 +53,8 @@
   --color-input: var(--input);
   --color-ring: var(--ring);
 
-  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Playfair Display", "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Cormorant Garamond", "Playfair Display", Georgia, serif;
   --font-display-serif: "Cormorant Garamond", "Playfair Display", Georgia, serif;
 }
 
@@ -134,16 +134,18 @@
     background-color: #050505;
     background-image: var(--gradient-canvas);
     background-attachment: fixed;
-    color: var(--color-foreground);
+    color: #F3F4F6;
     font-family: var(--font-sans);
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
 
   h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-display);
-    letter-spacing: 0.02em;
+    letter-spacing: 0.015em;
     font-weight: 600;
+    text-rendering: optimizeLegibility;
   }
 
   ::selection {
@@ -342,8 +344,10 @@
   background: rgba(20, 21, 24, 0.7);
   background-image: none;
   color: #D8B893;
+  font-family: var(--font-sans);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   border: 1px solid rgba(212, 175, 55, 0.4);
   border-radius: var(--radius);
   box-shadow: none;
@@ -365,8 +369,10 @@
   gap: 0.5rem;
   border: 1px solid var(--border-gold);
   color: var(--gold);
+  font-family: var(--font-sans);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   border-radius: var(--radius);
   transition: box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.3s ease;
   &:hover {
@@ -384,8 +390,10 @@
   background: transparent;
   border: 1px solid var(--gold);
   color: var(--gold);
+  font-family: var(--font-sans);
   font-weight: 600;
-  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
   border-radius: var(--radius);
   transition: box-shadow 0.35s ease, border-color 0.35s ease, background-color 0.3s ease, color 0.3s ease;
   &:hover {
@@ -442,6 +450,7 @@
 
 /* Small gold eyebrow label */
 @utility eyebrow {
+  font-family: var(--font-sans);
   font-size: 0.75rem;
   font-weight: 600;
   letter-spacing: 0.22em;

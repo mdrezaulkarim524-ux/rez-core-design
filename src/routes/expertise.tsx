@@ -99,7 +99,7 @@ function ExpertisePage() {
             <p className="hero-copy mt-6 max-w-3xl text-lg leading-relaxed sm:text-xl">
               We possess the capital infrastructure and advanced supply chain compliance
               frameworks to securely manage, audit, and distribute products across 25 core
-              market sectors. Global brands trust our operational alignment to maintain
+              market sectors. Structured B2B procurement alignment maintains
               steady bulk volume velocity.
             </p>
           </Reveal>
@@ -133,7 +133,7 @@ function ExpertisePage() {
             <div className="mb-12 text-center">
               <p className="eyebrow">25 Sectors of Operational Capability</p>
               <h2 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl">
-                Fully Capitalized. Fully Compliant.
+                Direct Bulk Wholesale Procurement Capacity. Fully Compliant.
               </h2>
             </div>
           </Reveal>
