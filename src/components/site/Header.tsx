@@ -20,7 +20,7 @@ const TICKER_ITEMS = [
   { Icon: Banknote, color: "#D8B893", label: "Upfront Bulk Capital Procurement" },
   { Icon: Building2, color: "#9CA3AF", label: "Official UK Entity (CRN: 17320050)" },
   { Icon: Globe2, color: "#A5F3FC", label: "Digital Marketplace Distribution Partner" },
-  { Icon: Warehouse, color: "#FDE68A", label: "Compliant Prep & Warehousing Infrastructure" },
+  { Icon: Warehouse, color: "#FDE68A", label: "Compliant 3PL Partner Warehousing Infrastructure" },
 ] as const;
 
 function TickerGroup({ ariaHidden = false }: { ariaHidden?: boolean }) {
