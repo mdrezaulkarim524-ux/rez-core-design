@@ -177,7 +177,7 @@ function AboutPage() {
 
           <Reveal delay={120}>
             <div className="rounded-lg border border-border-gold bg-background p-8 sm:p-10">
-              <p className="eyebrow">The Guarantee</p>
+              <p className="eyebrow">Our Partnership Standards</p>
               <h3 className="mt-4 font-display text-2xl font-extrabold text-foreground">
                 Our Strategic Promise to Brand Owners.
               </h3>
