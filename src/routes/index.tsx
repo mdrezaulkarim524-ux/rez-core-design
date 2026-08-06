@@ -200,7 +200,7 @@ function HomePage() {
           <Reveal>
             <p className="eyebrow">The Strategic Difference</p>
             <h2 className="mt-4 font-display text-3xl font-extrabold text-gold sm:text-4xl">
-              Why Leading Brands Trust <span className="text-white">REZ INTERNATIONAL LTD</span> as a Digital Wholesale Partner.
+              A Distribution Partner Built to Protect Your Market Ecosystem.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
               Traditional distributors simply move boxes. REZ INTERNATIONAL LTD protects your market ecosystem. We do not run public storefronts and we do not compete with your direct retail network. Instead, we absorb the operational burden of high volume digital logistics, ensuring your supply line remains organised, fully optimised and strictly protected from unauthorised third party disruption.
@@ -340,7 +340,7 @@ function HomePage() {
           <Reveal>
             <p className="eyebrow">Why Trust Us?</p>
             <h2 className="mt-3 max-w-3xl font-display text-3xl font-extrabold text-gold sm:text-4xl">
-              Why Leading Brands Trust REZ INTERNATIONAL
+              Why Manufacturers Partner With REZ INTERNATIONAL LTD
             </h2>
           </Reveal>
           <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
