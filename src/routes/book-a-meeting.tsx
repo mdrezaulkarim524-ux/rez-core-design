@@ -78,7 +78,28 @@ function BookMeetingPage() {
             </div>
           </Reveal>
 
-          <p className="mt-8 text-center text-xs uppercase tracking-[0.22em] text-muted-foreground">
+          <Reveal delay={160}>
+            <div className="mt-16">
+              <p className="eyebrow text-center">Supplier Questions</p>
+              <h2 className="mt-3 text-center font-display text-2xl font-extrabold text-gold sm:text-3xl">
+                Frequently Asked Questions
+              </h2>
+              <Accordion type="single" collapsible className="mx-auto mt-8 w-full max-w-3xl">
+                {FAQS.map((faq, i) => (
+                  <AccordionItem key={faq.q} value={`faq-${i}`} className="border-border">
+                    <AccordionTrigger className="text-left font-display text-base font-semibold text-foreground">
+                      {faq.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                      {faq.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </Reveal>
+
+          <p className="mt-12 text-center text-xs uppercase tracking-[0.22em] text-muted-foreground">
             B2B Procurement &amp; Authorised Wholesale Distribution. UK Company No. {COMPANY.crn}.
           </p>
         </div>
