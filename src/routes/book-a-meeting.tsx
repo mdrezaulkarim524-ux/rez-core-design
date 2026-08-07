@@ -3,8 +3,41 @@ import { CalendarCheck, Clock, ShieldCheck, Users, ArrowRight } from "lucide-rea
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { BookingModal } from "@/components/site/BookingModal";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { COMPANY } from "@/lib/site";
 import meetingHero from "@/assets/meeting-boardroom.jpg";
+
+const FAQS = [
+  {
+    q: "How does REZ INTERNATIONAL LTD handle inventory procurement?",
+    a: "Subject to supplier approval and commercial agreements, REZ INTERNATIONAL LTD seeks to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners, and authorised distributors.",
+  },
+  {
+    q: "Which channels do you distribute through?",
+    a: "Distribution is carried out through authorised retail sales channels in accordance with supplier agreements and applicable policies.",
+  },
+  {
+    q: "How do you support brand protection and pricing guidelines?",
+    a: "Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.",
+  },
+  {
+    q: "How is inventory fulfillment and prep handled?",
+    a: "We work with compliant fulfilment logistics partners to support inventory receiving, inspection and marketplace-ready order preparation.",
+  },
+  {
+    q: "Do you purchase inventory outright?",
+    a: "Subject to commercial agreements, REZ INTERNATIONAL LTD intends to purchase inventory through wholesale procurement arrangements rather than operating as a brokerage or consignment business.",
+  },
+  {
+    q: "Which retail channels do you support?",
+    a: "Depending on supplier agreements and channel eligibility, products may be supplied through authorised retail sales channels.",
+  },
+] as const;
 
 const TITLE = "Book a Meeting | REZ INTERNATIONAL";
 const DESCRIPTION =
