@@ -14,13 +14,15 @@ import {
 import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
+const TICKER_LABEL = "B2B Procurement & Authorised Wholesale Distribution";
+
 const TICKER_ITEMS = [
-  { Icon: ShieldCheck, color: "#D8B893", label: "MAP Policy Compliant" },
-  { Icon: LockKeyhole, color: "#D1D5DB", label: "Brand Equity Protection" },
-  { Icon: Banknote, color: "#D8B893", label: "Upfront Bulk Capital Procurement" },
-  { Icon: Building2, color: "#9CA3AF", label: "Official UK Entity (CRN: 17320050)" },
-  { Icon: Globe2, color: "#A5F3FC", label: "Digital Marketplace Distribution Partner" },
-  { Icon: Warehouse, color: "#FDE68A", label: "Compliant 3PL Partner Warehousing Infrastructure" },
+  { Icon: ShieldCheck, color: "#D8B893", key: "shield", label: TICKER_LABEL },
+  { Icon: LockKeyhole, color: "#D1D5DB", key: "lock", label: TICKER_LABEL },
+  { Icon: Banknote, color: "#D8B893", key: "banknote", label: TICKER_LABEL },
+  { Icon: Building2, color: "#9CA3AF", key: "building", label: TICKER_LABEL },
+  { Icon: Globe2, color: "#A5F3FC", key: "globe", label: TICKER_LABEL },
+  { Icon: Warehouse, color: "#FDE68A", key: "warehouse", label: TICKER_LABEL },
 ] as const;
 
 function TickerGroup({ ariaHidden = false }: { ariaHidden?: boolean }) {
