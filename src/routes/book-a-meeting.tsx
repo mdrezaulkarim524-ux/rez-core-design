@@ -8,7 +8,7 @@ import meetingHero from "@/assets/meeting-boardroom.jpg";
 
 const TITLE = "Book a Meeting | REZ INTERNATIONAL";
 const DESCRIPTION =
-  "Schedule a confidential 30 minute corporate consultation with the REZ INTERNATIONAL LTD partnerships team to discuss bulk wholesale supply, MAP compliance and marketplace distribution.";
+  "Schedule a confidential 30 minute corporate consultation with REZ INTERNATIONAL LTD (CRN: 17320050) to discuss B2B procurement and authorised wholesale distribution.";
 
 export const Route = createFileRoute("/book-a-meeting")({
   head: () => ({
@@ -26,7 +26,7 @@ export const Route = createFileRoute("/book-a-meeting")({
 
 const POINTS = [
   { icon: Clock, title: "30 Minute Session", text: "A focused corporate call scheduled directly in your own time zone." },
-  { icon: Users, title: "Senior Partnerships Team", text: "Speak with the team responsible for supply agreements and onboarding." },
+  { icon: Users, title: "Procurement Team", text: "Speak with the team responsible for procurement proposals and commercial agreements." },
   { icon: ShieldCheck, title: "Strictly Confidential", text: "Catalogue, pricing and distribution guidelines are treated in confidence." },
   { icon: CalendarCheck, title: "Immediate Confirmation", text: "Your invitation and calendar hold are issued the moment you book." },
 ] as const;
@@ -37,7 +37,7 @@ function BookMeetingPage() {
       <PageHero
         eyebrow="Corporate Scheduling"
         title="Book a Meeting With REZ INTERNATIONAL LTD"
-        description="Arrange a confidential discussion around bulk wholesale supply, brand protection and marketplace distribution. Reach our partnerships team directly through the contact channels below."
+        description="Arrange a confidential discussion around structured wholesale procurement, supplier requirements and authorised retail sales channels. Reach our team directly through the contact channels below."
         image={meetingHero}
         imageAlt="Luxury executive corporate boardroom conference suite at night with champagne gold accent lighting"
       />
@@ -79,7 +79,7 @@ function BookMeetingPage() {
           </Reveal>
 
           <p className="mt-8 text-center text-xs uppercase tracking-[0.22em] text-muted-foreground">
-            Strictly B2B. Supply chain partnerships only. UK Company No. {COMPANY.crn}.
+            B2B Procurement &amp; Authorised Wholesale Distribution. UK Company No. {COMPANY.crn}.
           </p>
         </div>
       </section>
