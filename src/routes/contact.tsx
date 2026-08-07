@@ -12,12 +12,12 @@ export const Route = createFileRoute("/contact")({
       {
         name: "description",
         content:
-          "Direct corporate channels for REZ INTERNATIONAL — registered UK office and corporate procurement email.",
+          "Direct corporate channels for REZ INTERNATIONAL LTD (CRN: 17320050) — registered UK office and corporate procurement email.",
       },
       { property: "og:title", content: "Contact Us — REZ INTERNATIONAL" },
       {
         property: "og:description",
-        content: "Verified corporate channels and registered UK office of REZ INTERNATIONAL.",
+        content: "B2B Procurement & Authorised Wholesale Distribution. Verified corporate channels and registered UK office of REZ INTERNATIONAL LTD.",
       },
     ],
   }),

@@ -3,12 +3,45 @@ import { CalendarCheck, Clock, ShieldCheck, Users, ArrowRight } from "lucide-rea
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
 import { BookingModal } from "@/components/site/BookingModal";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { COMPANY } from "@/lib/site";
 import meetingHero from "@/assets/meeting-boardroom.jpg";
 
+const FAQS = [
+  {
+    q: "How does REZ INTERNATIONAL LTD handle inventory procurement?",
+    a: "Subject to supplier approval and commercial agreements, REZ INTERNATIONAL LTD seeks to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners, and authorised distributors.",
+  },
+  {
+    q: "Which channels do you distribute through?",
+    a: "Distribution is carried out through authorised retail sales channels in accordance with supplier agreements and applicable policies.",
+  },
+  {
+    q: "How do you support brand protection and pricing guidelines?",
+    a: "Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.",
+  },
+  {
+    q: "How is inventory fulfillment and prep handled?",
+    a: "We work with compliant fulfilment logistics partners to support inventory receiving, inspection and marketplace-ready order preparation.",
+  },
+  {
+    q: "Do you purchase inventory outright?",
+    a: "Subject to commercial agreements, REZ INTERNATIONAL LTD intends to purchase inventory through wholesale procurement arrangements rather than operating as a brokerage or consignment business.",
+  },
+  {
+    q: "Which retail channels do you support?",
+    a: "Depending on supplier agreements and channel eligibility, products may be supplied through authorised retail sales channels.",
+  },
+] as const;
+
 const TITLE = "Book a Meeting | REZ INTERNATIONAL";
 const DESCRIPTION =
-  "Schedule a confidential 30 minute corporate consultation with the REZ INTERNATIONAL LTD partnerships team to discuss bulk wholesale supply, MAP compliance and marketplace distribution.";
+  "Schedule a confidential 30 minute corporate consultation with REZ INTERNATIONAL LTD (CRN: 17320050) to discuss B2B procurement and authorised wholesale distribution.";
 
 export const Route = createFileRoute("/book-a-meeting")({
   head: () => ({
@@ -26,7 +59,7 @@ export const Route = createFileRoute("/book-a-meeting")({
 
 const POINTS = [
   { icon: Clock, title: "30 Minute Session", text: "A focused corporate call scheduled directly in your own time zone." },
-  { icon: Users, title: "Senior Partnerships Team", text: "Speak with the team responsible for supply agreements and onboarding." },
+  { icon: Users, title: "Procurement Team", text: "Speak with the team responsible for procurement proposals and commercial agreements." },
   { icon: ShieldCheck, title: "Strictly Confidential", text: "Catalogue, pricing and distribution guidelines are treated in confidence." },
   { icon: CalendarCheck, title: "Immediate Confirmation", text: "Your invitation and calendar hold are issued the moment you book." },
 ] as const;
@@ -37,7 +70,7 @@ function BookMeetingPage() {
       <PageHero
         eyebrow="Corporate Scheduling"
         title="Book a Meeting With REZ INTERNATIONAL LTD"
-        description="Arrange a confidential discussion around bulk wholesale supply, brand protection and marketplace distribution. Reach our partnerships team directly through the contact channels below."
+        description="Arrange a confidential discussion around structured wholesale procurement, supplier requirements and authorised retail sales channels. Reach our team directly through the contact channels below."
         image={meetingHero}
         imageAlt="Luxury executive corporate boardroom conference suite at night with champagne gold accent lighting"
       />
@@ -78,8 +111,29 @@ function BookMeetingPage() {
             </div>
           </Reveal>
 
-          <p className="mt-8 text-center text-xs uppercase tracking-[0.22em] text-muted-foreground">
-            Strictly B2B. Supply chain partnerships only. UK Company No. {COMPANY.crn}.
+          <Reveal delay={160}>
+            <div className="mt-16">
+              <p className="eyebrow text-center">Supplier Questions</p>
+              <h2 className="mt-3 text-center font-display text-2xl font-extrabold text-gold sm:text-3xl">
+                Frequently Asked Questions
+              </h2>
+              <Accordion type="single" collapsible className="mx-auto mt-8 w-full max-w-3xl">
+                {FAQS.map((faq, i) => (
+                  <AccordionItem key={faq.q} value={`faq-${i}`} className="border-border">
+                    <AccordionTrigger className="text-left font-display text-base font-semibold text-foreground">
+                      {faq.q}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                      {faq.a}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
+            </div>
+          </Reveal>
+
+          <p className="mt-12 text-center text-xs uppercase tracking-[0.22em] text-muted-foreground">
+            B2B Procurement &amp; Authorised Wholesale Distribution. UK Company No. {COMPANY.crn}.
           </p>
         </div>
       </section>

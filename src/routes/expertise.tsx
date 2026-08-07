@@ -31,16 +31,16 @@ import s25 from "@/assets/sectors/s25-b2btech.jpg";
 export const Route = createFileRoute("/expertise")({
   head: () => ({
     meta: [
-      { title: "Specialized Product Sectors & Logistics Capability | REZ INTERNATIONAL" },
+      { title: "Product Sectors | B2B Procurement & Authorised Wholesale Distribution" },
       {
         name: "description",
         content:
-          "25 specialised product sectors and full-spectrum logistics capability. REZ INTERNATIONAL LTD (CRN: 17320050) executes bulk procurement and marketplace distribution under strict UK compliance.",
+          "25 product sectors of interest for structured wholesale procurement. REZ INTERNATIONAL LTD (CRN: 17320050) operates as a compliant wholesale buyer under UK law.",
       },
-      { property: "og:title", content: "Specialized Product Sectors & Logistics Capability | REZ INTERNATIONAL" },
+      { property: "og:title", content: "Product Sectors | B2B Procurement & Authorised Wholesale Distribution" },
       {
         property: "og:description",
-        content: "25 specialised sectors executed under bulk procurement and MAP-compliant marketplace distribution.",
+        content: "25 product sectors covered by our structured wholesale procurement proposal.",
       },
     ],
   }),
@@ -49,7 +49,7 @@ export const Route = createFileRoute("/expertise")({
 
 const SECTORS: { title: string; description: string; image: string }[] = [
   { title: "Beauty & Personal Care", description: "Premium cosmetics, luxury skincare formulations, and advanced personal grooming apparatus.", image: s01 },
-  { title: "Health, Wellness & Supplements", description: "Certified vitamins, pharmaceutical grade supplements, and wellness goods aligned with strict UK standards.", image: s02 },
+  { title: "Health, Wellness & Supplements", description: "Vitamins, supplements, and wellness goods aligned with strict UK standards.", image: s02 },
   { title: "Home & Kitchen Infrastructure", description: "High end matte black cookware, premium small kitchen appliances, and culinary organization assets.", image: s03 },
   { title: "Consumer Electronics", description: "Modern smart speakers, luxury audio hardware, and advanced personal tech accessories.", image: s04 },
   { title: "Office & Workspace Supplies", description: "Premium ergonomic desktop tools, sleek corporate workspace organization, and executive stationery.", image: s05 },
@@ -97,10 +97,9 @@ function ExpertisePage() {
               Diversified Portfolio. Specialized Execution.
             </h1>
             <p className="hero-copy mt-6 max-w-3xl text-lg leading-relaxed sm:text-xl">
-              We possess the capital infrastructure and advanced supply chain compliance
-              frameworks to securely manage, audit, and distribute products across 25 core
-              market sectors. Structured B2B procurement alignment maintains
-              steady bulk volume velocity.
+              Subject to supplier approval and commercial agreements, we seek to procure
+              inventory through wholesale purchasing arrangements across 25 core product
+              sectors, supported by compliant fulfilment logistics partners.
             </p>
           </Reveal>
         </div>
@@ -115,11 +114,11 @@ function ExpertisePage() {
               <span className="absolute left-0 top-0 h-full w-1 bg-gold" aria-hidden />
               <p className="eyebrow">Core Compliance Statement</p>
               <p className="mt-4 text-lg leading-relaxed text-foreground sm:text-xl">
-                Every single product vertical managed by{" "}
+                Where applicable,{" "}
                 <span className="font-semibold text-gold">REZ INTERNATIONAL LTD</span>{" "}
-                undergoes strict batch verification, quality assurance routing, and
-                high-standard retail prep compliance according to UK statutory
-                regulations and individual manufacturer guidelines.
+                follows supplier requirements, MAP policies, and recognised marketplace
+                standards to support responsible pricing practices and consistent product
+                presentation, in line with UK statutory regulations.
               </p>
             </div>
           </Reveal>
@@ -206,9 +205,9 @@ function ExpertisePage() {
               Do You Manufacture Within These Sectors?
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-lg leading-relaxed text-muted-foreground">
-              If your brand fits within our operational capabilities and you are looking
-              for a highly compliant, non-disruptive UK distribution partner that procures
-              in high wholesale volumes. Please connect with our procurement team to initiate trade.
+              If your brand operates within these sectors, we would welcome the opportunity to
+              submit a structured procurement proposal as a compliant wholesale buyer and
+              prospective retail partner, subject to supplier approval.
             </p>
             <div className="mt-10 flex justify-center">
               <Link to="/partner" className="btn-crimson px-8 py-4">

@@ -127,8 +127,10 @@ function TermsPage() {
             <TermsItem value="t1" title="1. Nature of Business">
               <p>
                 <LegalName /> (CRN {COMPANY.crn}), registered at {COMPANY.address}, operates as a
-                digital wholesale marketplace distribution partner and strategic procurement asset
-                for global brands, manufacturers and authorised suppliers.
+                compliant wholesale buyer and prospective retail partner. Subject to supplier
+                approval and commercial agreements, the company seeks to procure inventory through
+                wholesale purchasing arrangements with manufacturers, brand owners and authorised
+                distributors.
               </p>
               <p className="mt-4">
                 This web application functions exclusively as a corporate portfolio and

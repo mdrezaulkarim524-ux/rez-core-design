@@ -22,17 +22,17 @@ import { COMPANY } from "@/lib/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Digital Wholesale Distribution Partner | REZ INTERNATIONAL" },
+      { title: "B2B Procurement & Authorised Wholesale Distribution | REZ INTERNATIONAL LTD" },
       {
         name: "description",
         content:
-          "Official corporate portal of REZ INTERNATIONAL (CRN: 17320050). We act as a trusted digital marketplace distribution and supply chain partner for global brands and manufacturers. Secure bulk upfront capital procurement with strict MAP compliance.",
+          "Corporate portal of REZ INTERNATIONAL LTD (CRN: 17320050), a UK registered compliant wholesale buyer. Subject to supplier approval, we seek to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners and authorised distributors.",
       },
-      { property: "og:title", content: "Digital Wholesale Distribution Partner | REZ INTERNATIONAL" },
+      { property: "og:title", content: "B2B Procurement & Authorised Wholesale Distribution | REZ INTERNATIONAL LTD" },
       {
         property: "og:description",
         content:
-          "Official corporate portal of REZ INTERNATIONAL (CRN: 17320050). We act as a trusted digital marketplace distribution and supply chain partner for global brands and manufacturers. Secure bulk upfront capital procurement with strict MAP compliance.",
+          "Corporate portal of REZ INTERNATIONAL LTD (CRN: 17320050), a UK registered compliant wholesale buyer. Subject to supplier approval, we seek to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners and authorised distributors.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -45,12 +45,12 @@ const TRUST_ANCHORS = [
   {
     icon: ShieldCheck,
     title: "Brand Equity Protection",
-    text: "REZ INTERNATIONAL LTD strictly respects Minimum Advertised Price (MAP) policies and follows your exact corporate guidelines, eliminating grey market listings and safeguarding brand value across every authorised channel.",
+    text: "Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.",
   },
   {
     icon: Landmark,
     title: "Seamless Capital & Scale",
-    text: `Operating under UK Company Registration Number ${COMPANY.crn}, REZ INTERNATIONAL LTD acts as a well-capitalised wholesale buying partner, purchasing high-volume wholesale inventory directly and upfront.`,
+    text: `Operating under UK Company Registration Number ${COMPANY.crn}, REZ INTERNATIONAL LTD is structured as a compliant wholesale buyer, and subject to commercial agreements intends to purchase inventory through wholesale procurement arrangements.`,
   },
 
 
@@ -58,14 +58,14 @@ const TRUST_ANCHORS = [
   {
     icon: Boxes,
     title: "Advanced Supply Chain Integration",
-    text: "REZ INTERNATIONAL LTD operates premium prep facilities, strict quality control systems and streamlined inventory workflows, ensuring every digital marketplace compliance threshold is flawlessly met.",
+    text: "We work with compliant fulfilment logistics partners to support inventory receiving, inspection and marketplace-ready order preparation.",
   },
 ] as const;
 
 const METRICS = [
-  { icon: CheckCircle2, label: "100% Marketplace Compliant Prep" },
-  { icon: Wallet, label: "Upfront Bulk Capital Committed" },
-  { icon: Lock, label: "Strict MAP Policy Adherence" },
+  { icon: CheckCircle2, label: "Compliant Wholesale Buyer" },
+  { icon: Wallet, label: "Structured Procurement Proposal" },
+  { icon: Lock, label: "Supplier & MAP Policy Alignment" },
 ] as const;
 
 const SECTOR_CARDS = [
@@ -73,19 +73,19 @@ const SECTOR_CARDS = [
     image: sectorBeauty,
     eyebrow: "Sector 01",
     title: "Beauty & Personal Care",
-    text: "Premium prestige beauty, skincare, and grooming SKUs prepped to marketplace-grade specifications.",
+    text: "Prestige beauty, skincare and grooming lines prepared to retail-ready specifications.",
   },
   {
     image: sectorHome,
     eyebrow: "Sector 02",
     title: "Home & Kitchen Logistics",
-    text: "High-volume household goods managed with disciplined inventory workflows and MAP enforcement.",
+    text: "Household goods managed with disciplined inventory workflows and supplier pricing guidelines.",
   },
   {
     image: sectorConsumer,
     eyebrow: "Sector 03",
     title: "Premium Consumer Goods",
-    text: "Electronics, lifestyle and specialty categories scaled through authorized digital channels.",
+    text: "Electronics, lifestyle and specialty categories supplied through authorised retail sales channels.",
   },
 ] as const;
 
@@ -93,12 +93,12 @@ const TRUST_PILLARS = [
   {
     icon: Lock,
     title: "Strict Brand & Price Protection",
-    text: "We strictly enforce MAP (Minimum Advertised Price) policies and eliminate unauthorized channel resellers to preserve your brand equity across all marketplaces.",
+    text: "Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.",
   },
   {
     icon: Banknote,
     title: "Direct Capital Investment",
-    text: "We operate as a true wholesale partner, purchasing inventory upfront to provide immediate cash flow and stock stability for manufacturers.",
+    text: "Subject to commercial agreements, REZ INTERNATIONAL LTD intends to purchase inventory through wholesale procurement arrangements rather than operating as a brokerage or consignment business.",
   },
   {
     icon: Building2,
@@ -107,8 +107,8 @@ const TRUST_PILLARS = [
   },
   {
     icon: Globe2,
-    title: "Omnichannel Marketplace Power",
-    text: "Proven distribution infrastructure connecting authorized suppliers with high-converting opportunities across major UK and European digital marketplaces.",
+    title: "Prospective Retail Partner",
+    text: "Depending on supplier agreements and channel eligibility, products may be supplied through authorised retail sales channels across the UK and Europe.",
   },
 ] as const;
 
@@ -116,17 +116,17 @@ const STEPS = [
   {
     n: "01",
     title: "Connect & Align",
-    text: "Share your product catalog and marketplace distribution guidelines through our corporate channel.",
+    text: "Share your product catalogue and distribution guidelines through our corporate channel.",
   },
   {
     n: "02",
     title: "Fleet & Capital Commit",
-    text: "We evaluate inventory fit and issue an upfront bulk purchase order directly to your manufacturing plant or warehouse.",
+    text: "We prepare a structured procurement proposal for your review, subject to supplier approval and commercial agreements.",
   },
   {
     n: "03",
     title: "Compliance & Scale",
-    text: "Our UK distribution hub receives, preps, and seamlessly feeds the products into optimized digital marketplace distribution channels while keeping pricing fully stable.",
+    text: "We work with compliant fulfilment logistics partners to support inventory receiving, inspection and marketplace-ready order preparation.",
   },
 ] as const;
 
@@ -146,16 +146,16 @@ function HomePage() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative mx-auto flex max-w-7xl flex-col items-start px-4 py-28 sm:px-6 lg:px-8 lg:py-44">
           <Reveal>
-            <p className="eyebrow" style={{ color: "#FFFFFF" }}>UK-Registered Digital Wholesale Business Partner</p>
+            <p className="eyebrow" style={{ color: "#FFFFFF" }}>B2B Procurement &amp; Authorised Wholesale Distribution</p>
             <h1
               className="mt-5 max-w-5xl font-display font-extrabold leading-[1.1]"
               style={{ color: "#D8B893", fontSize: "clamp(1.8rem, 4vw, 3.2rem)" }}
             >
-              <span className="block sm:whitespace-nowrap">Accelerating Brand Growth</span>
-              <span className="block sm:whitespace-nowrap">Across Premium Digital Marketplaces</span>
+              <span className="block sm:whitespace-nowrap">A Compliant UK Wholesale Buyer</span>
+              <span className="block sm:whitespace-nowrap">For Brands and Manufacturers</span>
             </h1>
             <h2 className="hero-copy mt-6 max-w-3xl text-lg font-normal leading-relaxed sm:text-xl">
-              REZ INTERNATIONAL LTD acts as your official distribution and fulfilment facilitator. We purchase inventory in bulk, honour your brand guidelines, enforce price stability and optimise your positioning across digital channels with zero marketplace channel friction.
+              Subject to supplier approval and commercial agreements, REZ INTERNATIONAL LTD seeks to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners, and authorised distributors. Products may subsequently be supplied through authorised retail sales channels in accordance with supplier agreements, applicable policies, and relevant legal requirements.
             </h2>
 
             <div className="mt-10 flex flex-wrap gap-4">
@@ -177,7 +177,7 @@ function HomePage() {
           <Reveal>
             <p className="eyebrow">Trust Anchors & Core Values</p>
             <h2 className="mt-3 max-w-2xl font-display text-3xl font-extrabold text-gold sm:text-4xl">
-              Built on Compliance, Capital, and Control.
+              Built on Compliance, Transparency and Control.
             </h2>
           </Reveal>
           <div className="mt-14 grid gap-6 md:grid-cols-3">
@@ -200,10 +200,10 @@ function HomePage() {
           <Reveal>
             <p className="eyebrow">The Strategic Difference</p>
             <h2 className="mt-4 font-display text-3xl font-extrabold text-gold sm:text-4xl">
-              A Distribution Partner Built to Protect Your Market Ecosystem.
+              A Compliant Wholesale Buyer and Prospective Retail Partner.
             </h2>
             <p className="mt-6 text-base leading-relaxed text-muted-foreground">
-              Traditional distributors simply move boxes. REZ INTERNATIONAL LTD protects your market ecosystem. We do not run public storefronts and we do not compete with your direct retail network. Instead, we absorb the operational burden of high volume digital logistics, ensuring your supply line remains organised, fully optimised and strictly protected from unauthorised third party disruption.
+              REZ INTERNATIONAL LTD is a newly registered UK company operating as a compliant wholesale buyer and prospective retail partner. Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.
             </p>
 
             <div className="mt-8">
@@ -248,8 +248,8 @@ function HomePage() {
               Sectors We Support
             </h2>
             <p className="mt-4 max-w-2xl text-muted-foreground">
-              A preview of the diversified product ecosystems we manage and scale through our
-              digital distribution network.
+              A preview of the product categories we would like to support through structured
+              wholesale procurement arrangements.
             </p>
           </Reveal>
           <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -291,7 +291,7 @@ function HomePage() {
                     View All 25 Sectors
                   </p>
                   <p className="mt-3 text-sm text-muted-foreground">
-                    From beauty and grocery to electronics and hardware, one professional standard across every category we distribute.
+                    From beauty and grocery to electronics and hardware, one professional standard across every category we would like to procure.
                   </p>
 
                   <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-crimson-bright">
@@ -366,10 +366,10 @@ function HomePage() {
         <div className="mx-auto max-w-5xl px-4 text-center sm:px-6">
           <Reveal>
             <h2 className="font-display text-3xl font-extrabold sm:text-4xl lg:text-5xl" style={{ color: "#FFFFFF" }}>
-              Protect Your Brand. Scale Your Digital Footprint.
+              Discuss a Structured Procurement Proposal.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed sm:text-lg" style={{ color: "#D8B893" }}>
-              Partner with REZ INTERNATIONAL LTD, an officially registered UK marketplace distribution expert. Let us discuss a secure, high volume bulk supply contract today.
+              REZ INTERNATIONAL LTD is a UK registered company (CRN: 17320050) seeking structured wholesale procurement arrangements. We welcome the opportunity to discuss a procurement proposal, subject to supplier approval and commercial agreements.
             </p>
 
             <div className="mt-10 flex justify-center">
@@ -379,7 +379,7 @@ function HomePage() {
               </Link>
             </div>
             <p className="mt-8 text-xs uppercase tracking-[0.22em] text-muted-foreground">
-              Strictly B2B. Supply Chain Partnerships Only. UK Company No. {COMPANY.crn}.
+              B2B Procurement & Authorised Wholesale Distribution. UK Company No. {COMPANY.crn}.
             </p>
 
           </Reveal>

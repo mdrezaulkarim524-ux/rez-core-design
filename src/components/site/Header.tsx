@@ -14,20 +14,22 @@ import {
 import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
+const TICKER_LABEL = "B2B Procurement & Authorised Wholesale Distribution";
+
 const TICKER_ITEMS = [
-  { Icon: ShieldCheck, color: "#D8B893", label: "MAP Policy Compliant" },
-  { Icon: LockKeyhole, color: "#D1D5DB", label: "Brand Equity Protection" },
-  { Icon: Banknote, color: "#D8B893", label: "Upfront Bulk Capital Procurement" },
-  { Icon: Building2, color: "#9CA3AF", label: "Official UK Entity (CRN: 17320050)" },
-  { Icon: Globe2, color: "#A5F3FC", label: "Digital Marketplace Distribution Partner" },
-  { Icon: Warehouse, color: "#FDE68A", label: "Compliant 3PL Partner Warehousing Infrastructure" },
+  { Icon: ShieldCheck, color: "#D8B893", key: "shield", label: TICKER_LABEL },
+  { Icon: LockKeyhole, color: "#D1D5DB", key: "lock", label: TICKER_LABEL },
+  { Icon: Banknote, color: "#D8B893", key: "banknote", label: TICKER_LABEL },
+  { Icon: Building2, color: "#9CA3AF", key: "building", label: TICKER_LABEL },
+  { Icon: Globe2, color: "#A5F3FC", key: "globe", label: TICKER_LABEL },
+  { Icon: Warehouse, color: "#FDE68A", key: "warehouse", label: TICKER_LABEL },
 ] as const;
 
 function TickerGroup({ ariaHidden = false }: { ariaHidden?: boolean }) {
   return (
     <div className="marquee-group" aria-hidden={ariaHidden || undefined}>
-      {TICKER_ITEMS.map(({ Icon, color, label }) => (
-        <span key={label} className="marquee-item">
+      {TICKER_ITEMS.map(({ Icon, color, key, label }) => (
+        <span key={key} className="marquee-item">
           <Icon size={14} strokeWidth={1.2} color={color} className="shrink-0" />
           {label}
         </span>

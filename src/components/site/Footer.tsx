@@ -35,9 +35,9 @@ export function Footer() {
           </div>
 
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            REZ INTERNATIONAL LTD is a UK based digital wholesale business partner and omnichannel
-            marketplace distribution specialist, connecting global brands, manufacturers and
-            authorised suppliers with compliant marketplace growth.
+            B2B Procurement &amp; Authorised Wholesale Distribution. REZ INTERNATIONAL LTD is a UK
+            registered company operating as a compliant wholesale buyer and prospective retail
+            partner, subject to supplier approval and commercial agreements.
           </p>
           <p className="mt-4 text-xs text-muted-foreground">
             Company Registration No. 17320050. Registered in England and Wales.
@@ -81,7 +81,7 @@ export function Footer() {
           <p className="eyebrow mb-4">Partnerships</p>
           <div className="hover-luxe rounded-lg border border-border-gold bg-surface p-5">
             <p className="font-display text-sm font-bold text-foreground">
-              Strictly B2B &amp; Supply Chain Partnerships Only
+              B2B Procurement &amp; Authorised Wholesale Distribution
             </p>
             <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
               We do not sell to individual consumers. All enquiries are handled through our
