@@ -13,13 +13,13 @@ export const Route = createFileRoute("/partner")({
       {
         name: "description",
         content:
-          "Initiate a B2B supply partnership with REZ INTERNATIONAL (CRN: 17320050). Submit your corporate portfolio for procurement vetting, MAP alignment and marketplace distribution onboarding.",
+          "Submit your corporate portfolio to REZ INTERNATIONAL LTD (CRN: 17320050) for review. B2B procurement and authorised wholesale distribution, subject to supplier approval.",
       },
       { property: "og:title", content: "Initiate B2B Supply Partnership & Vetting | REZ INTERNATIONAL" },
       {
         property: "og:description",
         content:
-          "Corporate portfolio submission and supplier vetting pathway for global brands and manufacturers.",
+          "Corporate portfolio submission and review pathway for brands, manufacturers and authorised distributors.",
       },
     ],
   }),
@@ -31,7 +31,7 @@ const CAPACITIES = ["Under £10,000", "£10,000 – £50,000", "£50,000 – £1
 const ASSURANCES = [
   { icon: ShieldCheck, title: "Confidential Review", body: "All submitted portfolios are evaluated under strict corporate NDA protocols." },
   { icon: Clock3, title: "2 Business Day SLA", body: "Our procurement team responds to qualified submissions within 48 hours." },
-  { icon: FileCheck2, title: "Compliance Vetted", body: "MAP, authenticity, and jurisdictional alignment reviewed before onboarding." },
+  { icon: FileCheck2, title: "Compliance Vetted", body: "Supplier requirements, MAP policies and jurisdictional alignment reviewed before any agreement." },
 ] as const;
 
 function PartnerPage() {
@@ -59,7 +59,7 @@ function PartnerPage() {
         title="Initiate a Strategic Supply Partnership"
         image={partnerBg}
         imageAlt="Global container port and freight logistics infrastructure at dusk"
-        description="Submit your corporate portfolio and distribution guidelines. Our procurement team will review your asset structures, minimum capital requirements, and inventory volume availability within 2 business days."
+        description="Submit your corporate portfolio and distribution guidelines. Our team will review your product range and volume availability and respond with a structured procurement proposal where there is a fit, subject to supplier approval and commercial agreements."
       />
 
       <section className="relative overflow-hidden bg-background py-20 lg:py-28">
@@ -85,8 +85,8 @@ function PartnerPage() {
               A vetted onboarding pathway for global suppliers
             </h2>
             <p className="mt-4 text-muted-foreground">
-              REZ INTERNATIONAL operates a structured procurement pipeline. Only manufacturers,
-              brand owners and authorised distributors are shortlisted for commercial evaluation.
+              REZ INTERNATIONAL LTD operates a structured procurement process. Enquiries from
+              manufacturers, brand owners and authorised distributors are reviewed for commercial fit.
             </p>
 
             <ul className="mt-10 space-y-6">

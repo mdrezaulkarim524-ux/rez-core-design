@@ -11,13 +11,13 @@ export const Route = createFileRoute("/about")({
       {
         name: "description",
         content:
-          "REZ INTERNATIONAL LTD is a UK-registered digital wholesale and marketplace distribution specialist. Learn about our corporate credentials, compliance standards, and partnership philosophy.",
+          "REZ INTERNATIONAL LTD (CRN: 17320050) is a UK registered compliant wholesale buyer. Learn about our corporate credentials, compliance standards and procurement approach.",
       },
       { property: "og:title", content: "About Us — REZ INTERNATIONAL" },
       {
         property: "og:description",
         content:
-          "UK-registered corporate entity built on compliance, capital, and controlled marketplace distribution.",
+          "UK registered corporate entity built on compliance, transparency and structured wholesale procurement.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -31,26 +31,26 @@ const PILLARS = [
     icon: ShieldCheck,
     title: "Sustainable Price Integrity",
     subtitle: "Zero Grey Market Friction",
-    text: "We strictly respect and honour Minimum Advertised Price (MAP) setups. By continuously monitoring digital channels, we ensure that your product's pricing remains perfectly unified, avoiding price wars and protecting your physical storefronts or direct retail channels.",
+    text: "Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.",
   },
   {
     icon: Truck,
     title: "Operational and Logistics Mastery",
-    subtitle: "Direct Infrastructure Asset",
-    text: "We manage the exhaustive process of product inspection, premium retail prep, labeling, and complex digital marketplace distribution rules. Every single pallet we process matches the highest standards of international supply chain compliance.",
+    subtitle: "Compliant Fulfilment Partners",
+    text: "We work with compliant fulfilment logistics partners to support inventory receiving, inspection and marketplace-ready order preparation.",
   },
   {
     icon: Wallet,
-    title: "Long-Term Bulk Capital Commitments",
-    subtitle: "Consistent Upfront Purchasing",
-    text: "We are not a consignment service or drop-shipper. We establish trust by placing volume purchase orders upfront, maintaining a healthy cash flow for our suppliers, and steadily moving large-scale manufacturing output.",
+    title: "Structured Wholesale Purchasing",
+    subtitle: "Compliant Wholesale Buyer",
+    text: "Subject to commercial agreements, REZ INTERNATIONAL LTD intends to purchase inventory through wholesale procurement arrangements rather than operating as a brokerage or consignment business.",
   },
 ] as const;
 
 const PROMISES = [
-  "100% adherence to your explicit corporate policies and aesthetic guidelines.",
+  "Adherence to your documented corporate policies and presentation guidelines.",
   "Continuous market data sharing and collaborative inventory forecasting.",
-  "Zero unauthorized marketplace storefront clutter that competes with your brand.",
+  "Clear, documented alignment with your authorised channel policies before any purchase order is placed.",
 ] as const;
 
 function AboutPage() {
@@ -73,7 +73,7 @@ function AboutPage() {
               Driven by Compliance. <span className="text-gold-gradient">Scaled by Innovation.</span>
             </h1>
             <h2 className="hero-copy mt-6 max-w-3xl text-lg font-normal leading-relaxed sm:text-xl">
-              At REZ INTERNATIONAL LTD, we bridge the gap between world class manufacturing and complex digital marketplace distribution ecosystems. We do not operate as an ordinary broker; we act as an authorized, fully-compliant wholesale partner committed to long term brand preservation.
+              Subject to supplier approval and commercial agreements, REZ INTERNATIONAL LTD seeks to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners, and authorised distributors. Products may subsequently be supplied through authorised retail sales channels in accordance with supplier agreements, applicable policies, and relevant legal requirements.
             </h2>
           </Reveal>
         </div>
@@ -121,7 +121,7 @@ function AboutPage() {
                     <Globe className="mt-0.5 h-5 w-5 shrink-0 text-gold" strokeWidth={1.75} />
                     <div>
                       <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Scope of Operation</p>
-                      <p className="mt-1 font-semibold text-foreground">Authorized Digital Marketplace Distribution, Cross-Border Supply Chain Infrastructure, and Professional Supply Chain Management.</p>
+                      <p className="mt-1 font-semibold text-foreground">B2B Procurement &amp; Authorised Wholesale Distribution.</p>
                     </div>
                   </div>
                 </div>
@@ -168,10 +168,10 @@ function AboutPage() {
               A Clear, Transparent Path Forward.
             </h2>
             <p className="mt-6 leading-relaxed text-muted-foreground">
-              The digital marketplace landscape is often diluted by unauthorised third party sellers who degrade brand identity for quick, short term profits. REZ INTERNATIONAL LTD was founded to counter this challenge. We act as a single, highly professional point of contact that absorbs logistical friction, cleans up fragmented listings, and drives steady, predictable growth for your corporate portfolio.
+              REZ INTERNATIONAL LTD is a newly registered UK company presenting a structured procurement proposal to manufacturers, brand owners and authorised distributors. We operate as a compliant wholesale buyer and prospective retail partner, with a single professional point of contact for every commercial discussion.
             </p>
             <p className="mt-4 leading-relaxed text-muted-foreground">
-              We do not compete with your brand. We augment your digital distribution capability with a controlled, compliant, and capital backed wholesale layer that respects your market positioning.
+              Any distribution activity is carried out through authorised retail sales channels in accordance with supplier agreements, applicable policies and relevant legal requirements.
             </p>
           </Reveal>
 
@@ -203,7 +203,7 @@ function AboutPage() {
               Partner with a Transparent UK Corporate Entity.
             </h2>
             <p className="mx-auto mt-6 max-w-2xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              Let's establish a highly stable, structured wholesale partnership that protects your brand equity while moving bulk volume.
+              We welcome the opportunity to discuss a structured procurement proposal, subject to supplier approval and commercial agreements.
             </p>
             <div className="mt-10 flex justify-center">
               <Link to="/partner" className="btn-crimson animate-gold-pulse px-8 py-4 text-base">
@@ -212,7 +212,7 @@ function AboutPage() {
               </Link>
             </div>
             <p className="mt-8 text-xs uppercase tracking-[0.22em] text-muted-foreground">
-              Strictly B2B &middot; UK Company No. {COMPANY.crn} &middot; Registered in England & Wales
+              B2B Procurement &amp; Authorised Wholesale Distribution &middot; UK Company No. {COMPANY.crn} &middot; Registered in England & Wales
             </p>
           </Reveal>
         </div>

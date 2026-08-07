@@ -11,13 +11,13 @@ export const Route = createFileRoute("/brand-protection")({
       {
         name: "description",
         content:
-          "Strict MAP compliance, brand value protection, and advanced supply chain infrastructure for global brands and manufacturers partnering with REZ INTERNATIONAL.",
+          "Where applicable, REZ INTERNATIONAL LTD follows supplier requirements, MAP policies and recognised marketplace standards, working with compliant fulfilment logistics partners.",
       },
       { property: "og:title", content: "Brand Protection & Supply Chain — REZ INTERNATIONAL" },
       {
         property: "og:description",
         content:
-          "Strict MAP compliance and advanced supply chain infrastructure for global brands and manufacturers.",
+          "Supplier requirements, MAP policies and compliant fulfilment logistics partners.",
       },
     ],
   }),
@@ -28,17 +28,17 @@ const CAPABILITIES = [
   {
     icon: PackageCheck,
     title: "Advanced Prep & Quality Control",
-    text: "Every inbound shipment undergoes a rigorous inspection protocol. We verify batch numbers, audit packaging integrity, and apply specialized barcode labeling that adheres strictly to complex digital marketplace compliance standards.",
+    text: "We work with compliant fulfilment logistics partners to support inventory receiving, inspection and marketplace-ready order preparation.",
   },
   {
     icon: Warehouse,
     title: "High-Volume Bulk Storage",
-    text: "Our logistics footprint is fully optimised to receive, cross-dock, and store high-capacity inventory, from single pallets to high-volume wholesale inventory and full pallet distributions.",
+    text: "Storage is arranged through compliant third party logistics partners, scaled from single pallets to full pallet volumes as commercial agreements allow.",
   },
   {
     icon: Truck,
     title: "Rapid Fulfillment-Ready Routing",
-    text: "Located strategically in the United Kingdom, our network is optimized for hyper-efficient freight handling, ensuring that bulk inventory is processed, verified, and routed into distribution channels without operational lag.",
+    text: "Working from the United Kingdom, our fulfilment partners support freight handling so inventory can be processed, verified and routed into authorised retail sales channels.",
   },
 ] as const;
 
@@ -61,10 +61,10 @@ function BrandProtectionSupplyChainPage() {
               Safeguarding Brand Equity. Optimizing Global Logistics.
             </h1>
             <p className="hero-copy mt-6 max-w-2xl text-lg leading-relaxed sm:text-xl">
-              We do not simply move inventory; we protect your market ecosystem. By combining strict
-              price policy enforcement with an advanced, compliant supply chain network, REZ
-              INTERNATIONAL LTD ensures your products are handled with the highest corporate standards
-              from factory to marketplace.
+              Where applicable, we follow supplier requirements, MAP policies, and recognised
+              marketplace standards to support responsible pricing practices and consistent product
+              presentation. We work with compliant fulfilment logistics partners to support inventory
+              receiving, inspection and marketplace-ready order preparation.
             </p>
           </Reveal>
         </div>
@@ -81,12 +81,10 @@ function BrandProtectionSupplyChainPage() {
                   Strict MAP Compliance & Price Stabilisation
                 </h2>
                 <p className="mt-4 leading-relaxed text-muted-foreground">
-                  Uncontrolled online pricing destroys retail networks and degrades brand perception.
-                  REZ INTERNATIONAL LTD operates under strict internal mandates to honour and enforce
-                  your Minimum Advertised Price (MAP) policies. We do not participate in destructive
-                  price wars. Instead, we use advanced monitoring software to ensure your listings
-                  remain completely clean, stable, and perfectly aligned with your global corporate
-                  strategy.
+                  Where applicable, REZ INTERNATIONAL LTD follows supplier requirements, MAP
+                  policies, and recognised marketplace standards to support responsible pricing
+                  practices and consistent product presentation. Pricing conduct is governed by the
+                  terms set out in each supplier agreement.
                 </p>
               </div>
             </Reveal>
@@ -116,8 +114,8 @@ function BrandProtectionSupplyChainPage() {
               Supply Chain & Logistics Infrastructure
             </h2>
             <p className="mx-auto mt-4 max-w-2xl text-center leading-relaxed text-muted-foreground">
-              A professionally engineered network designed to receive, verify, store, and route bulk
-              inventory with absolute compliance and speed.
+              We work with compliant fulfilment logistics partners to support inventory receiving,
+              inspection and marketplace-ready order preparation.
             </p>
           </Reveal>
 
@@ -163,8 +161,8 @@ function BrandProtectionSupplyChainPage() {
                   Secure Your Digital Supply Chain Today.
                 </h2>
                 <p className="mx-auto mt-4 max-w-2xl text-center leading-relaxed text-muted-foreground">
-                  Experience a distribution partnership built on transparency, capital investment,
-                  and absolute brand protection.
+                  A structured procurement proposal from a compliant wholesale buyer and prospective
+                  retail partner, subject to supplier approval and commercial agreements.
                 </p>
                 <div className="mt-10 flex justify-center">
                   <Link to="/partner" className="btn-crimson px-8 py-4">

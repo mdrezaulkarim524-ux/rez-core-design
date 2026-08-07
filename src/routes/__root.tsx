@@ -83,19 +83,19 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Official corporate portal of REZ INTERNATIONAL (CRN: 17320050). We act as a trusted digital marketplace distribution and supply chain partner for global brands and manufacturers. Secure bulk upfront capital procurement with strict MAP compliance.",
+          "Corporate portal of REZ INTERNATIONAL LTD (CRN: 17320050). B2B Procurement & Authorised Wholesale Distribution, subject to supplier approval and commercial agreements.",
       },
       { name: "author", content: "REZ INTERNATIONAL" },
       { property: "og:title", content: "Digital Wholesale Distribution Partner | REZ INTERNATIONAL" },
       {
         property: "og:description",
         content:
-          "Official corporate portal of REZ INTERNATIONAL (CRN: 17320050). We act as a trusted digital marketplace distribution and supply chain partner for global brands and manufacturers. Secure bulk upfront capital procurement with strict MAP compliance.",
+          "Corporate portal of REZ INTERNATIONAL LTD (CRN: 17320050). B2B Procurement & Authorised Wholesale Distribution, subject to supplier approval and commercial agreements.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:title", content: "Digital Wholesale Distribution Partner | REZ INTERNATIONAL" },
-      { name: "twitter:description", content: "Official corporate portal of REZ INTERNATIONAL (CRN: 17320050). We act as a trusted digital marketplace distribution and supply chain partner for global brands and manufacturers. Secure bulk upfront capital procurement with strict MAP compliance." },
+      { name: "twitter:description", content: "Corporate portal of REZ INTERNATIONAL LTD (CRN: 17320050). B2B Procurement & Authorised Wholesale Distribution, subject to supplier approval and commercial agreements." },
       { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/86c188f8-3a66-4d46-b811-afe1131e3d9a/id-preview-86f70913--06c73bfc-58ee-4395-b84f-0c3cc94ffad0.lovable.app-1783865531322.png" },
       { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/86c188f8-3a66-4d46-b811-afe1131e3d9a/id-preview-86f70913--06c73bfc-58ee-4395-b84f-0c3cc94ffad0.lovable.app-1783865531322.png" },
     ],
