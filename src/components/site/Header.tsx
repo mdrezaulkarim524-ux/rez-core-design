@@ -28,8 +28,8 @@ const TICKER_ITEMS = [
 function TickerGroup({ ariaHidden = false }: { ariaHidden?: boolean }) {
   return (
     <div className="marquee-group" aria-hidden={ariaHidden || undefined}>
-      {TICKER_ITEMS.map(({ Icon, color, label }) => (
-        <span key={label} className="marquee-item">
+      {TICKER_ITEMS.map(({ Icon, color, key, label }) => (
+        <span key={key} className="marquee-item">
           <Icon size={14} strokeWidth={1.2} color={color} className="shrink-0" />
           {label}
         </span>
