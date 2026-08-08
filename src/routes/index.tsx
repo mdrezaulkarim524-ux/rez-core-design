@@ -22,13 +22,13 @@ import { COMPANY } from "@/lib/site";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "B2B Procurement & Authorised Wholesale Distribution | REZ INTERNATIONAL LTD" },
+      { title: "B2B Wholesale Procurement & Distribution | REZ INTERNATIONAL LTD" },
       {
         name: "description",
         content:
           "Corporate portal of REZ INTERNATIONAL LTD (CRN: 17320050), a UK registered compliant wholesale buyer. Subject to supplier approval, we seek to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners and authorised distributors.",
       },
-      { property: "og:title", content: "B2B Procurement & Authorised Wholesale Distribution | REZ INTERNATIONAL LTD" },
+      { property: "og:title", content: "B2B Wholesale Procurement & Distribution | REZ INTERNATIONAL LTD" },
       {
         property: "og:description",
         content:
@@ -146,7 +146,7 @@ function HomePage() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative mx-auto flex max-w-7xl flex-col items-start px-4 py-28 sm:px-6 lg:px-8 lg:py-44">
           <Reveal>
-            <p className="eyebrow" style={{ color: "#FFFFFF" }}>B2B Procurement &amp; Authorised Wholesale Distribution</p>
+            <p className="eyebrow" style={{ color: "#FFFFFF" }}>B2B Wholesale Procurement &amp; Distribution</p>
             <h1
               className="mt-5 max-w-5xl font-display font-extrabold leading-[1.1]"
               style={{ color: "#D8B893", fontSize: "clamp(1.8rem, 4vw, 3.2rem)" }}
@@ -379,7 +379,7 @@ function HomePage() {
               </Link>
             </div>
             <p className="mt-8 text-xs uppercase tracking-[0.22em] text-muted-foreground">
-              B2B Procurement & Authorised Wholesale Distribution. UK Company No. {COMPANY.crn}.
+              B2B Wholesale Procurement & Distribution. UK Company No. {COMPANY.crn}.
             </p>
 
           </Reveal>

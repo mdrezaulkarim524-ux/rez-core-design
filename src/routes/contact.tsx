@@ -50,7 +50,7 @@ export const Route = createFileRoute("/contact")({
       { property: "og:title", content: "Contact Us — REZ INTERNATIONAL" },
       {
         property: "og:description",
-        content: "B2B Procurement & Authorised Wholesale Distribution. Verified corporate channels and registered UK office of REZ INTERNATIONAL LTD.",
+        content: "B2B Wholesale Procurement & Distribution. Verified corporate channels and registered UK office of REZ INTERNATIONAL LTD.",
       },
     ],
   }),

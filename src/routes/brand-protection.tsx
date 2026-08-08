@@ -95,7 +95,7 @@ function BrandProtectionSupplyChainPage() {
                   Supporting Listing Integrity &amp; Compliance
                 </h2>
                 <p className="mt-4 leading-relaxed text-muted-foreground">
-                  REZ INTERNATIONAL LTD seeks to establish authorised wholesale procurement
+                  REZ INTERNATIONAL LTD seeks to establish wholesale procurement
                   relationships with manufacturers and brand owners. Where agreements allow, we work
                   collaboratively to support accurate catalogue positioning and consistent, verified
                   product presentation across authorised retail sales channels.

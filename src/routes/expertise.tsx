@@ -31,13 +31,13 @@ import s25 from "@/assets/sectors/s25-b2btech.jpg";
 export const Route = createFileRoute("/expertise")({
   head: () => ({
     meta: [
-      { title: "Product Sectors | B2B Procurement & Authorised Wholesale Distribution" },
+      { title: "Product Sectors | B2B Wholesale Procurement & Distribution" },
       {
         name: "description",
         content:
           "25 product sectors of interest for structured wholesale procurement. REZ INTERNATIONAL LTD (CRN: 17320050) operates as a compliant wholesale buyer under UK law.",
       },
-      { property: "og:title", content: "Product Sectors | B2B Procurement & Authorised Wholesale Distribution" },
+      { property: "og:title", content: "Product Sectors | B2B Wholesale Procurement & Distribution" },
       {
         property: "og:description",
         content: "25 product sectors covered by our structured wholesale procurement proposal.",

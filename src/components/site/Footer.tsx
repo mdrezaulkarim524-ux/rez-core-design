@@ -35,7 +35,7 @@ export function Footer() {
           </div>
 
           <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-            B2B Procurement &amp; Authorised Wholesale Distribution. REZ INTERNATIONAL LTD is a UK
+            B2B Wholesale Procurement &amp; Distribution. REZ INTERNATIONAL LTD is a UK
             registered company operating as a compliant wholesale buyer and prospective retail
             partner, subject to supplier approval and commercial agreements.
           </p>
@@ -81,7 +81,7 @@ export function Footer() {
           <p className="eyebrow mb-4">Partnerships</p>
           <div className="hover-luxe rounded-lg border border-border-gold bg-surface p-5">
             <p className="font-display text-sm font-bold text-foreground">
-              B2B Procurement &amp; Authorised Wholesale Distribution
+              B2B Wholesale Procurement &amp; Distribution
             </p>
             <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
               All enquiries are handled through our corporate onboarding process.

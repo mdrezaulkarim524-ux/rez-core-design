@@ -14,7 +14,7 @@ import {
 import { NAV_LINKS, SECTORS } from "@/lib/site";
 const logoAsset = "/rez-logo.png";
 
-const TICKER_LABEL = "B2B Procurement & Authorised Wholesale Distribution";
+const TICKER_LABEL = "B2B Wholesale Procurement & Distribution";
 
 const TICKER_ITEMS = [
   { Icon: ShieldCheck, color: "#D8B893", key: "shield", label: TICKER_LABEL },

@@ -13,7 +13,7 @@ export const Route = createFileRoute("/partner")({
       {
         name: "description",
         content:
-          "Submit your corporate portfolio to REZ INTERNATIONAL LTD (CRN: 17320050) for review. B2B procurement and authorised wholesale distribution, subject to supplier approval.",
+          "Submit your corporate portfolio to REZ INTERNATIONAL LTD (CRN: 17320050) for review. B2B wholesale procurement and distribution, subject to supplier approval.",
       },
       { property: "og:title", content: "Initiate B2B Supply Partnership & Vetting | REZ INTERNATIONAL" },
       {

@@ -88,7 +88,7 @@ function AboutPage() {
                 <div>
                   <p className="eyebrow">Verified Corporate Standing</p>
                   <h2 className="mt-3 font-display text-2xl font-extrabold text-gold sm:text-3xl">
-                    Legal Compliance & Official Credentials
+                    Legal Compliance & Corporate Credentials
                   </h2>
                   <p className="mt-4 leading-relaxed text-muted-foreground">
                     Our corporate structure is transparent, registered, and fully accountable under UK commercial law. We provide risk averse legal departments and procurement officers with every detail required to verify our standing.
@@ -98,7 +98,7 @@ function AboutPage() {
                   <div className="flex items-start gap-4 rounded-md border border-border bg-background p-5">
                     <Building2 className="mt-0.5 h-5 w-5 shrink-0 text-gold" strokeWidth={1.75} />
                     <div>
-                      <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Official Entity</p>
+                      <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Registered Entity</p>
                       <p className="mt-1 font-semibold text-foreground">{COMPANY.name}</p>
                     </div>
                   </div>
@@ -121,7 +121,7 @@ function AboutPage() {
                     <Globe className="mt-0.5 h-5 w-5 shrink-0 text-gold" strokeWidth={1.75} />
                     <div>
                       <p className="text-xs uppercase tracking-[0.18em] text-muted-foreground">Scope of Operation</p>
-                      <p className="mt-1 font-semibold text-foreground">B2B Procurement &amp; Authorised Wholesale Distribution.</p>
+                      <p className="mt-1 font-semibold text-foreground">B2B Wholesale Procurement &amp; Distribution.</p>
                     </div>
                   </div>
                 </div>
@@ -212,7 +212,7 @@ function AboutPage() {
               </Link>
             </div>
             <p className="mt-8 text-xs uppercase tracking-[0.22em] text-muted-foreground">
-              B2B Procurement &amp; Authorised Wholesale Distribution &middot; UK Company No. {COMPANY.crn} &middot; Registered in England & Wales
+              B2B Wholesale Procurement &amp; Distribution &middot; UK Company No. {COMPANY.crn} &middot; Registered in England & Wales
             </p>
           </Reveal>
         </div>

@@ -41,7 +41,7 @@ const FAQS = [
 
 const TITLE = "Book a Meeting | REZ INTERNATIONAL";
 const DESCRIPTION =
-  "Schedule a confidential 30 minute corporate consultation with REZ INTERNATIONAL LTD (CRN: 17320050) to discuss B2B procurement and authorised wholesale distribution.";
+  "Schedule a confidential 30 minute corporate consultation with REZ INTERNATIONAL LTD (CRN: 17320050) to discuss B2B wholesale procurement and distribution.";
 
 export const Route = createFileRoute("/book-a-meeting")({
   head: () => ({
@@ -133,7 +133,7 @@ function BookMeetingPage() {
           </Reveal>
 
           <p className="mt-12 text-center text-xs uppercase tracking-[0.22em] text-muted-foreground">
-            B2B Procurement &amp; Authorised Wholesale Distribution. UK Company No. {COMPANY.crn}.
+            B2B Wholesale Procurement &amp; Distribution. UK Company No. {COMPANY.crn}.
           </p>
         </div>
       </section>
