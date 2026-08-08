@@ -2,8 +2,41 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Mail, MapPin, Building2, Scale } from "lucide-react";
 import { PageHero } from "@/components/site/PageHero";
 import { Reveal } from "@/components/site/Reveal";
+import {
+  Accordion,
+  AccordionContent,
+  AccordionItem,
+  AccordionTrigger,
+} from "@/components/ui/accordion";
 import { COMPANY } from "@/lib/site";
 import contactHero from "@/assets/contact-network.jpg";
+
+const FAQS = [
+  {
+    q: "How does REZ INTERNATIONAL LTD handle inventory procurement?",
+    a: "Subject to supplier approval and commercial agreements, REZ INTERNATIONAL LTD seeks to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners, and authorised distributors.",
+  },
+  {
+    q: "Which channels do you distribute through?",
+    a: "Distribution is carried out through authorised retail sales channels in accordance with supplier agreements and applicable policies.",
+  },
+  {
+    q: "How do you support brand protection and pricing guidelines?",
+    a: "Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.",
+  },
+  {
+    q: "How is inventory fulfillment and prep handled?",
+    a: "We work with compliant fulfilment logistics partners to support inventory receiving, inspection and marketplace-ready order preparation.",
+  },
+  {
+    q: "Do you purchase inventory outright?",
+    a: "Subject to commercial agreements, REZ INTERNATIONAL LTD intends to purchase inventory through wholesale procurement arrangements rather than operating as a brokerage or consignment business.",
+  },
+  {
+    q: "Which retail channels do you support?",
+    a: "Depending on supplier agreements and channel eligibility, products may be supplied through authorised retail sales channels.",
+  },
+] as const;
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -242,6 +275,30 @@ function ContactPage() {
           </Reveal>
         </div>
       </section>
+
+      <section className="bg-surface py-20 lg:py-28">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <Reveal>
+            <p className="eyebrow text-center">Supplier Questions</p>
+            <h2 className="mt-3 text-center font-display text-2xl font-extrabold text-gold sm:text-3xl">
+              Frequently Asked Questions
+            </h2>
+            <Accordion type="single" collapsible className="mx-auto mt-8 w-full max-w-3xl">
+              {FAQS.map((faq, i) => (
+                <AccordionItem key={faq.q} value={`faq-${i}`} className="border-border">
+                  <AccordionTrigger className="text-left font-display text-base font-semibold text-foreground">
+                    {faq.q}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-sm leading-relaxed text-muted-foreground">
+                    {faq.a}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </Reveal>
+        </div>
+      </section>
     </>
+
   );
 }

@@ -30,7 +30,7 @@ const PILLARS = [
   {
     icon: ShieldCheck,
     title: "Sustainable Price Integrity",
-    subtitle: "Zero Grey Market Friction",
+    subtitle: "Supporting Listing Integrity",
     text: "Where applicable, we follow supplier requirements, MAP policies, and recognised marketplace standards to support responsible pricing practices and consistent product presentation.",
   },
   {
