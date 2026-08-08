@@ -92,13 +92,13 @@ function BrandProtectionSupplyChainPage() {
               <div className="hover-luxe-crisp h-full rounded-lg border border-border bg-card p-8 lg:p-10">
                 <ShieldCheck className="h-8 w-8 text-gold" strokeWidth={1.5} />
                 <h2 className="mt-5 font-display text-2xl font-bold text-gold">
-                  Eradicating Unauthorised Intermediaries
+                  Supporting Listing Integrity &amp; Compliance
                 </h2>
                 <p className="mt-4 leading-relaxed text-muted-foreground">
-                  We help brands clean up fragmented digital marketplaces. When we commit upfront
-                  capital to your product line, we work collaboratively to identify grey market
-                  sellers, optimise authorised catalogue positioning, and ensure that only pristine,
-                  verified assets represent your corporate name to the public.
+                  REZ INTERNATIONAL LTD seeks to establish authorised wholesale procurement
+                  relationships with manufacturers and brand owners. Where agreements allow, we work
+                  collaboratively to support accurate catalogue positioning and consistent, verified
+                  product presentation across authorised retail sales channels.
                 </p>
               </div>
             </Reveal>

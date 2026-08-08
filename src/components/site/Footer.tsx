@@ -84,8 +84,7 @@ export function Footer() {
               B2B Procurement &amp; Authorised Wholesale Distribution
             </p>
             <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
-              We do not sell to individual consumers. All enquiries are handled through our
-              corporate onboarding process.
+              All enquiries are handled through our corporate onboarding process.
             </p>
             <Link to="/partner" className="btn-crimson mt-4 w-full px-4 py-2.5 text-sm">
               Start an Enquiry
