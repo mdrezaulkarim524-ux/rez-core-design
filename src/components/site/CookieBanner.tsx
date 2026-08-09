@@ -71,7 +71,7 @@ export function CookieBanner() {
         <Link
           to="/cookie-policy"
           target="_self"
-          className="btn-gold-outline px-5 py-2 text-sm"
+          className="btn-gold-outline px-5 py-2 text-sm uppercase tracking-wide"
           onClick={() => setVisible(false)}
         >
           Cookie Policy
