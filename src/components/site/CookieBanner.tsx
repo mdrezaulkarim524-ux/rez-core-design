@@ -59,18 +59,19 @@ export function CookieBanner() {
       className="animate-fade-in fixed inset-x-4 bottom-4 z-[60] mx-auto max-w-2xl rounded-lg border border-border-gold bg-surface/95 p-5 shadow-lg backdrop-blur-md sm:inset-x-6"
     >
       <p className="text-sm leading-relaxed text-muted-foreground">
-        আমরা এই কর্পোরেট ওয়েবসাইট পরিচালনার জন্য প্রয়োজনীয় কুকিজ ব্যবহার করি। আমরা বর্তমানে
-        অ্যানালিটিক্স বা বিজ্ঞাপন ট্র্যাকিং কুকিজ ব্যবহার করি না। কোনো নন-এসেনশিয়াল কুকিজ সম্মতি
-        ছাড়া সেট করা হয় না। আরও তথ্যের জন্য আমাদের কুকি পলিসি পড়ুন।
+        We use essential cookies to operate this corporate web application. We currently do not use
+        analytics or advertising tracking cookies. No non-essential cookies are set without prior
+        consent. Read our Cookie Policy for more information.
       </p>
       <div className="mt-4 flex flex-wrap justify-end gap-3">
-        <button onClick={accept} className="btn-crimson px-5 py-2 text-sm">
+        <button onClick={accept} className="btn-crimson px-5 py-2 text-sm uppercase tracking-wide">
           Accept Essential Cookies
         </button>
+
         <Link
           to="/cookie-policy"
           target="_self"
-          className="btn-gold-outline px-5 py-2 text-sm"
+          className="btn-gold-outline px-5 py-2 text-sm uppercase tracking-wide"
           onClick={() => setVisible(false)}
         >
           Cookie Policy
