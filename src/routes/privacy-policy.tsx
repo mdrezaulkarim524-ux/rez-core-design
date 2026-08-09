@@ -108,7 +108,20 @@ function PrivacyPage() {
                   <p className="mt-4">
                     Data is retained only for the period necessary to fulfil the procurement dialogue for which it was submitted, or as required by applicable UK statutory obligations. Beyond that period, records are securely destroyed or irreversibly anonymised.
                   </p>
+                  <p className="mt-4">
+                    UK GDPR অনুযায়ী ব্যক্তিগত ডেটা সুরক্ষার জন্য উপযুক্ত প্রযুক্তিগত এবং সাংগঠনিক ব্যবস্থা (appropriate technical and organisational measures) গ্রহণ করা হয়।
+                  </p>
                 </LegalItem>
+
+                <LegalItem value="s3b" title="3a. Third-Party Services">
+                  <p>
+                    This corporate website is delivered through secure cloud hosting and content delivery infrastructure. Hosting and infrastructure partners process limited technical telemetry, such as anonymised performance signals and IP-derived routing data, strictly under legal and contractual data protection obligations, solely to maintain availability, security and performance.
+                  </p>
+                  <p className="mt-4">
+                    No analytics, advertising or behavioural tracking providers are engaged. Further detail is set out in our Cookie Policy.
+                  </p>
+                </LegalItem>
+
 
                 <LegalItem value="s4" title="4. Legal Rights (UK GDPR)">
                   <p>
