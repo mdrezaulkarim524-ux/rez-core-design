@@ -135,13 +135,29 @@ function HomePage() {
     <>
       {/* 1. HERO */}
       <section className="relative overflow-hidden">
-        <img
-          src={heroImage}
-          alt="Cinematic automated global distribution centre with robotic conveyor lines and palletised premium inventory"
-          width={1920}
-          height={1088}
-          className="animate-camera-pan absolute inset-0 h-full w-full object-cover"
-        />
+        <div aria-hidden="true" className="absolute inset-0 h-full w-full">
+          <img
+            src={heroImage}
+            alt=""
+            width={1920}
+            height={1088}
+            className="absolute inset-0 h-full w-full object-cover"
+          />
+          <video
+            className="hero-video absolute inset-0 h-full w-full object-cover"
+            autoPlay
+            loop
+            muted
+            playsInline
+            preload="metadata"
+            poster={heroImage}
+            width={1920}
+            height={1088}
+          >
+            <source src={HERO_VIDEO_URL} type="video/mp4" />
+          </video>
+        </div>
+
         <div className="absolute inset-0" style={{ background: "rgba(9, 10, 12, 0.18)" }} />
         <div className="absolute inset-0" style={{ background: "var(--gradient-hero)" }} />
         <div className="relative mx-auto flex max-w-7xl flex-col items-start px-4 py-28 sm:px-6 lg:px-8 lg:py-44">
