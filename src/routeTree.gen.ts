@@ -15,6 +15,7 @@ import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
 import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
 import { Route as PartnerRouteImport } from './routes/partner'
 import { Route as ExpertiseRouteImport } from './routes/expertise'
+import { Route as CookiePolicyRouteImport } from './routes/cookie-policy'
 import { Route as ContactRouteImport } from './routes/contact'
 import { Route as BrandProtectionRouteImport } from './routes/brand-protection'
 import { Route as BookAMeetingRouteImport } from './routes/book-a-meeting'
@@ -51,6 +52,11 @@ const ExpertiseRoute = ExpertiseRouteImport.update({
   path: '/expertise',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CookiePolicyRoute = CookiePolicyRouteImport.update({
+  id: '/cookie-policy',
+  path: '/cookie-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const ContactRoute = ContactRouteImport.update({
   id: '/contact',
   path: '/contact',
@@ -83,6 +89,7 @@ export interface FileRoutesByFullPath {
   '/book-a-meeting': typeof BookAMeetingRoute
   '/brand-protection': typeof BrandProtectionRoute
   '/contact': typeof ContactRoute
+  '/cookie-policy': typeof CookiePolicyRoute
   '/expertise': typeof ExpertiseRoute
   '/partner': typeof PartnerRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -96,6 +103,7 @@ export interface FileRoutesByTo {
   '/book-a-meeting': typeof BookAMeetingRoute
   '/brand-protection': typeof BrandProtectionRoute
   '/contact': typeof ContactRoute
+  '/cookie-policy': typeof CookiePolicyRoute
   '/expertise': typeof ExpertiseRoute
   '/partner': typeof PartnerRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -110,6 +118,7 @@ export interface FileRoutesById {
   '/book-a-meeting': typeof BookAMeetingRoute
   '/brand-protection': typeof BrandProtectionRoute
   '/contact': typeof ContactRoute
+  '/cookie-policy': typeof CookiePolicyRoute
   '/expertise': typeof ExpertiseRoute
   '/partner': typeof PartnerRoute
   '/privacy-policy': typeof PrivacyPolicyRoute
@@ -125,6 +134,7 @@ export interface FileRouteTypes {
     | '/book-a-meeting'
     | '/brand-protection'
     | '/contact'
+    | '/cookie-policy'
     | '/expertise'
     | '/partner'
     | '/privacy-policy'
@@ -138,6 +148,7 @@ export interface FileRouteTypes {
     | '/book-a-meeting'
     | '/brand-protection'
     | '/contact'
+    | '/cookie-policy'
     | '/expertise'
     | '/partner'
     | '/privacy-policy'
@@ -151,6 +162,7 @@ export interface FileRouteTypes {
     | '/book-a-meeting'
     | '/brand-protection'
     | '/contact'
+    | '/cookie-policy'
     | '/expertise'
     | '/partner'
     | '/privacy-policy'
@@ -165,6 +177,7 @@ export interface RootRouteChildren {
   BookAMeetingRoute: typeof BookAMeetingRoute
   BrandProtectionRoute: typeof BrandProtectionRoute
   ContactRoute: typeof ContactRoute
+  CookiePolicyRoute: typeof CookiePolicyRoute
   ExpertiseRoute: typeof ExpertiseRoute
   PartnerRoute: typeof PartnerRoute
   PrivacyPolicyRoute: typeof PrivacyPolicyRoute
@@ -217,6 +230,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof ExpertiseRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/cookie-policy': {
+      id: '/cookie-policy'
+      path: '/cookie-policy'
+      fullPath: '/cookie-policy'
+      preLoaderRoute: typeof CookiePolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/contact': {
       id: '/contact'
       path: '/contact'
@@ -261,6 +281,7 @@ const rootRouteChildren: RootRouteChildren = {
   BookAMeetingRoute: BookAMeetingRoute,
   BrandProtectionRoute: BrandProtectionRoute,
   ContactRoute: ContactRoute,
+  CookiePolicyRoute: CookiePolicyRoute,
   ExpertiseRoute: ExpertiseRoute,
   PartnerRoute: PartnerRoute,
   PrivacyPolicyRoute: PrivacyPolicyRoute,
@@ -271,13 +292,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
