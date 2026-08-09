@@ -97,12 +97,18 @@ export function Footer() {
       <div className="border-t border-border">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-6 text-xs text-muted-foreground sm:px-6 md:flex-row lg:px-8">
           <p>&copy; 2026 REZ INTERNATIONAL LTD. All rights reserved. Registered in England &amp; Wales. CRN: {COMPANY.crn}. UK GDPR Compliant.</p>
-          <div className="flex items-center gap-5">
-            <Link to="/privacy-policy" className="transition-colors hover:text-gold">
+          <div className="flex flex-wrap items-center justify-center gap-5">
+            <Link to="/privacy-policy" target="_self" className="transition-colors hover:text-gold">
               Privacy Policy
             </Link>
-            <Link to="/terms" className="transition-colors hover:text-gold">
+            <Link to="/cookie-policy" target="_self" className="transition-colors hover:text-gold">
+              Cookie Policy
+            </Link>
+            <Link to="/terms" target="_self" className="transition-colors hover:text-gold">
               Terms &amp; Conditions
+            </Link>
+            <Link to="/contact" target="_self" className="transition-colors hover:text-gold">
+              Contact
             </Link>
           </div>
 
