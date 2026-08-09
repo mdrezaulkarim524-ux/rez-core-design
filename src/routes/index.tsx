@@ -13,14 +13,14 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/hero-distribution-luxury.jpg";
 import heroVideoAsset from "../../public/hero-distribution.mp4.asset.json";
-
-const HERO_VIDEO_URL = heroVideoAsset.url;
 import sectorBeauty from "@/assets/sector-beauty.jpg";
 import sectorHome from "@/assets/sector-home.jpg";
 import sectorConsumer from "@/assets/sector-consumer.jpg";
 import { Reveal } from "@/components/site/Reveal";
 
 import { COMPANY } from "@/lib/site";
+
+const HERO_VIDEO_URL = heroVideoAsset.url;
 
 export const Route = createFileRoute("/")({
   head: () => ({
