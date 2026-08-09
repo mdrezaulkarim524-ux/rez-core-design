@@ -146,19 +146,6 @@ function HomePage() {
             height={1088}
             className="absolute inset-0 h-full w-full object-cover"
           />
-          <video
-            className="hero-video absolute inset-0 h-full w-full object-cover"
-            autoPlay
-            loop
-            muted
-            playsInline
-            preload="metadata"
-            poster={heroImage}
-            width={1920}
-            height={1088}
-          >
-            <source src={HERO_VIDEO_URL} type="video/mp4" />
-          </video>
         </div>
 
         <div className="absolute inset-0" style={{ background: "rgba(9, 10, 12, 0.18)" }} />
@@ -167,12 +154,17 @@ function HomePage() {
           <Reveal>
             <p className="eyebrow" style={{ color: "#FFFFFF" }}>B2B Wholesale Procurement &amp; Distribution</p>
             <h1
-              className="mt-5 max-w-5xl font-display font-extrabold leading-[1.1]"
-              style={{ color: "#D8B893", fontSize: "clamp(1.8rem, 4vw, 3.2rem)" }}
+              className="mt-5 max-w-5xl font-display font-extrabold leading-[1.15]"
+              style={{
+                color: "#D8B893",
+                fontSize: "clamp(1.05rem, 5vw, 3.2rem)",
+                letterSpacing: "-0.015em",
+              }}
             >
-              <span className="block sm:whitespace-nowrap">A Compliant UK Wholesale Buyer</span>
-              <span className="block sm:whitespace-nowrap">For Brands and Manufacturers</span>
+              <span className="block whitespace-nowrap">A Compliant UK Wholesale Buyer</span>
+              <span className="block whitespace-nowrap">For Brands and Manufacturers</span>
             </h1>
+
             <h2 className="hero-copy mt-6 max-w-3xl text-lg font-normal leading-relaxed sm:text-xl">
               Subject to supplier approval and commercial agreements, REZ INTERNATIONAL LTD seeks to procure inventory through wholesale purchasing arrangements with manufacturers, brand owners, and authorised distributors. Products may subsequently be supplied through authorised retail sales channels in accordance with supplier agreements, applicable policies, and relevant legal requirements.
             </h2>
