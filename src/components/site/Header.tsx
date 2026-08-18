@@ -61,8 +61,7 @@ export function Header() {
       <div
         className="relative"
         style={{
-          background: "rgba(9, 10, 12, 0.72)",
-          backdropFilter: "blur(12px)",
+          background: "#000000",
           borderBottom: "1px solid rgba(216, 184, 147, 0.15)",
         }}
       >

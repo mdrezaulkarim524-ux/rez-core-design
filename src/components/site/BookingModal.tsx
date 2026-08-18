@@ -80,7 +80,7 @@ export function BookingModal({ url = CALENDLY_URL }: { url?: string }) {
               transition: "all 0.25s ease-in-out",
             }}
           >
-            <div className="flex items-center justify-between border-b border-border bg-[#00072D] px-5 py-3">
+            <div className="flex items-center justify-between border-b border-border bg-[#0C1527] px-5 py-3">
               <p className="font-display text-sm font-semibold tracking-[0.14em] text-gold">
                 Corporate Consultation
               </p>
