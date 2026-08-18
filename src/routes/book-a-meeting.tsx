@@ -115,7 +115,7 @@ function BookMeetingPage() {
             <div className="mt-16">
               <p className="eyebrow text-center">Supplier Questions</p>
               <h2 className="mt-3 text-center font-display text-2xl font-extrabold text-gold sm:text-3xl">
-                Frequently Asked Questions
+                FAQ
               </h2>
               <Accordion type="single" collapsible className="mx-auto mt-8 w-full max-w-3xl">
                 {FAQS.map((faq, i) => (
