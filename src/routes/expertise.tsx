@@ -2,31 +2,15 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import { Reveal } from "@/components/site/Reveal";
 import { COMPANY } from "@/lib/site";
 import expertiseHero from "@/assets/expertise-hero.jpg";
-import s01 from "@/assets/sectors/s01-beauty.jpg";
-import s02 from "@/assets/sectors/s02-health.jpg";
-import s03 from "@/assets/sectors/s03-kitchen.jpg";
-import s04 from "@/assets/sectors/s04-electronics.jpg";
-import s05 from "@/assets/sectors/s05-office.jpg";
-import s06 from "@/assets/sectors/s06-baby.jpg";
-import s07 from "@/assets/sectors/s07-toys.jpg";
-import s08 from "@/assets/sectors/s08-pet.jpg";
-import s09 from "@/assets/sectors/s09-tools.jpg";
-import s10 from "@/assets/sectors/s10-garden.jpg";
-import s11 from "@/assets/sectors/s11-sports.jpg";
-import s12 from "@/assets/sectors/s12-auto.jpg";
-import s13 from "@/assets/sectors/s13-apparel.jpg";
-import s14 from "@/assets/sectors/s14-gourmet.jpg";
-import s15 from "@/assets/sectors/s15-lighting.jpg";
-import s16 from "@/assets/sectors/s16-music.jpg";
-import s17 from "@/assets/sectors/s17-art.jpg";
-import s18 from "@/assets/sectors/s18-safety.jpg";
-import s19 from "@/assets/sectors/s19-industrial.jpg";
-import s20 from "@/assets/sectors/s20-luggage.jpg";
-import s21 from "@/assets/sectors/s21-luxury.jpg";
-import s22 from "@/assets/sectors/s22-outdoor.jpg";
-import s23 from "@/assets/sectors/s23-sanitation.jpg";
-import s24 from "@/assets/sectors/s24-electrical.jpg";
-import s25 from "@/assets/sectors/s25-b2btech.jpg";
+import s01 from "@/assets/sectors/s03-kitchen.jpg";
+import s02 from "@/assets/sectors/s06-baby.jpg";
+import s03 from "@/assets/sectors/s02-health.jpg";
+import s04 from "@/assets/sectors/s01-beauty.jpg";
+import s05 from "@/assets/sectors/s08-pet.jpg";
+import s06 from "@/assets/sectors/s11-sports.jpg";
+import s07 from "@/assets/sectors/s10-garden.jpg";
+import s08 from "@/assets/sectors/s07-toys.jpg";
+import s09 from "@/assets/sectors/s23-sanitation.jpg";
 
 export const Route = createFileRoute("/expertise")({
   head: () => ({
@@ -35,12 +19,12 @@ export const Route = createFileRoute("/expertise")({
       {
         name: "description",
         content:
-          "25 product sectors of interest for structured wholesale procurement. REZ INTERNATIONAL LTD (CRN: 17320050) operates as a compliant wholesale buyer under UK law.",
+          "Core product sectors for structured wholesale procurement. REZ INTERNATIONAL LTD (CRN: 17320050) operates as a compliant wholesale buyer under UK law.",
       },
       { property: "og:title", content: "Product Sectors | B2B Wholesale Procurement & Distribution" },
       {
         property: "og:description",
-        content: "25 product sectors covered by our structured wholesale procurement proposal.",
+        content: "Core product sectors covered by our structured wholesale procurement proposal.",
       },
     ],
   }),
@@ -48,31 +32,15 @@ export const Route = createFileRoute("/expertise")({
 });
 
 const SECTORS: { title: string; description: string; image: string }[] = [
-  { title: "Beauty & Personal Care", description: "Premium cosmetics, luxury skincare formulations, and advanced personal grooming apparatus.", image: s01 },
-  { title: "Health, Wellness & Supplements", description: "Vitamins, supplements, and wellness goods aligned with strict UK standards.", image: s02 },
-  { title: "Home & Kitchen Infrastructure", description: "High end matte black cookware, premium small kitchen appliances, and culinary organization assets.", image: s03 },
-  { title: "Consumer Electronics", description: "Modern smart speakers, luxury audio hardware, and advanced personal tech accessories.", image: s04 },
-  { title: "Office & Workspace Supplies", description: "Premium ergonomic desktop tools, sleek corporate workspace organization, and executive stationery.", image: s05 },
-  { title: "Baby & Infant Care", description: "Certified organic baby essentials, developmental goods, and premium high end nursery assets.", image: s06 },
-  { title: "Toys & Collective Hobbies", description: "High grade structural hobby kits, premium educational assets, and refined collectible sets.", image: s07 },
-  { title: "Pet Care & Premium Nutrition", description: "Luxury pet wellness packaging, specialized diet canisters, and premium companion goods.", image: s08 },
-  { title: "Tools & Home Improvement", description: "Professional grade smart hardware, precision instruments, and high durability building equipment.", image: s09 },
-  { title: "Garden & Outdoor Living", description: "High end seasonal outdoor assets, luxury smart patio tech, and premium ambient lighting.", image: s10 },
-  { title: "Sports & High Performance Fitness", description: "Advanced training equipment, athletic health gear, and specialized recovery apparatus.", image: s11 },
-  { title: "Automotive Care & Accessories", description: "Ultra premium detailing kits, smart vehicular electronics, and high grade maintenance essentials.", image: s12 },
-  { title: "Apparel Accessories & Travel Gear", description: "Luxury travel hardware, secure commuter cases, and premium executive lifestyle accessories.", image: s13 },
-  { title: "Gourmet Provisions & Dry Groceries", description: "Shelf stable premium organic goods, gourmet corporate gift sets, and artisanal provisions.", image: s14 },
-  { title: "Smart Lighting & Home Automation", description: "High efficiency integrated lighting nodes, ambient LED arrays, and premium switch hardware.", image: s15 },
-  { title: "Musical Instruments & Studio Gear", description: "High fidelity audio capture tools, premium studio microphones, and content creation hardware.", image: s16 },
-  { title: "Art, Design & Premium Craft Supplies", description: "Professional grade artistic materials, premium design media, and luxury studio instruments.", image: s17 },
-  { title: "Personal Safety & Security Hardware", description: "Smart biometric home locks, advanced residential monitoring nodes, and premium protection gear.", image: s18 },
-  { title: "Industrial Equipment & Corporate Supplies", description: "Commercial logistical components, heavy duty secure storage, and facility infrastructure.", image: s19 },
-  { title: "Luggage & High Capacity Travel Systems", description: "Premium hard shell cases, modular travel packs, and professional aluminium flight gear.", image: s20 },
-  { title: "Timepieces & Premium Luxury Accents", description: "High end horology preservation gear, luxury desktop timepieces, and premium display cases.", image: s21 },
-  { title: "Outdoor Recreation & Tactical Camping", description: "High durability exploration equipment, survival tech, and specialized multi tool arrays.", image: s22 },
-  { title: "Commercial Cleaning & Sanitation Infrastructure", description: "Professional grade facility maintenance solutions and safe bulk sanitization arrays.", image: s23 },
-  { title: "Electrical Systems & Energy Management", description: "Premium smart power distribution hardware, surge protection arrays, and backup cell systems.", image: s24 },
-  { title: "B2B Technological Hardware & Peripherals", description: "Enterprise networking components, secure data drives, and rack mount corporate hardware.", image: s25 },
+  { title: "Home & Kitchen", description: "Premium cookware, small kitchen appliances, and household organisation assets prepared to retail-ready standards.", image: s01 },
+  { title: "Baby & Nursery", description: "Certified baby essentials, developmental goods, and premium nursery products aligned with UK safety standards.", image: s02 },
+  { title: "Health & Personal Care", description: "Vitamins, supplements, and personal wellness goods sourced through authorised distribution channels.", image: s03 },
+  { title: "Beauty & Cosmetics", description: "Prestige skincare, colour cosmetics, and grooming lines supplied under strict brand protection guidelines.", image: s04 },
+  { title: "Pet Supplies", description: "Premium pet nutrition, wellness packaging, and companion care products for authorised retail channels.", image: s05 },
+  { title: "Sports & Outdoors", description: "Advanced training equipment, athletic health gear, and high-performance outdoor recreation products.", image: s06 },
+  { title: "Garden & DIY", description: "Seasonal outdoor assets, smart patio technology, and home improvement essentials for garden and living spaces.", image: s07 },
+  { title: "Toys & Games", description: "High-grade hobby kits, premium educational assets, and refined collectible and play sets.", image: s08 },
+  { title: "Household Essentials", description: "Professional-grade cleaning, sanitation, and everyday household maintenance solutions.", image: s09 },
 ];
 
 function ExpertisePage() {
@@ -98,7 +66,7 @@ function ExpertisePage() {
             </h1>
             <p className="hero-copy mt-6 max-w-3xl text-lg leading-relaxed sm:text-xl">
               Subject to supplier approval and commercial agreements, we seek to procure
-              inventory through wholesale purchasing arrangements across 25 core product
+              inventory through wholesale purchasing arrangements across core product
               sectors, supported by compliant fulfilment logistics partners.
             </p>
           </Reveal>
@@ -125,21 +93,21 @@ function ExpertisePage() {
         </div>
       </section>
 
-      {/* 3. THE 25 SECTORS GRID */}
+      {/* 3. CORE SECTORS GRID */}
       <section className="bg-background pb-20 lg:pb-28">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <Reveal>
             <div className="mb-12 text-center">
-              <p className="eyebrow">25 Sectors of Operational Capability</p>
+              <p className="eyebrow">Core Sectors of Operational Capability</p>
               <h2 className="mt-3 font-display text-3xl font-extrabold text-foreground sm:text-4xl">
                 Direct Bulk Wholesale Procurement Capacity. Fully Compliant.
               </h2>
             </div>
           </Reveal>
 
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {SECTORS.map((sector, i) => (
-              <Reveal key={sector.title} delay={(i % 4) * 60}>
+              <Reveal key={sector.title} delay={(i % 3) * 60}>
                 <article
                   className="hover-luxe group flex h-full flex-col overflow-hidden rounded-lg border border-border bg-surface transition-all duration-500 hover:border-crimson"
                   style={{ boxShadow: "inset 0 0 0 1px rgba(255,255,255,0.06)" }}
