@@ -369,7 +369,7 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  background: rgba(11, 11, 69, 0.7);
+  background: transparent;
   background-image: none;
   color: #D8B893;
   font-family: var(--font-sans);
@@ -381,7 +381,7 @@
   box-shadow: none;
   transition: background-color 0.3s ease, border-color 0.3s ease;
   &:hover {
-    background: rgba(11, 11, 69, 0.9);
+    background: rgba(0, 0, 0, 0.45);
     border-color: rgba(212, 175, 55, 0.7);
     color: #E4CBA9;
     box-shadow: none;
