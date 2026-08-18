@@ -105,9 +105,9 @@ export function Header() {
                 {/* Mega dropdown */}
                 <div className="invisible absolute left-1/2 top-full z-50 w-[560px] -translate-x-1/2 pt-4 opacity-0 transition-all duration-300 group-hover:visible group-hover:opacity-100">
                   <div className="rounded-lg border border-border-gold bg-popover p-6 shadow-lg">
-                    <p className="eyebrow mb-4">25 Product Sectors We Distribute</p>
+                    <p className="eyebrow mb-4">Core Product Sectors</p>
                     <div className="grid grid-cols-2 gap-x-6 gap-y-2">
-                      {SECTORS.slice(0, 10).map((sector) => (
+                      {SECTORS.map((sector) => (
                         <Link
                           key={sector}
                           to="/expertise"
@@ -117,10 +117,6 @@ export function Header() {
                         </Link>
                       ))}
                     </div>
-                    <div className="divider-gold my-4" />
-                    <Link to="/expertise" className="text-sm font-semibold text-gold hover:text-crimson-bright">
-                      View all 25 sectors &rarr;
-                    </Link>
                   </div>
                 </div>
               </div>

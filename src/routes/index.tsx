@@ -297,10 +297,10 @@ function HomePage() {
                 <p className="eyebrow">All Categories</p>
                 <div>
                   <p className="font-display text-2xl font-extrabold text-gold">
-                    View All 25 Sectors
+                    View All Core Sectors
                   </p>
                   <p className="mt-3 text-sm text-muted-foreground">
-                    From beauty and grocery to electronics and hardware, one professional standard across every category we would like to procure.
+                    From home and kitchen to beauty and pet care, one professional standard across every core category we would like to procure.
                   </p>
 
                   <span className="mt-6 inline-flex items-center gap-2 text-sm font-semibold text-crimson-bright">

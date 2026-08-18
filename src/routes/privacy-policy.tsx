@@ -109,7 +109,7 @@ function PrivacyPage() {
                     Data is retained only for the period necessary to fulfil the procurement dialogue for which it was submitted, or as required by applicable UK statutory obligations. Beyond that period, records are securely destroyed or irreversibly anonymised.
                   </p>
                   <p className="mt-4">
-                    UK GDPR অনুযায়ী ব্যক্তিগত ডেটা সুরক্ষার জন্য উপযুক্ত প্রযুক্তিগত এবং সাংগঠনিক ব্যবস্থা (appropriate technical and organisational measures) গ্রহণ করা হয়।
+                    In accordance with UK GDPR and the Data Protection Act 2018, appropriate technical and organisational measures are continuously maintained to safeguard all personal and corporate data against unauthorized access, alteration, or disclosure.
                   </p>
                 </LegalItem>
 
